@@ -9,7 +9,9 @@
     "posts": "Posts",
     "postsTitle": "Posts page",
     "contact": "Contact",
-    "contactTitle": "Contact page"
+    "contactTitle": "Contact page",
+    "marekkrumal": "Marek Křůmal",
+    "marekkrumalTitle": "Profile page"
   },
   "Footer": {
     "createdWith": "Created with",
