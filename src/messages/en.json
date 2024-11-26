@@ -1,0 +1,46 @@
+{
+  "NavbarLinks": {
+    "home": "Home",
+    "homeTitle": "Home page",
+    "about": "About",
+    "aboutTitle": "About page",
+    "projects": "Projects",
+    "projectsTitle": "Projects page",
+    "posts": "Posts",
+    "postsTitle": "Posts page",
+    "contact": "Contact",
+    "contactTitle": "Contact page"
+  },
+  "Footer": {
+    "link": "Footer"
+  },
+  "HomePage": {
+    "title": "Landing page",
+    "welcome": "Welcome to my website!",
+    "description": "This is the main page of my portfolio."
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "Learn more about who I am and what I do."
+  },
+  "ProfilePage": {
+    "title": "Profile",
+    "description": "This is your profile page."
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "A list of my projects."
+  },
+  "PostsPage": {
+    "title": "Posts",
+    "description": "Read my latest posts."
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Get in touch with me."
+  },
+  "ThemeToggle": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "NavbarLinks": {
+    "home": "Domů",
+    "homeTitle": "Úvodní stránka",
+    "about": "O nás",
+    "aboutTitle": "Stránka o nás",
+    "projects": "Projekty",
+    "projectsTitle": "Stránka projektů",
+    "posts": "Příspěvky",
+    "postsTitle": "Stránka příspěvků",
+    "contact": "Kontakt",
+    "contactTitle": "Stránka kontaktu"
+  },
+  "Footer": {
+    "link": "Patička"
+  },
+  "HomePage": {
+    "title": "Úvodní stránka",
+    "welcome": "Vítejte na mém webu!",
+    "description": "Toto je hlavní stránka mého portfolia."
+  },
+  "AboutPage": {
+    "title": "O nás",
+    "description": "Dozvíte se více o mně a mé práci."
+  },
+  "ProfilePage": {
+    "title": "Profil",
+    "description": "Toto je stránka vašeho profilu."
+  },
+  "ProjectsPage": {
+    "title": "Projekty",
+    "description": "Seznam mých projektů."
+  },
+  "PostsPage": {
+    "title": "Příspěvky",
+    "description": "Přečtěte si mé poslední příspěvky."
+  },
+  "ContactPage": {
+    "title": "Kontakt",
+    "description": "Spojte se se mnou."
+  },
+  "ThemeToggle": {
+    "light": "Světelný režim",
+    "dark": "Tmavý režim"
+  }
+}
