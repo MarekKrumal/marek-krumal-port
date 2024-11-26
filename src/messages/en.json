@@ -12,7 +12,9 @@
     "contactTitle": "Contact page"
   },
   "Footer": {
-    "link": "Footer"
+    "createdWith": "Created with",
+    "usingTechnologies": "using Next.js and TailwindCSS. Check out my projects on",
+    "github": "Github"
   },
   "HomePage": {
     "title": "Landing page",

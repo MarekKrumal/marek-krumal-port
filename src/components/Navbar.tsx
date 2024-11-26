@@ -2,7 +2,7 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { useTranslations } from "next-intl";
-import LanguageButton from "./LanguageButton"; // Import nové komponenty
+import LanguageButton from "./LanguageButton";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
@@ -19,7 +19,6 @@ export default function Navbar() {
         </nav>
         <div className="flex items-center space-x-3">
           <ThemeToggle />
-          {/* Použití nové komponenty LanguageButton */}
           <LanguageButton />
         </div>
       </div>

@@ -2,7 +2,7 @@
   "NavbarLinks": {
     "home": "Domů",
     "homeTitle": "Úvodní stránka",
-    "about": "O nás",
+    "about": "O mně",
     "aboutTitle": "Stránka o nás",
     "projects": "Projekty",
     "projectsTitle": "Stránka projektů",
@@ -12,7 +12,9 @@
     "contactTitle": "Stránka kontaktu"
   },
   "Footer": {
-    "link": "Patička"
+    "createdWith": "Vytvořeno s",
+    "usingTechnologies": "za pomocí Next.js a TailwindCSS. Podívej se na moje projekty na",
+    "github": "Githubu"
   },
   "HomePage": {
     "title": "Úvodní stránka",
