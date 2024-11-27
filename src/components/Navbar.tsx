@@ -1,21 +1,45 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageButton from "./LanguageButton";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
   const locale = useLocale();
+
   const [click, setClick] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = () => setClick(!click);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="sticky top-0 bg-background">
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 px-4 pt-8 pb-4">
+    <header
+      className={`sticky top-0 bg-background border-b transition-transform duration-300 ${
+        hidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 px-4 pt-5 pb-5">
         <div className="flex-shrink-0 hidden md:flex">
           <Link href="/" className="font-bold text-xl uppercase">
             {t("marekkrumal")}

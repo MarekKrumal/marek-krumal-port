@@ -1,38 +1,49 @@
 import { MapPin } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { PiArrowElbowRightDownLight } from "react-icons/pi";
+import { useTranslations } from "next-intl";
 
 const MarekKrumal = () => {
+  const t = useTranslations("MarekKrumal");
+
   return (
-    <div className="relative mx-auto mt-8 p-7 border border-slate-600 rounded-md">
-      {/* Container pro ikonky v pravém horním rohu */}
-      <div className="absolute top-4 right-4 flex space-x-4">
+    <div className="relative mx-auto mt-2 p-12 border shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10 max-w-3xl">
+      <div className="absolute top-4 right-4 flex space-x-0 md:space-x-4">
         <a
           href="https://github.com/MarekKrumal"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-400 hover:text-black  transition-transform duration-500 ease-in-out hover:scale-110"
+          className="flex flex-col items-center justify-center p-2 shadow-sm border hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
         >
-          <FiGithub size={32} />
+          <FiGithub size={20} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
-          className="text-slate-400 hover:text-black transition-transform duration-500 ease-in-out hover:scale-110"
+          className="flex flex-col items-center justify-center p-2 shadow-sm border hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
         >
-          <MdOutlineEmail size={32} />
+          <MdOutlineEmail size={20} />
         </a>
       </div>
 
       <div className="space-y-2">
-        <h1 className="text-4xl font-bold uppercase">Marek Křůmal</h1>
+        <h1 className="text-2xl font-bold uppercase">Marek Křůmal</h1>
         <h2 className="relative flex items-center space-x-2">
-          <MapPin size={16} strokeWidth={1} absoluteStrokeWidth />
-          <span>Olomouc - Česká Republika</span>
+          <MapPin size={16} strokeWidth={1} />
+          <span className="font-light text-gray-700 dark:text-gray-400">
+            {t("olomouc")}
+          </span>
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
           adipisicing elit. Itaque, distinctio minima! Maxime, perferendis.
         </p>
+        <h1 className="text-sm uppercase font-bold pt-3">
+          {t("technologie")}
+          <p className="absolute left-60 bottom-10 flex items-center space-x-2">
+            <PiArrowElbowRightDownLight size={24} />
+          </p>
+        </h1>
       </div>
     </div>
   );

@@ -13,9 +13,9 @@ export default function LanguageButton() {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-3 py-1 border rounded hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-3 py-1 border shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10"
     >
-      {currentLocale === "cz" ? "ENGLISH" : "ČEŠTINA"}
+      {currentLocale === "cz" ? "EN" : "CZ"}
     </button>
   );
 }
