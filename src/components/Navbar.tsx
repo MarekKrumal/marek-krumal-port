@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 bg-background border-b transition-transform duration-300 ${
+      className={`sticky top-0 z-[1000] bg-background border-b transition-transform duration-300 ${
         hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -58,22 +58,21 @@ export default function Navbar() {
           <LanguageButton />
         </div>
 
-        <div className="block md:hidden p-1 z-50" onClick={handleClick}>
+        <div
+          className="block md:hidden p-1 z-[1000] relative"
+          onClick={handleClick}
+        >
           {click ? (
-            <X size={40} strokeWidth={1} className="text-white text-3xl z-50" />
+            <X size={40} strokeWidth={1} className="text-white text-3xl" />
           ) : (
-            <Menu
-              size={40}
-              strokeWidth={1}
-              className="text-white text-3xl z-50"
-            />
+            <Menu size={40} strokeWidth={1} className="text-white text-3xl" />
           )}
         </div>
       </div>
       <ul
         className={`${
           click ? "block" : "hidden"
-        } absolute top-0 left-0 md:hidden w-full h-screen bg-background text-white flex flex-col text-xl justify-center font-bold uppercase items-center z-40`}
+        } absolute top-0 left-0 md:hidden w-full h-screen bg-background text-white flex flex-col text-xl justify-center font-bold uppercase items-center z-[99]`}
       >
         <li className="p-[2rem]">
           <Link href="/">{t("marekkrumal")}</Link>

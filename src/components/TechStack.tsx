@@ -49,7 +49,7 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <div className="space-y-8 mt-8 max-w-3xl">
+    <div className="space-y-8 mt-8 max-w-3xl relative z-10">
       <div className="grid grid-cols-4 gap-0">
         {techStack.map((tech, index) => (
           <div
