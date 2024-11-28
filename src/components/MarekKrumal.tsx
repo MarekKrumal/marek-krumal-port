@@ -8,7 +8,7 @@ const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
 
   return (
-    <div className="relative mx-auto mt-2 p-12 border shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10 max-w-3xl">
+    <div className="group relative z-10 mx-auto mt-0 p-12 border shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10 max-w-3xl">
       <div className="absolute top-4 right-4 flex space-x-0 md:space-x-4">
         <a
           href="https://github.com/MarekKrumal"
@@ -27,7 +27,9 @@ const MarekKrumal = () => {
       </div>
 
       <div className="space-y-2">
-        <h1 className="text-2xl font-bold uppercase">Marek Křůmal</h1>
+        <h1 className="text-2xl font-bold uppercase group-hover:text-blue-900 dark:group-hover:text-cyan-100">
+          Marek Křůmal
+        </h1>
         <h2 className="relative flex items-center space-x-2">
           <MapPin size={16} strokeWidth={1} />
           <span className="font-light text-gray-700 dark:text-gray-400">
@@ -38,7 +40,7 @@ const MarekKrumal = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
           adipisicing elit. Itaque, distinctio minima! Maxime, perferendis.
         </p>
-        <h1 className="text-sm uppercase font-bold pt-3">
+        <h1 className="text-sm uppercase font-bold pt-3 dark:group-hover:text-sky-100 group-hover:text-sky-800">
           {t("technologie")}
           <p className="absolute left-60 bottom-10 flex items-center space-x-2">
             <PiArrowElbowRightDownLight size={24} />

@@ -71,3 +71,7 @@
 body {
   overflow-y: auto;
 }
+
+.bg-gradient-to-t {
+  margin-bottom: -1px;
+}
