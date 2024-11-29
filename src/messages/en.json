@@ -50,10 +50,10 @@
 
   "MarekKrumal": {
     "olomouc": "Olomouc - CZ",
-    "technologie": "My main technologies"
+    "projekt": "Projects"
   },
   "ProjectAware": {
     "title": "Awares",
-    "description": "Full-stack aplikace pro sociální média s infinite loading, autentizací, DMs a notifikacemi. Pro více informací click."
+    "description": "A full-stack social media app with infinite loading, authentication, DMs, notifications, for more info click here or on the picture."
   }
 }

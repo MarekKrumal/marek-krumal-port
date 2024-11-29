@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { PiArrowElbowRightDownLight } from "react-icons/pi";
 import { useTranslations } from "next-intl";
-
+import { AiFillCaretRight } from "react-icons/ai";
 const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
 
@@ -27,7 +27,7 @@ const MarekKrumal = () => {
       </div>
 
       <div className="space-y-2">
-        <h1 className="text-2xl font-bold uppercase group-hover:text-blue-900 dark:group-hover:text-cyan-100">
+        <h1 className="text-2xl font-bold uppercase group-hover:text-blue-700 dark:group-hover:text-cyan-100">
           Marek Křůmal
         </h1>
         <h2 className="relative flex items-center space-x-2">
@@ -40,9 +40,40 @@ const MarekKrumal = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
           adipisicing elit. Itaque, distinctio minima! Maxime, perferendis.
         </p>
-        <h1 className="text-sm uppercase font-bold pt-3 dark:group-hover:text-sky-100 group-hover:text-sky-800">
-          {t("technologie")}
-          <p className="absolute left-60 bottom-10 flex items-center space-x-2">
+        <div className="grid grid-cols-2 gap-4 pt-4 font-mono">
+          <ul className="space-y-2 list-inside">
+            <li className="flex items-center gap-2 group-hover:text-blue-400 dark:group-hover:text-blue-400">
+              <AiFillCaretRight />
+              React.js
+            </li>
+            <li className="flex items-center gap-2 dark:group-hover:text-white/70 group-hover:text-black/60">
+              <AiFillCaretRight />
+              Next.js
+            </li>
+
+            <li className="flex items-center gap-2 group-hover:text-blue-500">
+              <AiFillCaretRight />
+              TypeScript
+            </li>
+          </ul>
+          <ul className="space-y-2  list-inside">
+            <li className="flex items-center gap-2 group-hover:text-yellow-600 dark:group-hover:text-yellow-400">
+              <AiFillCaretRight />
+              JavaScript
+            </li>
+            <li className="flex items-center gap-2 group-hover:text-sky-500 dark:group-hover:text-sky-400">
+              <AiFillCaretRight />
+              Tailwind
+            </li>
+            <li className="flex items-center gap-2 group-hover:text-green-500">
+              <AiFillCaretRight />
+              Node.js
+            </li>
+          </ul>
+        </div>
+        <h1 className="text-md uppercase font-bold pt-3 dark:group-hover:text-orange-500 group-hover:text-orange-600 ml-1">
+          {t("projekt")}
+          <p className="absolute left-36 bottom-10 flex items-center space-x-2">
             <PiArrowElbowRightDownLight size={24} />
           </p>
         </h1>
