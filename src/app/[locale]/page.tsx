@@ -1,6 +1,6 @@
 // pages/HomePage.jsx
 import MarekKrumal from "@/components/MarekKrumal";
-import Project from "@/components/Project";
+import ProjectAware from "@/components/ProjectAware";
 
 import TechStack from "@/components/TechStack";
 
@@ -14,9 +14,9 @@ export default async function HomePage() {
         <TechStack />
       </div>
       <div className="mx-auto mt-0 p-7 max-w-3xl">
-        <Project
+        <ProjectAware
           title="Awares"
-          description="Socail media app, working hashtags, comments and likes,fully responsive."
+          description="A full-stack social media app with infinite loading, authentication, DMs, notifications, for more info click"
           imageUrl="/assets/awaresdemo2.jpg"
           githubUrl="https://github.com/MarekKrumal/awares33"
           liveUrl="https://awares33.vercel.app/"

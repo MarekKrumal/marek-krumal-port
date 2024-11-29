@@ -63,33 +63,33 @@ export default function Navbar() {
           onClick={handleClick}
         >
           {click ? (
-            <X size={40} strokeWidth={1} className="text-white text-3xl" />
+            <X size={40} strokeWidth={1} className="text-3xl" />
           ) : (
-            <Menu size={40} strokeWidth={1} className="text-white text-3xl" />
+            <Menu size={40} strokeWidth={1} className="text-3xl" />
           )}
         </div>
       </div>
       <ul
         className={`${
           click ? "block" : "hidden"
-        } absolute top-0 left-0 md:hidden w-full h-screen bg-background text-white flex flex-col text-xl justify-center font-bold uppercase items-center z-[99]`}
+        } absolute top-0 left-0 md:hidden w-full h-screen bg-background flex flex-col text-xl justify-center font-bold uppercase items-center z-[99]`}
       >
         <li className="p-[2rem]">
           <Link href="/">{t("marekkrumal")}</Link>
         </li>
-        <hr className="border-t border-gray-600 w-3/4 mx-auto my-2" />
+        <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
           <Link href={`/${locale}/projects`}>{t("projects")}</Link>
         </li>
-        <hr className="border-t border-gray-600 w-3/4 mx-auto my-2" />
+        <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
           <Link href={`/${locale}/about`}>{t("about")}</Link>
         </li>
-        <hr className="border-t border-gray-600 w-3/4 mx-auto my-2" />
+        <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
           <Link href={`/${locale}/posts`}>{t("posts")}</Link>
         </li>
-        <hr className="border-t border-gray-600 w-3/4 mx-auto my-2" />
+        <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
           <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </li>

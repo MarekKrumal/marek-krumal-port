@@ -8,19 +8,19 @@ const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
 
   return (
-    <div className="group relative z-10 mx-auto mt-0 p-12 border shadow-sm hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10 max-w-3xl">
+    <div className="group relative z-10 mx-auto mt-0 p-12 border shadow-sm duration-300 dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10 max-w-3xl hover:shadow-2xl transition-shadow ">
       <div className="absolute top-4 right-4 flex space-x-0 md:space-x-4">
         <a
           href="https://github.com/MarekKrumal"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center p-2 shadow-sm border hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
+          className="flex flex-col items-center justify-center p-2 hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
         >
           <FiGithub size={20} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
-          className="flex flex-col items-center justify-center p-2 shadow-sm border hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
+          className="flex flex-col items-center justify-center p-2 hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-white dark:hover:bg-white/10"
         >
           <MdOutlineEmail size={20} />
         </a>

@@ -50,5 +50,10 @@
   "MarekKrumal": {
     "olomouc": "Olomouc",
     "technologie": "S čím nejvíce pracuji?"
+  },
+
+  "ProjectAware": {
+    "title": "Awares",
+    "description": "A full-stack social media app with infinite loading, authentication, DMs, notifications, for more info click."
   }
 }
