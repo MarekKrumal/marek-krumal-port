@@ -1,6 +1,7 @@
 // pages/HomePage.jsx
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectAware from "@/components/ProjectAware";
+import Weather from "@/components/Weather";
 
 export default async function HomePage() {
   return (
@@ -15,6 +16,9 @@ export default async function HomePage() {
           githubUrl="https://github.com/MarekKrumal/awares33"
           liveUrl="https://awares33.vercel.app/"
         />
+        <div>
+          <Weather />
+        </div>
       </div>
     </div>
   );

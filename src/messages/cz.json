@@ -51,9 +51,34 @@
     "olomouc": "Olomouc",
     "projekt": "Projekty"
   },
-
   "ProjectAware": {
     "title": "Awares",
     "description": "Full-stack aplikace pro sociální média s infinite loading, autentizací, DMs a notifikacemi. Pro více informací klikněte zde nebo na obrázek."
+  },
+  "Weather": {
+    "počasí?": "Jaké mám dnes počasí?",
+    "načítání": "Načítání",
+    "vítr": "vítr",
+    "teplota": "teplota",
+    "vlhkost": "vlhkost",
+    "pocasi": "počasí",
+    "stav": "stav",
+    "weather": {
+      "clear": "Jasno",
+      "clouds": "Oblačno",
+      "rain": "Déšť",
+      "snow": "Sníh",
+      "thunderstorm": "Bouřka",
+      "drizzle": "Mrholení",
+      "mist": "Mlha",
+      "smoke": "Kouř",
+      "haze": "Opar",
+      "dust": "Prach",
+      "fog": "Mlha",
+      "sand": "Písek",
+      "ash": "Popel",
+      "squall": "Poryv větru",
+      "tornado": "Tornádo"
+    }
   }
 }

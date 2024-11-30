@@ -55,5 +55,31 @@
   "ProjectAware": {
     "title": "Awares",
     "description": "A full-stack social media app with infinite loading, authentication, DMs, notifications, for more info click here or on the picture."
+  },
+  "Weather": {
+    "počasí?": "Is it nice out?",
+    "načítání": "Loading...",
+    "vítr": "wind",
+    "teplota": "temperature",
+    "vlhkost": "humidity",
+    "pocasi": "weather",
+    "stav": "status",
+    "weather": {
+      "clear": "Clear",
+      "clouds": "Cloudy",
+      "rain": "Rain",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorm",
+      "drizzle": "Drizzle",
+      "mist": "Mist",
+      "smoke": "Smoke",
+      "haze": "Haze",
+      "dust": "Dust",
+      "fog": "Fog",
+      "sand": "Sand",
+      "ash": "Ash",
+      "squall": "Squall",
+      "tornado": "Tornado"
+    }
   }
 }
