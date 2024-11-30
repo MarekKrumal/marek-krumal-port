@@ -10,9 +10,9 @@ const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
 
   return (
-    <div className="relative z-10 mx-auto mt-0 p-4 sm:p-6 md:p-12 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-3xl bg">
+    <div className="relative z-10 mx-auto mt-0 p-4 sm:p-6 md:p-12 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-3xl bg hover:shadow-sky-500/5 hover:shadow-2xl transition-shadow duration-300">
       <div className="space-y-2">
-        <h1 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl md:text-2xl lg:text-3xl">
+        <h1 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-2xl md:text-3xl lg:text-4xl font-mono">
           Marek Křůmal
         </h1>
         <h2 className="relative flex items-center space-x-2">
@@ -29,29 +29,29 @@ const MarekKrumal = () => {
 
         <div className="grid grid-cols-2 gap-4 pt-4 font-mono">
           <ul className="space-y-2 list-inside">
-            <li className="flex items-center gap-2 text-blue-400 dark:text-blue-400 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-blue-400 dark:text-blue-400 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               React.js
             </li>
-            <li className="flex items-center gap-2 text-black/60 dark:text-white/70 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-black/60 dark:text-white/70 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               Next.js
             </li>
-            <li className="flex items-center gap-2 text-blue-500 dark:text-blue-500 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-blue-500 dark:text-blue-500 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               TypeScript
             </li>
           </ul>
           <ul className="space-y-2 list-inside">
-            <li className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               JavaScript
             </li>
-            <li className="flex items-center gap-2 text-sky-500 dark:text-sky-400 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-sky-500 dark:text-sky-400 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               Tailwind
             </li>
-            <li className="flex items-center gap-2 text-green-500 dark:text-green-500 text-xs md:text-base lg:text-base">
+            <li className="flex items-center gap-2 text-green-500 dark:text-green-500 text-md md:text-lg lg:text-xl">
               <AiFillCaretRight />
               Node.js
             </li>

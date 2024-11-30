@@ -1,7 +1,6 @@
 // pages/HomePage.jsx
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectAware from "@/components/ProjectAware";
-import Weather from "@/components/Weather";
 
 export default async function HomePage() {
   return (
@@ -11,14 +10,11 @@ export default async function HomePage() {
       </div>
       <div className="mx-auto mt-0 p-7 max-w-3xl">
         <ProjectAware
-          title="Awares"
+          title="Aware"
           imageUrl="/assets/awaresdemo2.jpg"
           githubUrl="https://github.com/MarekKrumal/awares33"
           liveUrl="https://awares33.vercel.app/"
         />
-        <div>
-          <Weather />
-        </div>
       </div>
     </div>
   );
