@@ -11,7 +11,10 @@
     "contact": "Contact",
     "contactTitle": "Contact page",
     "marekkrumal": "Marek Křůmal",
-    "marekkrumalTitle": "Profile page"
+    "marekkrumalTitle": "Profile page",
+    "allProjects": "All projects",
+    "awaresPage": "Aware social app",
+    "nebulaTrails": "Nebula Trails"
   },
   "Footer": {
     "createdWith": "Created with",

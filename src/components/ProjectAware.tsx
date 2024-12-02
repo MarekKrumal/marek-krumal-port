@@ -29,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({
   return (
     <div className="relative group mx-auto mt-8 overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
       <div className="relative w-full h-[600px] md:h-[800px]">
-        <a href={`/${locale}/projects/`} className="group">
+        <a href={`/${locale}/projects/awarespage`} className="group">
           <Image
             src={imageUrl}
             alt={title}
@@ -54,7 +54,6 @@ const Project: React.FC<ProjectProps> = ({
           </p>
         </a>
 
-        {/* Odkazy */}
         <div className="absolute top-4 right-4 flex space-x-4 z-10">
           {githubUrl && (
             <a

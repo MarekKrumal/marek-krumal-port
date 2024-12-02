@@ -32,23 +32,19 @@ const Weather = () => {
     fetchWeather();
   }, []);
 
-  // Funkce pro překlad počasí
   const translateWeather = (description: string) => {
     const key = description.toLowerCase();
-    return t(`weather.${key}`) || description; // Toto použije překlad přímo z en.json nebo cz.json
+    return t(`weather.${key}`) || description;
   };
 
   return (
     <div className="relative mx-auto mt-0 max-w-3xl hidden md:block">
       <div className="group relative">
-        {/* Hover text */}
         <p className="lowercase font-mono pl-0 text-sm dark:text-indigo-100 text-indigo-500 dark:hover:text-indigo-300 hover:text-indigo-700 cursor-pointer">
           {"< "}
           {t("počasí?")}
           {" >"}
         </p>
-
-        {/* Pop-up okno */}
         <div className="absolute flex flex-col left-full ml-56 dark:bg-black/0 bg-stone-50 invisible group-hover:visible z-50 ">
           {error ? (
             <div className="text-red-500 font-medium">{error}</div>

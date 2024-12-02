@@ -1,10 +1,17 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { useTranslations, useLocale } from "next-intl";
 import LanguageButton from "./LanguageButton";
 import { Menu, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
@@ -15,6 +22,8 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = () => setClick(!click);
+
+  const handleClose = () => setClick(false); // Close the menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,22 +44,67 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-[1000] bg-background border-b transition-transform duration-300 ${
+      className={`font-mono sticky top-0 z-[1000] bg-background border-b transition-transform duration-300 ${
         hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 px-4 pt-5 pb-5">
         <div className="flex-shrink-0 hidden md:flex">
-          <Link href="/" className="font-bold text-xl uppercase">
+          <Link href="/" className="font-bold text-xl uppercase ">
             {t("marekkrumal")}
           </Link>
         </div>
 
         <nav className="space-x-10 uppercase font-semibold mx-auto hidden md:flex text-center">
-          <Link href={`/${locale}/projects`}>{t("projects")}</Link>
-          <Link href={`/${locale}/about`}>{t("about")}</Link>
-          <Link href={`/${locale}/posts`}>{t("posts")}</Link>
-          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="font-semibold uppercase font-mono">
+                {t("projects")}
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="shadow-md z-[1000] bg-stone-50 dark:bg-[#262626] border p-3 text-center"
+              style={{ borderColor: "#404040" }}
+            >
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("allProjects")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/awarespage`}
+                  className="block w-full z-[10] font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("awaresPage")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/nebulatrails`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("nebulaTrails")}
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <Link href={`/${locale}/about`} onClick={handleClose}>
+            {t("about")}
+          </Link>
+          <Link href={`/${locale}/posts`} onClick={handleClose}>
+            {t("posts")}
+          </Link>
+          <Link href={`/${locale}/contact`} onClick={handleClose}>
+            {t("contact")}
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-3">
@@ -75,23 +129,33 @@ export default function Navbar() {
         } absolute top-0 left-0 md:hidden w-full h-screen bg-background flex flex-col text-xl justify-center font-bold uppercase items-center z-[99]`}
       >
         <li className="p-[2rem]">
-          <Link href="/">{t("marekkrumal")}</Link>
+          <Link href="/" onClick={handleClose}>
+            {t("marekkrumal")}
+          </Link>
         </li>
         <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
-          <Link href={`/${locale}/projects`}>{t("projects")}</Link>
+          <Link href={`/${locale}/projects`} onClick={handleClose}>
+            {t("projects")}
+          </Link>
         </li>
         <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
-          <Link href={`/${locale}/about`}>{t("about")}</Link>
+          <Link href={`/${locale}/about`} onClick={handleClose}>
+            {t("about")}
+          </Link>
         </li>
         <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
-          <Link href={`/${locale}/posts`}>{t("posts")}</Link>
+          <Link href={`/${locale}/posts`} onClick={handleClose}>
+            {t("posts")}
+          </Link>
         </li>
         <hr className="border-t border w-3/4 mx-auto my-2" />
         <li className="p-[2rem]">
-          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+          <Link href={`/${locale}/contact`} onClick={handleClose}>
+            {t("contact")}
+          </Link>
         </li>
       </ul>
     </header>
