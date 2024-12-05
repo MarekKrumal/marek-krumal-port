@@ -44,7 +44,9 @@
   },
   "ContactPage": {
     "title": "Contact",
-    "description": "Get in touch with me."
+    "description": "Reach out to me at",
+    "description2": "or via",
+    "description3": "I usually respond within one day."
   },
   "ThemeToggle": {
     "light": "Light Mode",

@@ -70,13 +70,13 @@ const MarekKrumal = () => {
           href="https://github.com/MarekKrumal"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-100  transition-shadow duration-300 dark:bg-transparent bg-transparent"
+          className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100  transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
           <FiGithub size={20} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
-          className="flex items-center justify-center p-[0] md:p-4 hover:scale-105 hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
+          className="flex items-center justify-center p-[0] md:p-4 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
           <MdOutlineEmail size={20} />
         </a>

@@ -44,7 +44,9 @@
   },
   "ContactPage": {
     "title": "Kontakt",
-    "description": "Spojte se se mnou."
+    "description": "Ozvěte se mi na",
+    "description2": "nebo přes",
+    "description3": "Většinou odpovídám do jednoho dne."
   },
   "ThemeToggle": {
     "light": "Světelný režim",
