@@ -14,7 +14,8 @@
     "marekkrumalTitle": "Stránka profilu",
     "allProjects": "Všechny projekty",
     "awaresPage": "Aware Sociální síť",
-    "nebulaTrails": "Nebula Trails"
+    "nebulaTrails": "Nebula Trails",
+    "artstore": "Art Store"
   },
   "Footer": {
     "createdWith": "Vytvořeno s",
@@ -59,6 +60,10 @@
   "ProjectAware": {
     "title": "Awares",
     "description": "Full-stack aplikace pro sociální média s infinite loading, autentizací, DMs a notifikacemi. Pro více informací klikněte zde nebo na obrázek."
+  },
+  "ProjectArtStore": {
+    "title": "ArtStore",
+    "description": "E-commerce website pro prodej obrazů, AI-generated Art oblečení atd. Pro více informací klikněte zde nebo na obrázek."
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",

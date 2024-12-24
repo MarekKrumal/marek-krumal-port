@@ -86,6 +86,15 @@ export default function Navbar() {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
+                  href={`/${locale}/projects/artstore`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("artstore")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
                   href={`/${locale}/projects/nebulatrails`}
                   className="block w-full font-mono"
                   onClick={handleClose} // Close menu after click

@@ -13,7 +13,6 @@ const Page = () => {
         <h1 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-2xl md:text-3xl lg:text-4xl font-mono">
           {t("title")}
         </h1>
-
         <p>
           <EmailOnClick />
         </p>

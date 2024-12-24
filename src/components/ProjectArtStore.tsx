@@ -16,16 +16,20 @@ interface ProjectProps {
   liveUrl?: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ title, githubUrl, liveUrl }) => {
+const ProjectArtStore: React.FC<ProjectProps> = ({
+  title,
+  githubUrl,
+  liveUrl,
+}) => {
   const t = useTranslations("ProjectAware");
   const locale = useLocale();
 
   return (
     <div className="relative group mx-auto mt-8 overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
       <div className="relative w-full h-[600px] md:h-[800px]">
-        <a href={`/${locale}/projects/awarespage`} className="group">
+        <a href={`/${locale}/projects/artstore`} className="group">
           <Image
-            src="/assets/awaresdemo2.png"
+            src="/assets/artstoremainpage.png"
             alt={title}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
@@ -106,4 +110,4 @@ const Project: React.FC<ProjectProps> = ({ title, githubUrl, liveUrl }) => {
   );
 };
 
-export default Project;
+export default ProjectArtStore;

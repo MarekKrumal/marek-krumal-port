@@ -14,7 +14,8 @@
     "marekkrumalTitle": "Profile page",
     "allProjects": "All projects",
     "awaresPage": "Aware social app",
-    "nebulaTrails": "Nebula Trails"
+    "nebulaTrails": "Nebula Trails",
+    "artstore": "Art Store"
   },
   "Footer": {
     "createdWith": "Created with",
@@ -60,6 +61,10 @@
   "ProjectAware": {
     "title": "Awares",
     "description": "A full-stack social media app with infinite loading, authentication, DMs, notifications, for more info click here or on the picture."
+  },
+  "ProjectArtStore": {
+    "title": "ArtStore",
+    "description": "An e-commerce website for selling images, AI-generated clothing, accessories, and more. For more info click here or on the picture."
   },
   "Weather": {
     "počasí?": "Is it nice out?",
