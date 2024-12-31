@@ -1,7 +1,13 @@
 import Image from "next/image";
-import { SiNextdotjs, SiTypescript, SiGithub, SiPolygon } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiGithub,
+  SiPolygon,
+  SiTailwindcss,
+} from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
-import { BiLogoWix, BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoWix } from "react-icons/bi";
 
 interface ProjectProps {
   title: string;
@@ -18,8 +24,8 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
   const locale = useLocale();
 
   return (
-    <div className="relative group mx-auto mt-8 overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
-      <div className="relative w-full h-[600px] md:h-[800px]">
+    <div className="relative group mx-auto overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
+      <div className="relative w-full h-[450px] md:h-[600px]">
         <a href={`/${locale}/projects/artstore`} className="group">
           <Image
             src="/assets/artstoremainpage.png"
@@ -36,10 +42,10 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
           ></div>
         </a>
       </div>
-      <div className="absolute border-t p-4 sm:p-6 md:p-8 inset-x-0 bottom-0 flex flex-col justify-end bg-stone-50 dark:bg-[#222222] group-hover:translate-y-0 translate-y-full transition-transform duration-500 ease-out shadow-sm">
-        <a href={`/${locale}/projects/`}>
-          <h2 className="text-lg sm:text-xl md:text-2xl font-mono font-bold uppercase group-hover:text-blue-700 dark:group-hover:text-cyan-100">
-            {title}
+      <div className="absolute border-t p-4 sm:p-6 md:p-8 inset-x-0 bottom-0 flex flex-col justify-end bg-stone-50 dark:bg-[#222222] shadow-sm">
+        <a href={`/${locale}/projects/artstore`}>
+          <h2 className="sm:text-xl md:text-2xl font-mono font-bold uppercase text-blue-700 dark:text-cyan-100">
+            {t("title")}
           </h2>
           <p className="mt-2 text-sm sm:text-md text-gray-700 dark:text-gray-400">
             {t("description")}
@@ -68,30 +74,30 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
             </a>
           )}
         </div>
-        <a href={`/${locale}/projects/`}>
+        <a href={`/${locale}/projects/artstore`}>
           <div className="group mt-4">
             <div className="flex justify-center gap-0 text-3xl grid-cols-4 grid-rows-4 md:grid-cols-4 sm:gap-8">
               <div className="flex flex-col items-center">
-                <SiNextdotjs className="text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                <SiNextdotjs className="text-black dark:text-white" />
+                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center">
                   Next.js
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <SiTypescript className="text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                <SiTypescript className="text-blue-600" />
+                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center">
                   TypeScript
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <BiLogoWix className="text-white dark:group-hover:text-white group-hover:text-black transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                <BiLogoWix className="dark:text-white text-black" />
+                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center">
                   WIX
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <BiLogoTailwindCss className="text-gray-400 group-hover:text-sky-500 transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                <SiTailwindcss className="text-sky-500" />
+                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center">
                   Tailwind
                 </p>
               </div>

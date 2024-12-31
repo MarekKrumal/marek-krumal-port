@@ -59,16 +59,16 @@
     "projekt": "Projekty"
   },
   "ProjectAware": {
-    "title": "Awares",
-    "description": "Full-stack aplikace pro sociální média s infinite loading, autentizací, DMs a notifikacemi. Pro více informací klikněte zde nebo na obrázek."
+    "title": "Sociální síťová aplikace",
+    "description": "Full-stack aplikace AWARE, nabízí funkce jako infinity loading, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání záložek atd. Pro více informací klikněte zde."
   },
   "ProjectArtStore": {
-    "title": "ArtStore",
-    "description": "E-commerce website pro prodej obrazů, AI-generated Art oblečení atd. Pro více informací klikněte zde nebo na obrázek."
+    "title": "Umělecký e-shop",
+    "description": "E-shop zaměřen na prodej obrazů, oblečení, AI obrázků a dalšího sortimentu. Autentizace, zpracování plateb a ukládání dat je postaveno na WixClient. Pro více informací klikněte zde."
   },
   "ProjectNeuralNetwork": {
-    "title": "NeuralNetwork",
-    "description": "Aplikace pro vykoušení neurálních sítů. Pro více informací klikněte zde nebo na obrázek."
+    "title": "Vizualizace neuronových sítí",
+    "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí Vite, Reactu a nového modelu od OpenAI – GPT-o1. Pro více informací klikněte zde."
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
