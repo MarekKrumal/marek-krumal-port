@@ -1,10 +1,12 @@
-import { MapPin } from "lucide-react";
-import { FiGithub } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
-import { PiArrowElbowRightDownLight } from "react-icons/pi";
 import { useTranslations } from "next-intl";
-import { AiFillCaretRight } from "react-icons/ai";
 import Weather from "./Weather";
+import {
+  BiMailSend,
+  BiLogoGithub,
+  BiMap,
+  BiCaretRight,
+  BiSubdirectoryLeft,
+} from "react-icons/bi";
 
 const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
@@ -16,7 +18,7 @@ const MarekKrumal = () => {
           Marek Křůmal
         </h1>
         <h2 className="relative flex items-center space-x-2">
-          <MapPin size={16} strokeWidth={1} />
+          <BiMap size={16} strokeWidth={1} />
           <span className="font-mono text-gray-700 dark:text-gray-400">
             {t("olomouc")}
           </span>
@@ -30,29 +32,29 @@ const MarekKrumal = () => {
         <div className="grid grid-cols-2 gap-4 pt-4 font-mono">
           <ul className="space-y-2 list-inside">
             <li className="flex items-center gap-2 text-blue-400 dark:text-blue-400 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               React.js
             </li>
             <li className="flex items-center gap-2 text-black/60 dark:text-white/70 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               Next.js
             </li>
             <li className="flex items-center gap-2 text-blue-500 dark:text-blue-500 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               TypeScript
             </li>
           </ul>
           <ul className="space-y-2 list-inside">
             <li className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               JavaScript
             </li>
             <li className="flex items-center gap-2 text-sky-500 dark:text-sky-400 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               Tailwind
             </li>
             <li className="flex items-center gap-2 text-green-500 dark:text-green-500 text-md md:text-lg lg:text-xl">
-              <AiFillCaretRight />
+              <BiCaretRight />
               Node.js
             </li>
           </ul>
@@ -60,7 +62,7 @@ const MarekKrumal = () => {
 
         <h1 className="text-xl font-semibold uppercase font-mono pt-3 text-orange-600 dark:text-orange-500 ml-1 flex items-center space-x-4">
           {t("projekt")}
-          <PiArrowElbowRightDownLight size={24} className="pl-1" />
+          <BiSubdirectoryLeft size={30} className="p-1 -rotate-90" />
         </h1>
       </div>
 
@@ -72,13 +74,13 @@ const MarekKrumal = () => {
           rel="noopener noreferrer"
           className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100  transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
-          <FiGithub size={20} />
+          <BiLogoGithub size={20} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
           className="flex items-center justify-center p-[0] md:p-4 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
-          <MdOutlineEmail size={20} />
+          <BiMailSend size={20} />
         </a>
       </div>
     </div>

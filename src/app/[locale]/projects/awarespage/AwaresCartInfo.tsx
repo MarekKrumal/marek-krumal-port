@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
-import { FiGithub } from "react-icons/fi";
-import { BsLink45Deg } from "react-icons/bs";
+import { SiGithub, SiPolygon } from "react-icons/si";
 
 export default function AwaresCartInfo() {
   const t = useTranslations("ProjectAware");
@@ -19,7 +18,7 @@ export default function AwaresCartInfo() {
               rel="noopener noreferrer"
               className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
             >
-              <FiGithub size={20} />
+              <SiGithub size={20} />
             </a>
             <a
               href="https://awares33.vercel.app/"
@@ -27,7 +26,7 @@ export default function AwaresCartInfo() {
               rel="noopener noreferrer"
               className="flex items-center justify-center p-1 hover:scale-105 dark:hover:text-sky-100 hover:text-sky-800 transition-shadow duration-300 dark:bg-transparent bg-transparent"
             >
-              <BsLink45Deg size={20} />
+              <SiPolygon size={20} />
             </a>
           </div>
         </div>

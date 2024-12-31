@@ -95,11 +95,11 @@ export default function Navbar() {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  href={`/${locale}/projects/nebulatrails`}
+                  href={`/${locale}/projects/neuralnetwork`}
                   className="block w-full font-mono"
                   onClick={handleClose} // Close menu after click
                 >
-                  {t("nebulaTrails")}
+                  {t("neuralnetwork")}
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>

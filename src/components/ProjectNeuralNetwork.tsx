@@ -1,11 +1,10 @@
 import Image from "next/image";
 import {
-  SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
-  SiPrisma,
   SiGithub,
   SiPolygon,
+  SiOpenai,
 } from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -15,16 +14,20 @@ interface ProjectProps {
   liveUrl?: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ title, githubUrl, liveUrl }) => {
-  const t = useTranslations("ProjectAware");
+const ProjectNeuralNetwork: React.FC<ProjectProps> = ({
+  title,
+  githubUrl,
+  liveUrl,
+}) => {
+  const t = useTranslations("ProjectNeuralNetwork");
   const locale = useLocale();
 
   return (
     <div className="relative group mx-auto mt-8 overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
       <div className="relative w-full h-[600px] md:h-[800px]">
-        <a href={`/${locale}/projects/awarespage`} className="group">
+        <a href={`/${locale}/projects/neuralnetwork`} className="group">
           <Image
-            src="/assets/awaresdemo2.png"
+            src="/assets/neuralnetworkfirstpic.png"
             alt={title}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
@@ -73,22 +76,30 @@ const Project: React.FC<ProjectProps> = ({ title, githubUrl, liveUrl }) => {
         <a href={`/${locale}/projects/`}>
           <div className="group mt-4">
             <div className="flex justify-center gap-0 text-3xl grid-cols-4 grid-rows-4 md:grid-cols-4 sm:gap-8">
+              {/* Vite Icon */}
               <div className="flex flex-col items-center">
-                <SiNextdotjs className="text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300" />
+                <Image
+                  src="/logo.svg"
+                  alt="ViteLogo"
+                  loading="lazy"
+                  width={30}
+                  height={30}
+                  className="transition-transform duration-300 group-hover:scale-105"
+                />
                 <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
-                  Next.js
+                  Vite
                 </p>
               </div>
               <div className="flex flex-col items-center">
                 <SiTypescript className="text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                <p className="text-sm p-2 pl-0 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
                   TypeScript
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <SiPrisma className="text-gray-400 group-hover:text-gray-500 transition-colors duration-300" />
-                <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
-                  Prisma
+                <SiOpenai className="text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300" />
+                <p className="text-sm pt-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
+                  GPT-o1
                 </p>
               </div>
               <div className="flex flex-col items-center">
@@ -105,4 +116,4 @@ const Project: React.FC<ProjectProps> = ({ title, githubUrl, liveUrl }) => {
   );
 };
 
-export default Project;
+export default ProjectNeuralNetwork;

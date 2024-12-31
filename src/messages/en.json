@@ -15,7 +15,8 @@
     "allProjects": "All projects",
     "awaresPage": "Aware social app",
     "nebulaTrails": "Nebula Trails",
-    "artstore": "Art Store"
+    "artstore": "Art Store",
+    "neuralnetwork": "Neural Network"
   },
   "Footer": {
     "createdWith": "Created with",
@@ -64,7 +65,11 @@
   },
   "ProjectArtStore": {
     "title": "ArtStore",
-    "description": "An e-commerce website for selling images, AI-generated clothing, accessories, and more. For more info click here or on the picture."
+    "description": "An e-commerce website for selling art, AI-generated images, clothing, accessories, and more. For more info click here or on the picture."
+  },
+  "ProjectNeuralNetwork": {
+    "title": "NeuralNetwork",
+    "description": "An application for testing neural networks. For more info click here or on the picture."
   },
   "Weather": {
     "počasí?": "Is it nice out?",

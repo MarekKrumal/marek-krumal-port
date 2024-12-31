@@ -1,7 +1,7 @@
-// pages/HomePage.jsx
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectArtStore from "@/components/ProjectArtStore";
 import ProjectAware from "@/components/ProjectAware";
+import ProjectNeuralNetwork from "@/components/ProjectNeuralNetwork";
 
 export default async function HomePage() {
   return (
@@ -21,6 +21,13 @@ export default async function HomePage() {
           title="ArtStore"
           githubUrl="https://github.com/MarekKrumal/art-store-next-js"
           liveUrl="https://art-store-next-js-fv76.vercel.app/"
+        />
+      </div>
+      <div className="mx-auto mt-0 p-7 max-w-3xl">
+        <ProjectNeuralNetwork
+          title="NeuralNetwork"
+          githubUrl="https://github.com/MarekKrumal/neural-network-nextjs"
+          liveUrl="https://neural-network-nextjs-zl89-git-vite-marekkrumals-projects.vercel.app/"
         />
       </div>
     </div>

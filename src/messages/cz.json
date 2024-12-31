@@ -15,7 +15,8 @@
     "allProjects": "Všechny projekty",
     "awaresPage": "Aware Sociální síť",
     "nebulaTrails": "Nebula Trails",
-    "artstore": "Art Store"
+    "artstore": "Art Store",
+    "neuralnetwork": "Neural Network"
   },
   "Footer": {
     "createdWith": "Vytvořeno s",
@@ -64,6 +65,10 @@
   "ProjectArtStore": {
     "title": "ArtStore",
     "description": "E-commerce website pro prodej obrazů, AI-generated Art oblečení atd. Pro více informací klikněte zde nebo na obrázek."
+  },
+  "ProjectNeuralNetwork": {
+    "title": "NeuralNetwork",
+    "description": "Aplikace pro vykoušení neurálních sítů. Pro více informací klikněte zde nebo na obrázek."
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",

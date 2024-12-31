@@ -1,8 +1,6 @@
-import { MdOutlineEmail } from "react-icons/md";
-import { RiLinkedinLine } from "react-icons/ri";
-import { FiGithub } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import EmailOnClick from "./EmailOnClick";
+import { BiMailSend, BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 
 const Page = () => {
   const t = useTranslations("ContactPage");
@@ -24,7 +22,7 @@ const Page = () => {
             href="mailto:krumalmarek@gmail.com"
             className="flex items-center justify-center p-2 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-transform duration-300"
           >
-            <MdOutlineEmail size={45} />
+            <BiMailSend size={45} />
           </a>
           <span className="font-mono text-xs text-gray-600 dark:text-gray-300">
             E-mail
@@ -41,7 +39,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="flex items-center justify-center p-2 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-transform duration-300"
           >
-            <FiGithub size={45} />
+            <BiLogoGithub size={45} />
           </a>
           <span className="text-xs text-gray-600 dark:text-gray-300">
             GitHub
@@ -56,7 +54,7 @@ const Page = () => {
             rel="noopener noreferrer"
             className="flex items-center justify-center p-2 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-transform duration-300"
           >
-            <RiLinkedinLine size={45} />
+            <BiLogoLinkedinSquare size={45} />
           </a>
           <span className="font-mono text-xs text-gray-600 dark:text-gray-300">
             LinkedIn

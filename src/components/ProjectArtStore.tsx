@@ -1,14 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import { FiGithub } from "react-icons/fi";
-import { BsLink45Deg } from "react-icons/bs";
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiPrisma,
-} from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiGithub, SiPolygon } from "react-icons/si";
 import { useLocale, useTranslations } from "next-intl";
+import { BiLogoWix, BiLogoTailwindCss } from "react-icons/bi";
 
 interface ProjectProps {
   title: string;
@@ -21,7 +14,7 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
   githubUrl,
   liveUrl,
 }) => {
-  const t = useTranslations("ProjectAware");
+  const t = useTranslations("ProjectArtStore");
   const locale = useLocale();
 
   return (
@@ -34,7 +27,7 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             loading="lazy"
             fill
-            quality={75}
+            quality={50}
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none"></div>
           <div
@@ -61,7 +54,7 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
               rel="noopener noreferrer"
               className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
             >
-              <FiGithub size={20} />
+              <SiGithub size={20} />
             </a>
           )}
           {liveUrl && (
@@ -71,7 +64,7 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
               rel="noopener noreferrer"
               className="flex items-center justify-center p-1 hover:scale-105 dark:hover:text-sky-100 hover:text-sky-800 transition-shadow duration-300 dark:bg-transparent bg-transparent"
             >
-              <BsLink45Deg size={20} />
+              <SiPolygon size={20} />
             </a>
           )}
         </div>
@@ -91,13 +84,13 @@ const ProjectArtStore: React.FC<ProjectProps> = ({
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <SiPrisma className="text-gray-400 group-hover:text-gray-500 transition-colors duration-300" />
+                <BiLogoWix className="text-white dark:group-hover:text-white group-hover:text-black transition-colors duration-300" />
                 <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
-                  Prisma
+                  WIX
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <SiTailwindcss className="text-gray-400 group-hover:text-sky-500 transition-colors duration-300" />
+                <BiLogoTailwindCss className="text-gray-400 group-hover:text-sky-500 transition-colors duration-300" />
                 <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center hidden group-hover:block transition-opacity duration-300">
                   Tailwind
                 </p>
