@@ -71,6 +71,12 @@
     "title": "Neural Network Visualizer",
     "description": "This project is a tool for visualizing and testing neural networks. I created it using Vite, React, and a new model from OpenAI - GPT-o1. For more info click here."
   },
+
+  "TicTacToe": {
+    "playagain": "play again",
+    "draw": "draw!",
+    "winner": "winner"
+  },
   "Weather": {
     "počasí?": "Is it nice out?",
     "načítání": "Loading...",

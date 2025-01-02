@@ -70,6 +70,11 @@
     "title": "Vizualizace neuronových sítí",
     "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí Vite, Reactu a nového modelu od OpenAI – GPT-o1. Pro více informací klikněte zde."
   },
+  "TicTacToe": {
+    "playagain": "hrát znovu",
+    "draw": "remíza!",
+    "winner": "vítěz"
+  },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
     "načítání": "Načítání",
