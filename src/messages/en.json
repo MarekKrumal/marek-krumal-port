@@ -77,6 +77,9 @@
     "draw": "draw!",
     "winner": "winner"
   },
+  "ShowMoreButton": {
+    "showMore": "Show more..."
+  },
   "Weather": {
     "počasí?": "Is it nice out?",
     "načítání": "Loading...",

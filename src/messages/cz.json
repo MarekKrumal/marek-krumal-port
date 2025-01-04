@@ -75,6 +75,9 @@
     "draw": "remíza!",
     "winner": "vítěz"
   },
+  "ShowMoreButton": {
+    "showMore": "zobrazit více..."
+  },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
     "načítání": "Načítání",
