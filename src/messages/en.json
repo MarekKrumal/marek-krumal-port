@@ -13,7 +13,7 @@
     "marekkrumal": "Marek Křůmal",
     "marekkrumalTitle": "Profile page",
     "allProjects": "All projects",
-    "awaresPage": "Aware social app",
+    "awarespage": "Aware social app",
     "nebulaTrails": "Nebula Trails",
     "artstore": "Art Store",
     "neuralnetwork": "NeuralNetwork"
@@ -59,19 +59,6 @@
     "olomouc": "Olomouc - CZ",
     "projekt": "Projects"
   },
-  "ProjectAware": {
-    "title": "Social Media App",
-    "description": "The full-stack application AWARE offers features such as infinite loading, authentication, DMs, tagging, tracking trending hashtags, bookmarking, and more. For more information, click here."
-  },
-  "ProjectArtStore": {
-    "title": "Art E-shop",
-    "description": "The e-shop is designed for selling art, clothing, AI art and more. Authentication, processing payments and storing data is done on the WixClient. For more information, click here."
-  },
-  "ProjectNeuralNetwork": {
-    "title": "Neural Network Visualizer",
-    "description": "This project is a tool for visualizing and testing neural networks. I created it using Vite, React, and a new model from OpenAI - GPT-o1. For more info click here."
-  },
-
   "TicTacToe": {
     "playagain": "play again",
     "draw": "draw!",
@@ -104,6 +91,24 @@
       "ash": "Ash",
       "squall": "Squall",
       "tornado": "Tornado"
+    }
+  },
+  "projects": {
+    "awarespage": {
+      "title": "Aware Social Network",
+      "description": "The full-stack application AWARE offers features such as infinite loading, authentication, DMs, tagging, tracking trending hashtags, bookmarking, and more."
+    },
+    "artstore": {
+      "title": "ArtStore",
+      "description": "The e-shop is designed for selling art, clothing, AI art and more. Authentication, processing payments and storing data is done on the WixClient."
+    },
+    "neuralnetwork": {
+      "title": "NeuralNetwork",
+      "description": "This project is a tool for visualizing and testing neural networks. I created it using Vite, React, and a new model from OpenAI - GPT-o1."
+    },
+    "nebulatrails": {
+      "title": "Nebula Trails",
+      "description": "This is the Nebula Trails project page."
     }
   }
 }

@@ -81,7 +81,7 @@ export default function Navbar() {
                   className="block w-full z-[10] font-mono"
                   onClick={handleClose} // Close menu after click
                 >
-                  {t("awaresPage")}
+                  {t("awarespage")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>

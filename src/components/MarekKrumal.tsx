@@ -31,7 +31,7 @@ const MarekKrumal = () => {
 
         <div className="grid grid-cols-2 gap-4 pt-4 font-mono">
           <ul className="space-y-2 list-inside">
-            <li className="flex items-center gap-2 text-blue-400 dark:text-blue-400 text-md md:text-lg lg:text-xl">
+            <li className="flex items-center gap-2 text-blue-400 text-md md:text-lg lg:text-xl">
               <BiCaretRight />
               React.js
             </li>
@@ -39,7 +39,7 @@ const MarekKrumal = () => {
               <BiCaretRight />
               Next.js
             </li>
-            <li className="flex items-center gap-2 text-blue-500 dark:text-blue-500 text-md md:text-lg lg:text-xl">
+            <li className="flex items-center gap-2 text-blue-500 text-md md:text-lg lg:text-xl">
               <BiCaretRight />
               TypeScript
             </li>
@@ -53,7 +53,7 @@ const MarekKrumal = () => {
               <BiCaretRight />
               Tailwind
             </li>
-            <li className="flex items-center gap-2 text-green-500 dark:text-green-500 text-md md:text-lg lg:text-xl">
+            <li className="flex items-center gap-2 text-green-500 text-md md:text-lg lg:text-xl">
               <BiCaretRight />
               Node.js
             </li>

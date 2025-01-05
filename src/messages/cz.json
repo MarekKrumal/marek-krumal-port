@@ -13,7 +13,7 @@
     "marekkrumal": "Marek Křůmal",
     "marekkrumalTitle": "Stránka profilu",
     "allProjects": "Všechny projekty",
-    "awaresPage": "Aware Sociální síť",
+    "awarespage": "Aware Sociální síť",
     "nebulaTrails": "Nebula Trails",
     "artstore": "Art Store",
     "neuralnetwork": "Neural Network"
@@ -58,18 +58,6 @@
     "olomouc": "Olomouc",
     "projekt": "Projekty"
   },
-  "ProjectAware": {
-    "title": "Sociální síťová aplikace",
-    "description": "Full-stack aplikace AWARE, nabízí funkce jako infinity loading, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání záložek atd. Pro více informací klikněte zde."
-  },
-  "ProjectArtStore": {
-    "title": "Umělecký e-shop",
-    "description": "E-shop zaměřen na prodej obrazů, oblečení, AI obrázků a dalšího sortimentu. Autentizace, zpracování plateb a ukládání dat je postaveno na WixClient. Pro více informací klikněte zde."
-  },
-  "ProjectNeuralNetwork": {
-    "title": "Vizualizace neuronových sítí",
-    "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí Vite, Reactu a nového modelu od OpenAI – GPT-o1. Pro více informací klikněte zde."
-  },
   "TicTacToe": {
     "playagain": "hrát znovu",
     "draw": "remíza!",
@@ -102,6 +90,24 @@
       "ash": "Popel",
       "squall": "Poryv větru",
       "tornado": "Tornádo"
+    }
+  },
+  "projects": {
+    "awarespage": {
+      "title": "Sociální síť Aware",
+      "description": "Full-stack aplikace AWARE, nabízí funkce jako infinity loading, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání záložek atd."
+    },
+    "artstore": {
+      "title": "Umělecký e-shop",
+      "description": "E-shop zaměřen na prodej obrazů, oblečení, AI obrázků a dalšího sortimentu. Autentizace, zpracování plateb a ukládání dat je postaveno na WixClient."
+    },
+    "neuralnetwork": {
+      "title": "NeuralNetwork",
+      "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí Vite, Reactu a nového modelu od OpenAI – GPT-o1."
+    },
+    "nebulatrails": {
+      "title": "Nebula Trails",
+      "description": "Tato stránka projektu Nebula Trails."
     }
   }
 }
