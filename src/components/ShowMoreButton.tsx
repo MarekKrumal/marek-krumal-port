@@ -26,7 +26,7 @@ const ShowMoreButton: React.FC<ShowMoreButtonProps> = ({
       >
         {t("showMore")}
 
-        <ChevronsDown className="mt-1" />
+        <ChevronsDown strokeWidth={1} className="mt-1" />
       </button>
     </div>
   );
