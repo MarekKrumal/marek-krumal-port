@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Project from "@/components/Project";
+import Project from "@/components/Projects/Project";
 import { ProjectData } from "@/types/Project";
-import ShowMoreButton from "./ShowMoreButton";
+import ShowMoreButton from "../ShowMoreButton";
 
 const projectsData: ProjectData[] = [
   {
@@ -41,7 +41,16 @@ const projectsData: ProjectData[] = [
     githubUrl: "https://github.com/MarekKrumal/nebulatrails-nextjs",
     liveUrl: "https://nebulatrails-nextjs.vercel.app",
     image: "/assets/nebulatrails1.png",
-    technologies: ["Next.js", "TypeScript", "Tailwind"],
+    technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
+  },
+  {
+    id: 5,
+    translationKey: "sonicrun",
+    title: "Sonic Run",
+    githubUrl: "https://github.com/MarekKrumal/sonicJS",
+    liveUrl: "https://sonic-js.vercel.app/",
+    image: "/assets/Screenshot_10.png",
+    technologies: ["Vite", "JavaScript", "Kaplay", "Node.js"],
   },
 ];
 
@@ -53,7 +62,7 @@ export default function ProjectList() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pt-8">
       {/* Viditelné projekty */}
       {projectsData.slice(0, visibleCount).map((project) => (
         <Project key={project.id} {...project} />

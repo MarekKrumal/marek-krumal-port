@@ -5,7 +5,11 @@ export type TechnologyName =
   | "Prisma"
   | "WIX"
   | "OpenAI"
-  | "Vite";
+  | "Vite"
+  | "Stripe"
+  | "JavaScript"
+  | "Kaplay"
+  | "Node.js";
 
 export interface ProjectData {
   id: number;
@@ -15,4 +19,11 @@ export interface ProjectData {
   liveUrl?: string;
   image?: string;
   technologies: TechnologyName[];
+}
+
+export interface PostData {
+  translationKey: string;
+  id: number;
+  title: string;
+  date: string;
 }

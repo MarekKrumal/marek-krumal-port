@@ -96,7 +96,43 @@
   "projects": {
     "awarespage": {
       "title": "Aware Social Network",
-      "description": "The full-stack application AWARE offers features such as infinite loading, authentication, DMs, tagging, tracking trending hashtags, bookmarking, and more."
+      "description": "The full-stack AWARE application offers features such as infinite loading, authentication, DMs, user tagging, tracking trending hashtags, bookmarking, and more.",
+
+      "whyWasItCreatedTitle": "Why was this application created?",
+      "whyWasItCreatedDesc": "It was built to experiment with advanced social media features (real-time updates, tagging, trending hashtags) using modern technologies like Next.js 13 and server components.",
+
+      "technologiesUsedTitle": "Which technologies does the app use?",
+      "technologiesUsedDesc": "Aware is built with Next.js 13, TypeScript, React Query, and Tailwind CSS. Data is stored in a SQL or NoSQL database, and authentication can be handled by NextAuth or a custom solution.",
+
+      "updatesTitle": "Updates",
+      "updateDesc": "The application is constantly updated with new features and bug fixes.",
+
+      "featuresTitle": "Features & Technologies",
+      "features": {
+        "nextjs": "Next.js 13 with App Router and Server Components",
+        "serverComponents": "Server Components for better performance and SEO",
+        "reactQuery": "React Query for data fetching",
+        "optimisticUpdates": "Optimistic updates for smoother user experience",
+        "infiniteScroll": "Infinite scroll for posts",
+        "fileUploads": "File uploads (images, videos)",
+        "likeSystem": "Like system",
+        "followSystem": "Follow system",
+        "commentSystem": "Comment system",
+        "notificationSystem": "Notification system",
+        "dmSystem": "Direct messages (DMs)",
+        "bookmarks": "Bookmarks",
+        "authentication": "Authentication (NextAuth or custom)",
+        "database": "SQL / NoSQL database support",
+        "hashtagsMentions": "Hashtags (#) and mentions (@)",
+        "fullTextSearch": "Full-text search",
+        "caching": "Caching and performance optimization",
+        "mobileResponsive": "Mobile responsive design",
+        "themes": "Light and dark themes",
+        "formValidation": "Form validation (e.g., via React Hook Form)",
+        "editor": "Built-in rich text editor",
+        "deployment": "Easy deployment (e.g., on Vercel)",
+        "ideSetup": "IDE setup for streamlined development"
+      }
     },
     "artstore": {
       "title": "ArtStore",
@@ -108,7 +144,20 @@
     },
     "nebulatrails": {
       "title": "Nebula Trails",
-      "description": "This is the Nebula Trails project page."
+      "description": "The project started as a simple landing page. I gradually learned how to convert files from .js, .html, .css to .jsx and .tsx. Finally, I added Stripe payments integration."
+    },
+    "sonicrun": {
+      "title": "Sonic Run",
+      "description": "Sonic Run is a simple 1-button game made in JS using the Kaplay library. The goal is to reach the highest score. The game speeds up and the difficulty increases."
+    }
+  },
+  "posts": {
+    "header": "Posts",
+    "headerdesc": "On my blog I share my experiences and thoughts related to programming.",
+    "top5nextjs": {
+      "title": "Top 5 Next.js",
+      "description": "next js is best",
+      "date": "2023-08-01"
     }
   }
 }

@@ -45,7 +45,7 @@ const MarekKrumal = () => {
             </li>
           </ul>
           <ul className="space-y-2 list-inside">
-            <li className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 text-md md:text-lg lg:text-xl">
+            <li className="flex items-center gap-2 text-yellow-500 dark:text-yellow-400 text-md md:text-lg lg:text-xl">
               <BiCaretRight />
               JavaScript
             </li>
@@ -53,7 +53,7 @@ const MarekKrumal = () => {
               <BiCaretRight />
               Tailwind
             </li>
-            <li className="flex items-center gap-2 text-green-500 text-md md:text-lg lg:text-xl">
+            <li className="flex items-center gap-2 text-green-600 dark:text-green-400 text-md md:text-lg lg:text-xl">
               <BiCaretRight />
               Node.js
             </li>

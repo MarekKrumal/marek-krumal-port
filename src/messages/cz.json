@@ -92,10 +92,47 @@
       "tornado": "Tornádo"
     }
   },
+
   "projects": {
     "awarespage": {
       "title": "Sociální síť Aware",
-      "description": "Full-stack aplikace AWARE, nabízí funkce jako infinity loading, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání záložek atd."
+      "description": "Full-stack aplikace AWARE nabízí funkce jako nekonečné načítání, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání příspěvků do záložek a další.",
+
+      "whyWasItCreatedTitle": "Proč byla tato aplikace vytvořena?",
+      "whyWasItCreatedDesc": "Tato aplikace vznikla kvůli experimentování s pokročilými funkcemi sociálních sítí a využití moderních technologií (Next.js 13, server components, real-time chat atd.).",
+
+      "technologiesUsedTitle": "Jaké technologie aplikace využívá?",
+      "technologiesUsedDesc": "Aware je postaveno na Next.js 13, TypeScriptu, React Query, Tailwind CSS a dalších. K ukládání dat můžeš použít SQL či NoSQL databázi a o autentizaci se stará NextAuth nebo vlastní řešení.",
+
+      "updateTitle": "Aktualizace",
+      "updateDesc": "Aplikace je konstantne aktualizována s novymi funkciemi a opravami.",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "nextjs": "Next.js 13 s App Router a serverovými komponentami",
+        "serverComponents": "Server Components pro lepší výkon a SEO",
+        "reactQuery": "React Query pro efektivní fetching dat",
+        "optimisticUpdates": "Optimistické aktualizace pro plynulou práci uživatele",
+        "infiniteScroll": "Nekonečné načítání příspěvků (infinite scroll)",
+        "fileUploads": "Nahrávání souborů (fotky, videa)",
+        "likeSystem": "Systém lajků (likeSystem)",
+        "followSystem": "Funkce sledování uživatelů (followSystem)",
+        "commentSystem": "Systém komentářů",
+        "notificationSystem": "Notifikační systém",
+        "dmSystem": "Soukromé zprávy (DMs)",
+        "bookmarks": "Ukládání příspěvků do záložek (bookmarks)",
+        "authentication": "Autentizace (NextAuth nebo vlastní řešení)",
+        "database": "Práce s databází (SQL / NoSQL)",
+        "hashtagsMentions": "Podpora hashtagů (#) a zmínek (@)",
+        "fullTextSearch": "Fulltextové vyhledávání",
+        "caching": "Caching a optimalizace výkonu",
+        "mobileResponsive": "Responzivní design pro mobily",
+        "themes": "Tmavý a světlý motiv (themes)",
+        "formValidation": "Validace formulářů (založená na React Hook Form nebo jiném nástroji)",
+        "editor": "Vestavěný editor pro psaní příspěvků",
+        "deployment": "Snadné nasazení (třeba na Vercel)",
+        "ideSetup": "IDE nastavení pro rychlý vývoj"
+      }
     },
     "artstore": {
       "title": "Umělecký e-shop",
@@ -107,7 +144,20 @@
     },
     "nebulatrails": {
       "title": "Nebula Trails",
-      "description": "Tato stránka projektu Nebula Trails."
+      "description": "Projekt začal jako jednoduchá landing page. Postupně jsem se na něm učil převádět soubory z .js, .html, .css na .jsx a na .tsx. Nakonec jsem přidal integraci Stripe plateb."
+    },
+    "sonicrun": {
+      "title": "Sonic Run",
+      "description": "Sonic Run je jednoduchá 1-button hra vytvořená v JS pomocí knihovny Kaplay. Cílem je dosáhnout co nejvyššího skóre. Hra se postupně zrychluje, což zvyšuje její obtížnost."
+    }
+  },
+  "posts": {
+    "header": "Příspěvky",
+    "headerdesc": "Na mém blogu sdílím své zkušenosti a myšlenky spojené s programováním.",
+    "top5nextjs": {
+      "title": "Top 5 Next.js",
+      "description": "next js je nejlepsi",
+      "date": "2023-08-01"
     }
   }
 }

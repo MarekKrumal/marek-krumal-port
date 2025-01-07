@@ -28,8 +28,8 @@ const Project: React.FC<ProjectProps> = ({
   const locale = useLocale();
 
   return (
-    <div className="relative group mx-auto overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 max-w-full sm:max-w-xl md:max-w-3xl hover:shadow-sky-500/5">
-      <div className="w-full h-[450px] md:h-[600px]">
+    <div className="relative group overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 w-full hover:shadow-sky-500/5">
+      <div className="w-full h-[450px] md:h-[600px] relative">
         <a href={`/${locale}/projects/${translationKey}`}>
           {image && (
             <Image
@@ -46,11 +46,9 @@ const Project: React.FC<ProjectProps> = ({
           <div className="absolute inset-0 pointer-events-none group-hover:shadow-inner group-hover:shadow-black/20 transition-shadow duration-300" />
         </a>
       </div>
-      <div className="absolute border-t p-4 sm:p-6 md:p-8 inset-x-0 bottom-0 flex flex-col justify-end bg-stone-50 dark:bg-[#222222] shadow-sm">
-        <a
-          href={`/${locale}/projects/${translationKey}`}
-          className="hover:underline"
-        >
+
+      <div className="absolute border-t pt-4 pl-7 pr-7 pb-2 inset-x-0 bottom-0 flex flex-col justify-end bg-stone-50 dark:bg-[#222222] shadow-sm">
+        <a href={`/${locale}/projects/${translationKey}`}>
           <h2 className="sm:text-xl md:text-2xl font-mono font-bold uppercase text-blue-700 dark:text-cyan-100">
             {t(`${translationKey}.title`, { default: title })}
           </h2>
@@ -60,9 +58,9 @@ const Project: React.FC<ProjectProps> = ({
             })}
           </p>
         </a>
-        <div className="mt-4">
+        <div className="mt-3">
           {technologies && (
-            <div className="flex flex-wrap justify-center gap-6 text-3xl">
+            <div className="flex flex-wrap justify-center gap-2 text-2xl">
               {technologies.map((tech, index) => {
                 const config = technologyConfig[tech];
                 if (!config) return null;

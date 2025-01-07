@@ -43,7 +43,7 @@ const Slider = ({ slides }: SliderProps) => {
   };
 
   return (
-    <div className="relative max-w-[90%] sm:max-w-[95%] lg:max-w-[1200px] mx-auto">
+    <div className="relative lg:max-w-[1200px] mx-auto">
       {/* Slider */}
       <div className="relative overflow-hidden">
         <Image
@@ -58,12 +58,12 @@ const Slider = ({ slides }: SliderProps) => {
 
       <RxDoubleArrowLeft
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-300"
         size={30}
       />
       <RxDoubleArrowRight
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-300"
         size={30}
       />
 
