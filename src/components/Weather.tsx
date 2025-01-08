@@ -45,7 +45,7 @@ const Weather = () => {
           {t("počasí?")}
           {" >"}
         </p>
-        <div className="absolute flex flex-col left-full ml-56 dark:bg-black/0 bg-stone-50 invisible group-hover:visible z-50 ">
+        <div className="absolute flex flex-col left-full ml-52 dark:bg-black/0 bg-stone-50 invisible group-hover:visible z-50 ">
           {error ? (
             <div className="text-red-500 font-medium">{error}</div>
           ) : weather ? (

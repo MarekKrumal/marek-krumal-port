@@ -62,15 +62,17 @@ export default function ProjectList() {
   };
 
   return (
-    <div className="space-y-6 pt-8">
+    <div className="pt-5">
       {/* Viditelné projekty */}
-      {projectsData.slice(0, visibleCount).map((project) => (
-        <Project key={project.id} {...project} />
-      ))}
+      <div className="space-y-5">
+        {projectsData.slice(0, visibleCount).map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
+      </div>
 
       {/* Tlačítko Show More */}
       {visibleCount < projectsData.length && (
-        <div className="flex justify-center mt-4">
+        <div className="mt-2">
           <ShowMoreButton
             visibleCount={visibleCount}
             totalCount={projectsData.length}

@@ -2,6 +2,7 @@
 
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectList from "@/components/Projects/ProjectList";
+import LatestPosts from "@/components/LatestPosts";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,9 @@ export default function HomePage() {
       </div>
       <div className="mx-auto max-w-full sm:max-w-xl md:max-w-3xl">
         <ProjectList />
+      </div>
+      <div>
+        <LatestPosts />
       </div>
     </div>
   );

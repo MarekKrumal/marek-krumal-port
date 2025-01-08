@@ -67,6 +67,11 @@
   "ShowMoreButton": {
     "showMore": "Show more..."
   },
+  "LatestPosts": {
+    "title": "Latest posts",
+    "headerdesc": "On my blog I share my experiences and thoughts related to programming.",
+    "showMore": "Show more..."
+  },
   "Weather": {
     "počasí?": "Is it nice out?",
     "načítání": "Loading...",

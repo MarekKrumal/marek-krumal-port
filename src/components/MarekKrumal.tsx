@@ -1,12 +1,8 @@
 import { useTranslations } from "next-intl";
 import Weather from "./Weather";
-import {
-  BiMailSend,
-  BiLogoGithub,
-  BiMap,
-  BiCaretRight,
-  BiSubdirectoryLeft,
-} from "react-icons/bi";
+import { BiMap, BiCaretRight, BiSubdirectoryLeft } from "react-icons/bi";
+import { SiGithub } from "react-icons/si";
+import { MdOutlineEmail } from "react-icons/md";
 
 const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
@@ -67,20 +63,20 @@ const MarekKrumal = () => {
       </div>
 
       {/* GitHub and Email Links */}
-      <div className="absolute top-4 right-4 flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+      <div className="absolute top-4 right-4 flex flex-row space-x-4">
         <a
           href="https://github.com/MarekKrumal"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100  transition-shadow duration-300 dark:bg-transparent bg-transparent"
+          className="flex items-center justify-center p-1 pt-5 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
-          <BiLogoGithub size={20} />
+          <SiGithub size={20} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
-          className="flex items-center justify-center p-[0] md:p-4 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
+          className="flex items-center justify-center pr-5 pt-5 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-shadow duration-300 dark:bg-transparent bg-transparent"
         >
-          <BiMailSend size={20} />
+          <MdOutlineEmail size={25} />
         </a>
       </div>
     </div>

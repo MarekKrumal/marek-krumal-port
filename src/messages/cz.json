@@ -64,7 +64,12 @@
     "winner": "vítěz"
   },
   "ShowMoreButton": {
-    "showMore": "zobrazit více..."
+    "showMore": "Více projektů..."
+  },
+  "LatestPosts": {
+    "title": "Příspěvky",
+    "headerdesc": "Na mém blogu sdílím své zkušenosti a myšlenky spojené s programováním.",
+    "showMore": "Více príspěvků..."
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
