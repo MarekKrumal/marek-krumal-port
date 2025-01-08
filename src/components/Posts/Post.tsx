@@ -13,7 +13,7 @@ export default function Post({ title, translationKey, date }: PostProps) {
 
   return (
     <Link href={`/${locale}/projects/${translationKey}`}>
-      <div className="pl-6 pt-4 pb-4 p-3 hover:shadow-lg transition-shadow mx-auto dark:bg-transparent bg-transparent hover:shadow-sky-500/5 duration-300">
+      <div className="pl-6 pt-4 pb-4 p-3 hover:shadow-2xl hover:shadow-indigo-500/20 hover:scale-105 dark:hover:bg-black/10 hover:bg-slate-100 transition-shadow mx-auto dark:bg-transparent bg-transparent  duration-300">
         <p className="text-xs font-extralight text-green-600 dark:text-green-200">
           {t(`${translationKey}.date`, { default: date })}
         </p>

@@ -41,7 +41,9 @@ export default async function RootLayout({
             <main className="relative mx-auto px-3 py-10 max-w-2xl">
               {children}
             </main>
-            <Footer />
+            <div className="pt-14">
+              <Footer />
+            </div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

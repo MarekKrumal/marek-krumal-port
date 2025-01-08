@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = ({
   const locale = useLocale();
 
   return (
-    <div className="relative group overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 w-full hover:shadow-sky-500/5">
+    <div className="relative group overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 w-full hover:shadow-sky-500/20">
       <div className="w-full h-[450px] md:h-[600px] relative">
         <a href={`/${locale}/projects/${translationKey}`}>
           {image && (
