@@ -1,5 +1,3 @@
-"use client";
-
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectList from "@/components/Projects/ProjectList";
 import LatestPosts from "@/components/LatestPosts";
@@ -11,7 +9,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-3xl">
         <MarekKrumal />
       </div>
-      <div className="mx-auto max-w-full sm:max-w-xl md:max-w-3xl">
+      <div className="mx-auto max-w-3xl">
         <ProjectList />
       </div>
       <div className="pt-4">

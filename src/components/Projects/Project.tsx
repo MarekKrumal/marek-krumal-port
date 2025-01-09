@@ -6,6 +6,7 @@ import { SiGithub, SiPolygon } from "react-icons/si";
 import { useTranslations, useLocale } from "next-intl";
 import { ProjectData, TechnologyName } from "@/types/Project";
 import { technologyConfig } from "@/lib/technologyConfig";
+import Link from "next/link";
 
 interface ProjectProps extends ProjectData {
   title: string;
@@ -30,21 +31,21 @@ const Project: React.FC<ProjectProps> = ({
   return (
     <div className="relative group overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 w-full hover:shadow-sky-500/20">
       <div className="w-full h-[450px] md:h-[600px] relative">
-        <a href={`/${locale}/projects/${translationKey}`}>
+        <Link href={`/${locale}/projects/${translationKey}`}>
           {image && (
             <Image
               src={image}
               alt={t(`${translationKey}.title`, { default: title })}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 50vw"
-              quality={50}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, (max-width: 1024px) 75vw, 75vw"
+              quality={80}
             />
           )}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 pointer-events-none" />
           <div className="absolute inset-0 pointer-events-none group-hover:shadow-inner group-hover:shadow-black/20 transition-shadow duration-300" />
-        </a>
+        </Link>
       </div>
 
       <div className="absolute border-t pt-4 pl-7 pr-7 pb-2 inset-x-0 bottom-0 flex flex-col justify-end bg-stone-50 dark:bg-[#222222] shadow-sm">

@@ -38,9 +38,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>
             <Navbar />
-            <main className="relative mx-auto px-3 py-10 max-w-2xl">
-              {children}
-            </main>
+            <main className="relative mx-auto px-3 py-10">{children}</main>
             <div className="pt-14">
               <Footer />
             </div>

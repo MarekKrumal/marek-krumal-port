@@ -102,6 +102,42 @@ export default function Navbar() {
                   {t("neuralnetwork")}
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/nebulatrails`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("nebulatrails")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/mtrx-mern`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("mtrx-mern")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/store-mern`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("store-mern")}
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href={`/${locale}/projects/sonicrun`}
+                  className="block w-full font-mono"
+                  onClick={handleClose} // Close menu after click
+                >
+                  {t("sonicrun")}
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 

@@ -1,13 +1,11 @@
-import { ProjectData } from "@/types/Project";
-import ProjectforAllProjects from "./ProjectsForAllProjectsPage";
-
-const projectsData: ProjectData[] = [
+const BREKEKE = [
   {
     id: 1,
     translationKey: "awarespage",
     title: "Aware Social Network",
     githubUrl: "https://github.com/MarekKrumal/awares33",
     liveUrl: "https://awares33.vercel.app/",
+    image: "/assets/awaresdemo2.png",
     technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
   },
   {
@@ -16,6 +14,7 @@ const projectsData: ProjectData[] = [
     title: "ArtStore",
     githubUrl: "https://github.com/MarekKrumal/art-store-next-js",
     liveUrl: "https://art-store-next-js-fv76.vercel.app/",
+    image: "/assets/artstoremainpage.png",
     technologies: ["Next.js", "TypeScript", "WIX", "Tailwind"],
   },
   {
@@ -25,6 +24,7 @@ const projectsData: ProjectData[] = [
     githubUrl: "https://github.com/MarekKrumal/neural-network-nextjs",
     liveUrl:
       "https://neural-network-nextjs-zl89-git-vite-marekkrumals-projects.vercel.app/",
+    image: "/assets/neuralnetwork/Screenshot_4.png",
     technologies: ["Vite", "TypeScript", "OpenAI", "Tailwind"],
   },
   {
@@ -33,6 +33,7 @@ const projectsData: ProjectData[] = [
     title: "NebulaTrails",
     githubUrl: "https://github.com/MarekKrumal/nebulatrails-nextjs",
     liveUrl: "https://nebulatrails-nextjs.vercel.app",
+    image: "/assets/nebulatrails/nebulahome.png",
     technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
   },
   {
@@ -41,6 +42,7 @@ const projectsData: ProjectData[] = [
     title: "Sonic Run",
     githubUrl: "https://github.com/MarekKrumal/sonicJS",
     liveUrl: "https://sonic-js.vercel.app/",
+    image: "/assets/sonic-ring-run/Screenshot_10.png",
     technologies: ["Vite", "JavaScript", "Kaplay", "Node.js"],
   },
   {
@@ -49,6 +51,7 @@ const projectsData: ProjectData[] = [
     title: "mtrx-mern",
     githubUrl: "https://github.com/MarekKrumal/MTRX",
     liveUrl: "https://mtrx.onrender.com/",
+    image: "/assets/mtrx-mern/Screenshot_1.png",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
   },
   {
@@ -57,16 +60,9 @@ const projectsData: ProjectData[] = [
     title: "store-mern",
     githubUrl: "https://github.com/MarekKrumal/MERN-store1",
     liveUrl: "https://mern-store1-piyt.onrender.com/",
+    image: "/assets/store-mern/mern-main.png",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
   },
 ];
 
-export default function ProjectListForAllProjects() {
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6">
-      {projectsData.map((project) => (
-        <ProjectforAllProjects key={project.id} {...project} />
-      ))}
-    </div>
-  );
-}
+export default BREKEKE;

@@ -14,9 +14,12 @@
     "marekkrumalTitle": "Profile page",
     "allProjects": "All projects",
     "awarespage": "Aware social app",
-    "nebulaTrails": "Nebula Trails",
-    "artstore": "Art Store",
-    "neuralnetwork": "NeuralNetwork"
+    "nebulatrails": "Nebula Trails",
+    "artstore": "Art(Raven) Store",
+    "neuralnetwork": "NeuralNetwork",
+    "sonicrun": "Sonic Ring Run",
+    "mtrx-mern": "MTRX mern-stack",
+    "store-mern": "Store mern-stack"
   },
   "Footer": {
     "createdWith": "Created with",
@@ -140,8 +143,44 @@
       }
     },
     "artstore": {
-      "title": "ArtStore",
-      "description": "The e-shop is designed for selling art, clothing, AI art and more. Authentication, processing payments and storing data is done on the WixClient."
+      "title": "Umělecký e-shop",
+      "description": "E-shop zaměřen na prodej obrazů, oblečení, AI obrázků a dalšího sortimentu. Autentizace, zpracování plateb a ukládání dat je postaveno na WixClient.",
+
+      "whyWasItCreatedTitle": "Proč byla tato aplikace vytvořena?",
+      "whyWasItCreatedDesc": "Tato aplikace vznikla kvůli experimentování s pokročilými funkcemi sociálních sítí a využití moderních technologií (Next.js 13, server components, real-time chat atd.).",
+
+      "technologiesUsedTitle": "Jaké technologie aplikace využívá?",
+      "technologiesUsedDesc": "Aware je postaveno na Next.js 13, TypeScriptu, React Query, Tailwind CSS a dalších. K ukládání dat můžeš použít SQL či NoSQL databázi a o autentizaci se stará NextAuth nebo vlastní řešení.",
+
+      "updateTitle": "Aktualizace",
+      "updateDesc": "Aplikace je konstantne aktualizována s novymi funkciemi a opravami.",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "nextjs": "Next.js 13 s App Router a serverovými komponentami",
+        "serverComponents": "Server Components pro lepší výkon a SEO",
+        "reactQuery": "React Query pro efektivní fetching dat",
+        "optimisticUpdates": "Optimistické aktualizace pro plynulou práci uživatele",
+        "infiniteScroll": "Nekonečné načítání příspěvků (infinite scroll)",
+        "fileUploads": "Nahrávání souborů (fotky, videa)",
+        "likeSystem": "Systém lajků (likeSystem)",
+        "followSystem": "Funkce sledování uživatelů (followSystem)",
+        "commentSystem": "Systém komentářů",
+        "notificationSystem": "Notifikační systém",
+        "dmSystem": "Soukromé zprávy (DMs)",
+        "bookmarks": "Ukládání příspěvků do záložek (bookmarks)",
+        "authentication": "Autentizace (NextAuth nebo vlastní řešení)",
+        "database": "Práce s databází (SQL / NoSQL)",
+        "hashtagsMentions": "Podpora hashtagů (#) a zmínek (@)",
+        "fullTextSearch": "Fulltextové vyhledávání",
+        "caching": "Caching a optimalizace výkonu",
+        "mobileResponsive": "Responzivní design pro mobily",
+        "themes": "Tmavý a světlý motiv (themes)",
+        "formValidation": "Validace formulářů (založená na React Hook Form nebo jiném nástroji)",
+        "editor": "Vestavěný editor pro psaní příspěvků",
+        "deployment": "Snadné nasazení (třeba na Vercel)",
+        "ideSetup": "IDE nastavení pro rychlý vývoj"
+      }
     },
     "neuralnetwork": {
       "title": "NeuralNetwork",

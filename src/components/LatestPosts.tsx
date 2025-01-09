@@ -61,7 +61,7 @@ const Page = () => {
         </div>
       </div>
       {visibleCount < postData.length && (
-        <div className="flex font-mono mx-auto mt-2 justify-start">
+        <div className="flex font-mono mx-auto mt-2 justify-start max-w-3xl">
           <button
             onClick={handleShowMore}
             className=" text-orange-600 dark:text-orange-500 px-1 hover:shadow-md transition-shadow duration-300 dark:bg-transparent bg-transparent hover:bg-gray-200 dark:hover:bg-black/20"

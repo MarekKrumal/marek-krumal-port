@@ -9,7 +9,9 @@ export type TechnologyName =
   | "Stripe"
   | "JavaScript"
   | "Kaplay"
-  | "Node.js";
+  | "Node.js"
+  | "MongoDB"
+  | "Express";
 
 export interface ProjectData {
   id: number;

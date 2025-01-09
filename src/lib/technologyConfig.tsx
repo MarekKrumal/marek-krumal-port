@@ -6,6 +6,8 @@ import {
   SiOpenai,
   SiJavascript,
   SiNodedotjs,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si";
 import { BiLogoWix } from "react-icons/bi";
 import Image from "next/image";
@@ -83,7 +85,22 @@ export const technologyConfig = {
       />
     ),
   },
+  MongoDB: {
+    label: "MongoDB",
+    icon: (
+      <SiMongodb
+        style={{
+          color: "#47a248",
+        }}
+      />
+    ),
+  },
+  Express: {
+    label: "Express",
+    icon: <SiExpress />,
+  },
 };
+
 export const technologyNames = [
   "Next.js",
   "TypeScript",
@@ -96,4 +113,6 @@ export const technologyNames = [
   "JavaScript",
   "Kaplay",
   "Node.js",
+  "MongoDB",
+  "Express",
 ];

@@ -31,7 +31,7 @@ const projectsData: ProjectData[] = [
     githubUrl: "https://github.com/MarekKrumal/neural-network-nextjs",
     liveUrl:
       "https://neural-network-nextjs-zl89-git-vite-marekkrumals-projects.vercel.app/",
-    image: "/assets/neuralnetworkfirstpic.png",
+    image: "/assets/neuralnetwork/Screenshot_4.png",
     technologies: ["Vite", "TypeScript", "OpenAI", "Tailwind"],
   },
   {
@@ -40,7 +40,7 @@ const projectsData: ProjectData[] = [
     title: "NebulaTrails",
     githubUrl: "https://github.com/MarekKrumal/nebulatrails-nextjs",
     liveUrl: "https://nebulatrails-nextjs.vercel.app",
-    image: "/assets/nebulatrails1.png",
+    image: "/assets/nebulatrails/nebulahome.png",
     technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
   },
   {
@@ -49,8 +49,26 @@ const projectsData: ProjectData[] = [
     title: "Sonic Run",
     githubUrl: "https://github.com/MarekKrumal/sonicJS",
     liveUrl: "https://sonic-js.vercel.app/",
-    image: "/assets/Screenshot_10.png",
+    image: "/assets/sonic-ring-run/Screenshot_10.png",
     technologies: ["Vite", "JavaScript", "Kaplay", "Node.js"],
+  },
+  {
+    id: 6,
+    translationKey: "mtrx-mern",
+    title: "mtrx-mern",
+    githubUrl: "https://github.com/MarekKrumal/MTRX",
+    liveUrl: "https://mtrx.onrender.com/",
+    image: "/assets/mtrx-mern/Screenshot_1.png",
+    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
+  },
+  {
+    id: 7,
+    translationKey: "store-mern",
+    title: "store-mern",
+    githubUrl: "https://github.com/MarekKrumal/MERN-store1",
+    liveUrl: "https://mern-store1-piyt.onrender.com/",
+    image: "/assets/store-mern/mern-main.png",
+    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
   },
 ];
 

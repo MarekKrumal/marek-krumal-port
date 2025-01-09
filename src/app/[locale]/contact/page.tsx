@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <div>
       <Contact />
-      <div className="pt-14">
+      <div className="pt-14 pb-20">
         <TicTacToe />
       </div>
     </div>
