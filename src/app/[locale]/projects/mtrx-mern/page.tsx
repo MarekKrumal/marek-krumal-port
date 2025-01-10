@@ -3,22 +3,22 @@ import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
 import Slider from "@/components/Slider/Slider";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
 
-export default function AwaresPage() {
+export default function MtrxMern() {
   return (
     <div>
       <div className="mx-auto max-w-3xl">
         <ProjectCartInfo
-          projectKey="awarespage"
+          projectKey="mtrx-mern"
           githubLink="https://github.com/MarekKrumal/awares33"
           liveLink="https://awares33.vercel.app/"
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.awarespage} />
+        <Slider slides={sliderData.mtrx} />
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">
-        <ProjectCartFunkce projectKey="awarespage" />
+        <ProjectCartFunkce projectKey="mtrx-mern" />
       </div>
     </div>
   );

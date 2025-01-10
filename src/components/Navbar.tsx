@@ -18,12 +18,15 @@ export default function Navbar() {
   const locale = useLocale();
 
   const [click, setClick] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Nový stav pro dropdown
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = () => setClick(!click);
 
-  const handleClose = () => setClick(false); // Close the menu
+  const handleClose = () => setClick(false); // Zavře mobilní menu
+
+  const closeDropdown = () => setDropdownOpen(false); // Funkce pro zavření dropdownu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,9 +59,12 @@ export default function Navbar() {
         </div>
 
         <nav className="space-x-10 uppercase font-semibold mx-auto hidden md:flex text-center">
-          <DropdownMenu>
+          <DropdownMenu open={dropdownOpen} onOpenChange={setDropdownOpen}>
             <DropdownMenuTrigger asChild>
-              <button className="font-semibold uppercase font-mono">
+              <button
+                className="font-semibold uppercase font-mono"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
                 {t("projects")}
               </button>
             </DropdownMenuTrigger>
@@ -69,8 +75,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono dark:hover:text-green-400 hover:text-green-600 hover:scale-105"
+                  onClick={closeDropdown}
                 >
                   {t("allProjects")}
                 </Link>
@@ -78,8 +84,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/awarespage`}
-                  className="block w-full z-[10] font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full z-[10] font-mono dark:hover:text-cyan-300 hover:text-cyan-600 hover:scale-105"
+                  onClick={closeDropdown}
                 >
                   {t("awarespage")}
                 </Link>
@@ -87,8 +93,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/artstore`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("artstore")}
                 </Link>
@@ -96,8 +102,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/neuralnetwork`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("neuralnetwork")}
                 </Link>
@@ -105,8 +111,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/nebulatrails`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("nebulatrails")}
                 </Link>
@@ -114,8 +120,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/mtrx-mern`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("mtrx-mern")}
                 </Link>
@@ -123,8 +129,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/store-mern`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("store-mern")}
                 </Link>
@@ -132,8 +138,8 @@ export default function Navbar() {
               <DropdownMenuItem>
                 <Link
                   href={`/${locale}/projects/sonicrun`}
-                  className="block w-full font-mono"
-                  onClick={handleClose} // Close menu after click
+                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
+                  onClick={closeDropdown}
                 >
                   {t("sonicrun")}
                 </Link>

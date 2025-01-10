@@ -26,7 +26,7 @@ const EmailOnClick = () => {
         onClick={copyEmailToClipboard}
       >
         krumalmarek@gmail.com
-      </span>{" "}
+      </span>
       <a
         href="https://www.linkedin.com/in/marek-krumal-747437339/"
         target="_blank"

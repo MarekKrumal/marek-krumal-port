@@ -11,7 +11,9 @@ export type TechnologyName =
   | "Kaplay"
   | "Node.js"
   | "MongoDB"
-  | "Express";
+  | "Express"
+  | "React"
+  | "FireBase";
 
 export interface ProjectData {
   id: number;

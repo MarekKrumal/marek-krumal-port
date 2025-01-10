@@ -8,17 +8,17 @@ export default function NebulaTrails() {
     <div>
       <div className="mx-auto max-w-3xl">
         <ProjectCartInfo
-          projectKey="NebulaTrails"
+          projectKey="nebulatrails"
           githubLink="https://github.com/MarekKrumal/nebulatrails-nextjs"
           liveLink="https://nebulatrails-nextjs.vercel.app/en"
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.awarespage} />
+        <Slider slides={sliderData.nebulatrails} />
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">
-        <ProjectCartFunkce projectKey="NebulaTrails" />
+        <ProjectCartFunkce projectKey="nebulatrails" />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function AwaresPage() {
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.awarespage} />
+        <Slider slides={sliderData.artstore} />
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">

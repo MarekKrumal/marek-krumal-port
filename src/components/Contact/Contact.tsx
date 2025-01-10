@@ -11,9 +11,9 @@ const Page = () => {
         <h1 className="text-md pl-7 sm:text-xl md:text-2xl font-mono text-blue-700 dark:text-cyan-100 uppercase mb-5 font-bold">
           {t("title")}
         </h1>
-        <p className="pl-7 pr-2">
+        <h2 className="pl-7 pr-2">
           <EmailOnClick />
-        </p>
+        </h2>
       </div>
 
       <div className="flex justify-around space-x-2 mt-8">

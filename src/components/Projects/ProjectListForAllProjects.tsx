@@ -23,8 +23,7 @@ const projectsData: ProjectData[] = [
     translationKey: "neuralnetwork",
     title: "NeuralNetwork",
     githubUrl: "https://github.com/MarekKrumal/neural-network-nextjs",
-    liveUrl:
-      "https://neural-network-nextjs-zl89-git-vite-marekkrumals-projects.vercel.app/",
+    liveUrl: "https://neural-network-nextjs-lnpd.vercel.app/",
     technologies: ["Vite", "TypeScript", "OpenAI", "Tailwind"],
   },
   {
@@ -46,7 +45,7 @@ const projectsData: ProjectData[] = [
   {
     id: 6,
     translationKey: "mtrx-mern",
-    title: "mtrx-mern",
+    title: "MTRX mern",
     githubUrl: "https://github.com/MarekKrumal/MTRX",
     liveUrl: "https://mtrx.onrender.com/",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
@@ -54,10 +53,35 @@ const projectsData: ProjectData[] = [
   {
     id: 7,
     translationKey: "store-mern",
-    title: "store-mern",
+    title: "Store mern",
     githubUrl: "https://github.com/MarekKrumal/MERN-store1",
     liveUrl: "https://mern-store1-piyt.onrender.com/",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
+  },
+  {
+    id: 8,
+    translationKey: "weather-app",
+    title: "weather app",
+    githubUrl: "https://github.com/MarekKrumal/MyWeatherRepository",
+    liveUrl: "https://weather-app-phi-indol-29.vercel.app/",
+    technologies: ["React", "Vite", "JavaScript", "Tailwind"],
+  },
+  {
+    id: 9,
+    translationKey: "netflix-clone",
+    title: "Netflix clone",
+    githubUrl: "https://github.com/MarekKrumal/MyBigProject",
+    liveUrl:
+      "https://66b36fb360cf90df8e00b27b--extraordinary-youtiao-260ac4.netlify.app/",
+    technologies: ["React", "FireBase", "JavaScript", "Tailwind"],
+  },
+  {
+    id: 9,
+    translationKey: "to-do",
+    title: "To Do App",
+    githubUrl: "https://github.com/MarekKrumal/ToDo-TS",
+    liveUrl: "https://to-do-ts-green.vercel.app/",
+    technologies: ["Vite", "TypeScript", "Tailwind"],
   },
 ];
 

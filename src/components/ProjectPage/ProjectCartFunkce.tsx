@@ -9,60 +9,45 @@ export default function ProjectCartFunkce({
 }: ProjectCartFunkceProps) {
   const t = useTranslations(`projects.${projectKey}`);
 
-  // Definujte klíče jednotlivých funkcí
   const featureKeys = [
-    "nextjs",
-    "serverComponents",
-    "reactQuery",
-    "optimisticUpdates",
-    "infiniteScroll",
-    "fileUploads",
-    "likeSystem",
-    "followSystem",
-    "commentSystem",
-    "notificationSystem",
-    "dmSystem",
-    "bookmarks",
-    "authentication",
-    "database",
-    "hashtagsMentions",
-    "fullTextSearch",
-    "caching",
-    "mobileResponsive",
-    "themes",
-    "formValidation",
-    "editor",
-    "deployment",
-    "ideSetup",
+    "func1",
+    "func2",
+    "func3",
+    "func4",
+    "func5",
+    "func6",
+    "func7",
+    "func8",
+    "func9",
+    "func10",
+    "func11",
+    "func12",
+    "func13",
+    "func14",
+    "func15",
+    "func16",
+    "func17",
+    "func18",
+    "func19",
+    "func20",
+    "func21",
+    "func22",
+    "func23",
   ];
+
+  const displayedFeatures = featureKeys
+    .filter((key) => t(`features.${key}`) !== "")
+    .slice(0, 23);
 
   return (
     <div className="z-10 mx-auto mt-0 p-4 sm:p-6 md:p-8 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-4xl hover:shadow-sky-500/20 hover:shadow-2xl transition-shadow duration-300">
       <div className="space-y-6">
-        {/* Titulek projektu */}
-        <h1 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-2xl md:text-2xl lg:text-2xl font-mono">
-          {t("title")}
-        </h1>
-
-        {/* Krátký úvod / popis */}
-        <p className="text-base text-gray-700 dark:text-gray-300">
-          {t("description")}
-        </p>
-
         {/* Proč byla aplikace vytvořena */}
         <h2 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl font-mono">
           {t("whyWasItCreatedTitle")}
         </h2>
         <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
           {t("whyWasItCreatedDesc")}
-        </p>
-
-        {/* Jaké technologie aplikace využívá */}
-        <h2 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl font-mono">
-          {t("technologiesUsedTitle")}
-        </h2>
-        <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-          {t("technologiesUsedDesc")}
         </p>
 
         {/* Výpis funkcí a technologií */}
@@ -73,17 +58,10 @@ export default function ProjectCartFunkce({
           className="list-disc list-inside text-sm sm:text-base 
                        text-gray-600 dark:text-gray-400 space-y-1"
         >
-          {featureKeys.map((key) => (
+          {displayedFeatures.map((key) => (
             <li key={key}>{t(`features.${key}`)}</li>
           ))}
         </ul>
-        {/* Popis jednotlivých funkcí */}
-        {/*<h2 className="font-bold uppercase text-orange-600 dark:text-orange-400 text-lg font-mono">
-          {t("updateTitle")}
-        </h2>
-        <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-          {t("updateDesc")}
-        </p>*/}
       </div>
     </div>
   );

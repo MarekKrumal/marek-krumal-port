@@ -9,17 +9,17 @@ export default function NeuralNetwork() {
     <div>
       <div className="mx-auto max-w-3xl">
         <ProjectCartInfo
-          projectKey="NeuralNetwork"
+          projectKey="neuralnetwork"
           githubLink="https://github.com/MarekKrumal/neural-network-nextjs"
           liveLink="https://neural-network-nextjs-lnpd.vercel.app/"
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.awarespage} />
+        <Slider slides={sliderData.neuralnetwork} />
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">
-        <ProjectCartFunkce projectKey="NeuralNetwork" />
+        <ProjectCartFunkce projectKey="neuralnetwork" />
       </div>
     </div>
   );

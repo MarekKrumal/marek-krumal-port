@@ -99,6 +99,14 @@ export const technologyConfig = {
     label: "Express",
     icon: <SiExpress />,
   },
+  React: {
+    label: "React",
+    icon: <div className="text-blue-600" />,
+  },
+  FireBase: {
+    label: "FireBase",
+    icon: <div className="text-yellow-500" />,
+  },
 };
 
 export const technologyNames = [
@@ -115,4 +123,6 @@ export const technologyNames = [
   "Node.js",
   "MongoDB",
   "Express",
+  "React",
+  "FireBase",
 ];

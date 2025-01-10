@@ -12,7 +12,7 @@ const projectsData: ProjectData[] = [
     title: "Aware Social Network",
     githubUrl: "https://github.com/MarekKrumal/awares33",
     liveUrl: "https://awares33.vercel.app/",
-    image: "/assets/awaresdemo2.png",
+    image: "/assets/awares/awaresdemo2.png",
     technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
   },
   {
@@ -21,7 +21,7 @@ const projectsData: ProjectData[] = [
     title: "ArtStore",
     githubUrl: "https://github.com/MarekKrumal/art-store-next-js",
     liveUrl: "https://art-store-next-js-fv76.vercel.app/",
-    image: "/assets/artstoremainpage.png",
+    image: "/assets/artstore/artstoremainpage.png",
     technologies: ["Next.js", "TypeScript", "WIX", "Tailwind"],
   },
   {
@@ -29,9 +29,8 @@ const projectsData: ProjectData[] = [
     translationKey: "neuralnetwork",
     title: "NeuralNetwork",
     githubUrl: "https://github.com/MarekKrumal/neural-network-nextjs",
-    liveUrl:
-      "https://neural-network-nextjs-zl89-git-vite-marekkrumals-projects.vercel.app/",
-    image: "/assets/neuralnetwork/Screenshot_4.png",
+    liveUrl: "https://neural-network-nextjs-lnpd.vercel.app/",
+    image: "/assets/neuralnetwork/cart.png",
     technologies: ["Vite", "TypeScript", "OpenAI", "Tailwind"],
   },
   {
