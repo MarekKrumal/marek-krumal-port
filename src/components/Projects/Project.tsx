@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import Image from "next/image";
 import { SiGithub, SiPolygon } from "react-icons/si";
 import { useTranslations, useLocale } from "next-intl";

@@ -6,10 +6,19 @@ import { notFound } from "next/navigation";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const Navbar = dynamic(() => import("@/components/Navbar"), {
+  loading: () => <p>Loading Navbar...</p>,
+});
+
+const Footer = dynamic(() => import("@/components/Footer"), {
+  loading: () => <p>Loading Footer...</p>,
+});
 
 export const metadata: Metadata = {
   title: {
@@ -37,14 +46,42 @@ export default async function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>
-            <Navbar />
-            <main className="relative mx-auto px-3 py-10">{children}</main>
-            <div className="pt-14">
+            <Suspense fallback={<NavbarLoading />}>
+              <Navbar />
+            </Suspense>
+            <Suspense fallback={<MainLoading />}>
+              <main className="relative mx-auto px-3 py-10">{children}</main>
+            </Suspense>
+            <Suspense fallback={<FooterLoading />}>
               <Footer />
-            </div>
+            </Suspense>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
+  );
+}
+
+function NavbarLoading() {
+  return (
+    <div className="p-4 font-mono text-center">
+      <h1>Loading Navbar...</h1>
+    </div>
+  );
+}
+
+function MainLoading() {
+  return (
+    <div className="flex items-center justify-center h-screen font-mono text-xl">
+      <h1>Loading Content...</h1>
+    </div>
+  );
+}
+
+function FooterLoading() {
+  return (
+    <div className="p-4 font-mono text-center">
+      <h1>Loading Footer...</h1>
+    </div>
   );
 }

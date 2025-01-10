@@ -18,15 +18,15 @@ export default function Navbar() {
   const locale = useLocale();
 
   const [click, setClick] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false); // Nový stav pro dropdown
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleClick = () => setClick(!click);
 
-  const handleClose = () => setClick(false); // Zavře mobilní menu
+  const handleClose = () => setClick(false);
 
-  const closeDropdown = () => setDropdownOpen(false); // Funkce pro zavření dropdownu
+  const closeDropdown = () => setDropdownOpen(false);
 
   useEffect(() => {
     const handleScroll = () => {

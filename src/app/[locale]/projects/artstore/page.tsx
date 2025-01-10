@@ -4,7 +4,7 @@ import { sliderData } from "@/components/Slider/sliderdata";
 import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
 
-export default function AwaresPage() {
+export default function ArtstorePage() {
   return (
     <div>
       <div className="mx-auto max-w-3xl">

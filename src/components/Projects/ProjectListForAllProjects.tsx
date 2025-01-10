@@ -76,7 +76,7 @@ const projectsData: ProjectData[] = [
     technologies: ["React", "FireBase", "JavaScript", "Tailwind"],
   },
   {
-    id: 9,
+    id: 10,
     translationKey: "to-do",
     title: "To Do App",
     githubUrl: "https://github.com/MarekKrumal/ToDo-TS",

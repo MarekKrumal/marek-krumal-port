@@ -12,7 +12,7 @@ const projectsData: ProjectData[] = [
     title: "Aware Social Network",
     githubUrl: "https://github.com/MarekKrumal/awares33",
     liveUrl: "https://awares33.vercel.app/",
-    image: "/assets/awares/awaresdemo2.png",
+    image: "/assets/awares/awaresdemo2.webp",
     technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
   },
   {
@@ -21,7 +21,7 @@ const projectsData: ProjectData[] = [
     title: "ArtStore",
     githubUrl: "https://github.com/MarekKrumal/art-store-next-js",
     liveUrl: "https://art-store-next-js-fv76.vercel.app/",
-    image: "/assets/artstore/artstoremainpage.png",
+    image: "/assets/artstore/artstoremainpage.webp",
     technologies: ["Next.js", "TypeScript", "WIX", "Tailwind"],
   },
   {
@@ -30,7 +30,7 @@ const projectsData: ProjectData[] = [
     title: "NeuralNetwork",
     githubUrl: "https://github.com/MarekKrumal/neural-network-nextjs",
     liveUrl: "https://neural-network-nextjs-lnpd.vercel.app/",
-    image: "/assets/neuralnetwork/cart.png",
+    image: "/assets/neuralnetwork/cart.webp",
     technologies: ["Vite", "TypeScript", "OpenAI", "Tailwind"],
   },
   {
@@ -39,7 +39,7 @@ const projectsData: ProjectData[] = [
     title: "NebulaTrails",
     githubUrl: "https://github.com/MarekKrumal/nebulatrails-nextjs",
     liveUrl: "https://nebulatrails-nextjs.vercel.app",
-    image: "/assets/nebulatrails/nebulahome.png",
+    image: "/assets/nebulatrails/nebulahome.webp",
     technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
   },
   {
@@ -48,7 +48,7 @@ const projectsData: ProjectData[] = [
     title: "Sonic Run",
     githubUrl: "https://github.com/MarekKrumal/sonicJS",
     liveUrl: "https://sonic-js.vercel.app/",
-    image: "/assets/sonic-ring-run/Screenshot_10.png",
+    image: "/assets/sonic-ring-run/Screenshot_10.webp",
     technologies: ["Vite", "JavaScript", "Kaplay", "Node.js"],
   },
   {
@@ -57,7 +57,7 @@ const projectsData: ProjectData[] = [
     title: "mtrx-mern",
     githubUrl: "https://github.com/MarekKrumal/MTRX",
     liveUrl: "https://mtrx.onrender.com/",
-    image: "/assets/mtrx-mern/Screenshot_1.png",
+    image: "/assets/mtrx-mern/Screenshot_1.webp",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
   },
   {
@@ -66,7 +66,7 @@ const projectsData: ProjectData[] = [
     title: "store-mern",
     githubUrl: "https://github.com/MarekKrumal/MERN-store1",
     liveUrl: "https://mern-store1-piyt.onrender.com/",
-    image: "/assets/store-mern/mern-main.png",
+    image: "/assets/store-mern/mern-main.webp",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
   },
 ];

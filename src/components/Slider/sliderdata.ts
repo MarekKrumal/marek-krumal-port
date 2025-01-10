@@ -4,28 +4,24 @@ export type SliderDataType = {
 
 export const sliderData = {
   awarespage: [
-    { image: "/assets/homepage.png" },
-    { image: "/assets/loginpage.png" },
-    { image: "/assets/hashtags.png" },
+    { image: "/assets/userprofile.webp" },
+    { image: "/assets/loginpage.webp" },
+    { image: "/assets/hashtags.webp" },
   ],
   artstore: [
-    { image: "/assets/artstore/mona.png" },
-    { image: "/assets/artstore/karta.png" },
-    { image: "/assets/artstore/products.png" },
-    { image: "/assets/artstore/malba.png" },
-    { image: "/assets/artstore/main.png" },
-    { image: "/assets/artstore/vzduch.png" },
+    { image: "/assets/artstore/mona.webp" },
+    { image: "/assets/artstore/karta.webp" },
+    { image: "/assets/artstore/products.webp" },
   ],
   neuralnetwork: [
-    { image: "/assets/neuralnetwork/editor.png" },
-    { image: "/assets/neuralnetwork/editor2.png" },
-    { image: "/assets/neuralnetwork/home.png" },
+    { image: "/assets/neuralnetwork/editor.webp" },
+    { image: "/assets/neuralnetwork/editor2.webp" },
+    { image: "/assets/neuralnetwork/home.webp" },
   ],
   nebulatrails: [
-    { image: "/assets/nebulatrails/home.png" },
-    { image: "/assets/nebulatrails/pricing.png" },
-    { image: "/assets/nebulatrails/stripe.png" },
-    { image: "/assets/nebulatrails/contact.png" },
+    { image: "/assets/nebulatrails/pricing.webp" },
+    { image: "/assets/nebulatrails/stripe.webp" },
+    { image: "/assets/nebulatrails/contact.webp" },
   ],
   mtrx: [
     { image: "/assets/mtrx-mern/trinity.png" },
@@ -38,8 +34,8 @@ export const sliderData = {
     { image: "/assets/store-mern/update.png" },
   ],
   sonicrun: [
-    { image: "/assets/sonic-ring-run/sonic3x.png" },
-    { image: "/assets/sonic-ring-run/sonichome.png" },
-    { image: "/assets/sonic-ring-run/sonicscore.png" },
+    { image: "/assets/sonic-ring-run/sonic3x.webp" },
+    { image: "/assets/sonic-ring-run/sonichome.webp" },
+    { image: "/assets/sonic-ring-run/sonicscore.webp" },
   ],
 };

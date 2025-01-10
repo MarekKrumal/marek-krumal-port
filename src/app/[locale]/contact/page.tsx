@@ -1,12 +1,12 @@
 import Contact from "../../../components/Contact/Contact";
-import TicTacToe from "@/components/Contact/TicTacToe";
+import TicTacToeWrapper from "../../../components/Contact/TicTacToeWrapper";
 
 const Page = () => {
   return (
     <div>
       <Contact />
       <div className="pt-14 pb-20">
-        <TicTacToe />
+        <TicTacToeWrapper />
       </div>
     </div>
   );

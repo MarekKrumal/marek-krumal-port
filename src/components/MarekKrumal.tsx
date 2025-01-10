@@ -1,8 +1,9 @@
+"use client";
 import { useTranslations } from "next-intl";
-import Weather from "./Weather";
 import { BiMap, BiCaretRight, BiSubdirectoryLeft } from "react-icons/bi";
 import { SiGithub } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
+import WeatherWrapper from "./WeatherWrapper";
 
 const MarekKrumal = () => {
   const t = useTranslations("MarekKrumal");
@@ -18,7 +19,7 @@ const MarekKrumal = () => {
           <span className="font-mono text-gray-700 dark:text-gray-400">
             {t("olomouc")}
           </span>
-          <Weather />
+          <WeatherWrapper />
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
