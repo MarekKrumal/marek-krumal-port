@@ -1,7 +1,13 @@
 import { sliderData } from "@/components/Slider/sliderdata";
 import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
-import Slider from "@/components/Slider/Slider";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
+import SliderSkeleton from "@/components/Slider/SliderSkeleton";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const Slider = dynamic(() => import("@/components/Slider/Slider"), {
+  loading: () => <SliderSkeleton />,
+});
 
 export default function AwaresPage() {
   return (
@@ -14,7 +20,9 @@ export default function AwaresPage() {
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.awarespage} />
+        <Suspense fallback={<SliderSkeleton />}>
+          <Slider slides={sliderData.awarespage} />
+        </Suspense>
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">

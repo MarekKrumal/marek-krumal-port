@@ -1,214 +1,134 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
+import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import ThemeToggle from "@/components/themes/ThemeToggle";
 import LanguageButton from "./LanguageButton";
 import { Menu, X } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   const t = useTranslations("NavbarLinks");
   const locale = useLocale();
-
-  const [click, setClick] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleClick = () => setClick(!click);
-
-  const handleClose = () => setClick(false);
-
-  const closeDropdown = () => setDropdownOpen(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
-      setLastScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header
-      className={`font-mono sticky top-0 z-[1000] bg-background border-b transition-transform duration-300 ${
-        hidden ? "-translate-y-full" : "translate-y-0"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 px-4 pt-5 pb-5">
-        <div className="flex-shrink-0 hidden md:flex">
-          <Link href="/" className="font-bold text-xl uppercase ">
-            {t("marekkrumal")}
-          </Link>
-        </div>
-
-        <nav className="space-x-10 uppercase font-semibold mx-auto hidden md:flex text-center">
-          <DropdownMenu open={dropdownOpen} onOpenChange={setDropdownOpen}>
-            <DropdownMenuTrigger asChild>
-              <button
-                className="font-semibold uppercase font-mono"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-              >
-                {t("projects")}
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              className="shadow-md z-[1000] bg-stone-50 dark:bg-[#262626] border p-3 text-center"
-              style={{ borderColor: "#404040" }}
+    <header className="font-mono sticky top-0 z-50 bg-background border-b">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5">
+        <Link href="/" className="font-bold text-xl uppercase hidden md:flex">
+          {t("marekkrumal")}
+        </Link>
+        <nav className="hidden md:flex space-x-8 font-semibold uppercase">
+          <div className="relative group">
+            <button
+              className="font-semibold uppercase focus:outline-none"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-              <DropdownMenuItem>
+              {t("projects")}
+            </button>
+            <div className="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-48 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 mt-2 p-2 rounded shadow-md z-50">
+              {[
+                { href: `/${locale}/projects`, label: t("allProjects") },
+                {
+                  href: `/${locale}/projects/awarespage`,
+                  label: t("awarespage"),
+                },
+                { href: `/${locale}/projects/artstore`, label: t("artstore") },
+                {
+                  href: `/${locale}/projects/neuralnetwork`,
+                  label: t("neuralnetwork"),
+                },
+                {
+                  href: `/${locale}/projects/nebulatrails`,
+                  label: t("nebulatrails"),
+                },
+                {
+                  href: `/${locale}/projects/mtrx-mern`,
+                  label: t("mtrx-mern"),
+                },
+                {
+                  href: `/${locale}/projects/store-mern`,
+                  label: t("store-mern"),
+                },
+                { href: `/${locale}/projects/sonicrun`, label: t("sonicrun") },
+              ].map(({ href, label }) => (
                 <Link
-                  href={`/${locale}/projects`}
-                  className="block w-full font-mono dark:hover:text-green-400 hover:text-green-600 hover:scale-105"
-                  onClick={closeDropdown}
+                  key={href}
+                  href={href}
+                  className="block px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded"
                 >
-                  {t("allProjects")}
+                  {label}
                 </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/awarespage`}
-                  className="block w-full z-[10] font-mono dark:hover:text-cyan-300 hover:text-cyan-600 hover:scale-105"
-                  onClick={closeDropdown}
-                >
-                  {t("awarespage")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/artstore`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("artstore")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/neuralnetwork`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("neuralnetwork")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/nebulatrails`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("nebulatrails")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/mtrx-mern`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("mtrx-mern")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/store-mern`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("store-mern")}
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href={`/${locale}/projects/sonicrun`}
-                  className="block w-full font-mono hover:scale-105 dark:hover:text-cyan-300 hover:text-cyan-600"
-                  onClick={closeDropdown}
-                >
-                  {t("sonicrun")}
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          <Link href={`/${locale}/about`} onClick={handleClose}>
-            {t("about")}
-          </Link>
-          <Link href={`/${locale}/posts`} onClick={handleClose}>
-            {t("posts")}
-          </Link>
-          <Link href={`/${locale}/contact`} onClick={handleClose}>
-            {t("contact")}
-          </Link>
+              ))}
+            </div>
+          </div>
+          <Link href={`/${locale}/about`}>{t("about")}</Link>
+          <Link href={`/${locale}/posts`}>{t("posts")}</Link>
+          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </nav>
-
         <div className="flex items-center space-x-3">
           <ThemeToggle />
           <LanguageButton />
         </div>
-
-        <div
-          className="block md:hidden p-1 z-[1000] relative"
-          onClick={handleClick}
+        <button
+          onClick={() => setMenuOpen((prev) => !prev)}
+          className="md:hidden flex items-center cursor-pointer z-50 p-2 relative"
         >
-          {click ? (
-            <X size={40} strokeWidth={1} className="text-3xl" />
+          {menuOpen ? (
+            <X className="w-6 h-6 text-neutral-800 dark:text-neutral-200" />
           ) : (
-            <Menu size={40} strokeWidth={1} className="text-3xl" />
+            <Menu className="w-6 h-6 text-neutral-800 dark:text-neutral-200" />
           )}
-        </div>
+        </button>
       </div>
-      <ul
-        className={`${
-          click ? "block" : "hidden"
-        } absolute top-0 left-0 md:hidden w-full h-screen bg-background flex flex-col text-xl justify-center font-bold uppercase items-center z-[99]`}
-      >
-        <li className="p-[2rem]">
-          <Link href="/" onClick={handleClose}>
-            {t("marekkrumal")}
-          </Link>
-        </li>
-        <hr className="border-t border w-3/4 mx-auto my-2" />
-        <li className="p-[2rem]">
-          <Link href={`/${locale}/projects`} onClick={handleClose}>
-            {t("projects")}
-          </Link>
-        </li>
-        <hr className="border-t border w-3/4 mx-auto my-2" />
-        <li className="p-[2rem]">
-          <Link href={`/${locale}/about`} onClick={handleClose}>
-            {t("about")}
-          </Link>
-        </li>
-        <hr className="border-t border w-3/4 mx-auto my-2" />
-        <li className="p-[2rem]">
-          <Link href={`/${locale}/posts`} onClick={handleClose}>
-            {t("posts")}
-          </Link>
-        </li>
-        <hr className="border-t border w-3/4 mx-auto my-2" />
-        <li className="p-[2rem]">
-          <Link href={`/${locale}/contact`} onClick={handleClose}>
-            {t("contact")}
-          </Link>
-        </li>
-      </ul>
+
+      {menuOpen && (
+        <div className="flex flex-col items-center bg-background w-full h-screen text-center fixed top-0 left-0 z-40">
+          <nav className="flex flex-col justify-center items-center space-y-8 mt-20">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="py-4 text-lg uppercase font-bold"
+            >
+              {t("home")}
+            </Link>
+            <hr className="border-t border w-60 mx-auto my-2" />
+            <Link
+              href={`/${locale}/projects`}
+              onClick={closeMenu}
+              className="py-4 text-lg uppercase w-60 font-bold"
+            >
+              {t("projects")}
+            </Link>
+            <hr className="border-t border mx-auto w-60 my-2" />
+            <Link
+              href={`/${locale}/about`}
+              onClick={closeMenu}
+              className="py-4 text-lg uppercase font-bold"
+            >
+              {t("about")}
+            </Link>
+            <hr className="border-t border w-60 mx-auto my-2" />
+            <Link
+              href={`/${locale}/posts`}
+              onClick={closeMenu}
+              className="py-4 text-lg uppercase font-bold"
+            >
+              {t("posts")}
+            </Link>
+            <hr className="border-t border w-60 mx-auto my-2" />
+            <Link
+              href={`/${locale}/contact`}
+              onClick={closeMenu}
+              className="py-4 text-lg uppercase font-bold"
+            >
+              {t("contact")}
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

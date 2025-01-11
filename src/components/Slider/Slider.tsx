@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import {
   RxDoubleArrowRight,
@@ -16,26 +15,26 @@ type SliderProps = {
   slides: SliderDataType[];
 };
 
-const Slider = ({ slides }: SliderProps) => {
+const Slider: React.FC<SliderProps> = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isContentVisible, setIsContentVisible] = useState(false);
+  const [isModalContentVisible, setIsModalContentVisible] = useState(false);
 
   const nextSlide = () => {
-    setCurrent(current === slides.length - 1 ? 0 : current + 1);
+    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
   const openModal = () => {
     setIsModalOpen(true);
-    setTimeout(() => setIsContentVisible(true), 100);
+    setTimeout(() => setIsModalContentVisible(true), 200);
   };
 
   const closeModal = () => {
-    setIsContentVisible(false);
+    setIsModalContentVisible(false);
     setTimeout(() => setIsModalOpen(false), 200);
   };
 
@@ -47,7 +46,7 @@ const Slider = ({ slides }: SliderProps) => {
 
   return (
     <div className="relative lg:max-w-[1200px] mx-auto">
-      {/* Slider */}
+      {/* Main Slider */}
       <div className="relative overflow-hidden">
         <Image
           src={slides[current].image}
@@ -56,6 +55,7 @@ const Slider = ({ slides }: SliderProps) => {
           height={600}
           className="w-full h-auto rounded-lg cursor-pointer"
           onClick={openModal}
+          loading="lazy"
         />
       </div>
 
@@ -73,12 +73,12 @@ const Slider = ({ slides }: SliderProps) => {
       {/* Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-sm"
+          className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-sm bg-black/50"
           onClick={handleBackgroundClick}
         >
           <div
-            className={`relative max-w-[90%] sm:max-w-[95%] lg:max-w-[1200px] transition-opacity duration-300 ${
-              isContentVisible ? "opacity-100" : "opacity-0"
+            className={`relative max-w-[1200px] transition-opacity duration-300 ${
+              isModalContentVisible ? "opacity-100" : "opacity-0"
             }`}
           >
             <Image
@@ -87,8 +87,9 @@ const Slider = ({ slides }: SliderProps) => {
               width={1200}
               height={800}
               className="w-full h-auto rounded-lg"
+              loading="lazy"
             />
-            {isContentVisible && (
+            {isModalContentVisible && (
               <>
                 <button
                   onClick={closeModal}
@@ -97,12 +98,18 @@ const Slider = ({ slides }: SliderProps) => {
                   <RxCross1 />
                 </button>
                 <RxDoubleArrowLeft
-                  onClick={prevSlide}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    prevSlide();
+                  }}
                   className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
                   size={40}
                 />
                 <RxDoubleArrowRight
-                  onClick={nextSlide}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    nextSlide();
+                  }}
                   className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
                   size={40}
                 />

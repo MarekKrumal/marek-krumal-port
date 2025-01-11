@@ -1,6 +1,6 @@
 import MarekKrumal from "@/components/MarekKrumal";
 import ProjectList from "@/components/Projects/ProjectList";
-import LatestPosts from "@/components/LatestPosts";
+import LatestPosts from "@/components/Posts/LatestPosts";
 import Contact from "@/components/Contact/Contact";
 
 export default function HomePage() {
@@ -10,10 +10,11 @@ export default function HomePage() {
         <MarekKrumal />
       </div>
       <div className="mx-auto max-w-3xl">
-        <ProjectList />
+        <ProjectList variant="full" showMore={true} grid={false} />
       </div>
-      <div className="pt-4">
+      <div className="pt-4 mx-auto max-w-3xl">
         <LatestPosts />
+
         <div className="pt-4">
           <Contact />
         </div>

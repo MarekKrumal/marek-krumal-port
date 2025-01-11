@@ -101,6 +101,7 @@
     }
   },
   "projects": {
+    "title": "Projects",
     "awarespage": {
       "title": "Aware Social Network",
       "description": "The full-stack AWARE application offers features such as infinite loading, authentication, DMs, user tagging, tracking trending hashtags, bookmarking, and more.",

@@ -101,6 +101,7 @@
   },
 
   "projects": {
+    "title": "Projekty",
     "awarespage": {
       "title": "Sociální síť Aware",
       "description": "Full-stack aplikace AWARE nabízí funkce jako nekonečné načítání, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání příspěvků do záložek a další.",

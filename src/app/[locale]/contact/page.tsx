@@ -1,5 +1,5 @@
 import Contact from "../../../components/Contact/Contact";
-import TicTacToeWrapper from "../../../components/Contact/TicTacToeWrapper";
+import TicTacToeWrapper from "@/components/Contact/TicTacToeWrapper";
 
 const Page = () => {
   return (

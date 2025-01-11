@@ -1,10 +1,35 @@
-import React from "react";
-import Slider from "@/components/Slider/Slider";
+import React, { Suspense } from "react";
 import { sliderData } from "@/components/Slider/sliderdata";
 import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
+import dynamic from "next/dynamic";
+import SliderSkeleton from "@/components/Slider/SliderSkeleton";
+import { notFound } from "next/navigation";
+import { AllProjects2 } from "@/app/data/projects";
 
-export default function ArtstorePage() {
+const Slider = dynamic(() => import("@/components/Slider/Slider"), {
+  loading: () => <SliderSkeleton />,
+});
+
+export async function generateStaticParams() {
+  return AllProjects2.map((proj) => ({
+    translationKey: proj.translationKey,
+  }));
+}
+
+export default function ArtStore({
+  params,
+}: {
+  params: { translationKey: string };
+}) {
+  const project = AllProjects2.find(
+    (p) => p.translationKey === params.translationKey
+  );
+
+  if (!project) {
+    notFound();
+  }
+
   return (
     <div>
       <div className="mx-auto max-w-3xl">
@@ -15,7 +40,9 @@ export default function ArtstorePage() {
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.artstore} />
+        <Suspense fallback={<SliderSkeleton />}>
+          <Slider slides={sliderData.artstore} />
+        </Suspense>
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">

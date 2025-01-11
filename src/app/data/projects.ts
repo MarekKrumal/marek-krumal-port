@@ -1,10 +1,4 @@
-"use client";
-import React, { useState } from "react";
-import ProjectCard from "./ProjectCart";
-import ShowMoreButton from "@/components/ShowMoreButton";
-import { ProjectData } from "@/types/Project";
-
-const allProjects: ProjectData[] = [
+export const AllProjects2 = [
   {
     id: 1,
     translationKey: "awarespage",
@@ -130,47 +124,3 @@ const allProjects: ProjectData[] = [
     alternativeUrl: "https://github.com/MarekKrumal/ToDo-TS",
   },
 ];
-
-interface ProjectListProps {
-  variant?: "full" | "compact";
-  showMore?: boolean;
-  grid?: boolean;
-}
-
-export default function ProjectList({
-  variant = "full",
-  showMore = false,
-  grid = false,
-}: ProjectListProps) {
-  const [visibleCount, setVisibleCount] = useState(3);
-
-  const displayedProjects = showMore
-    ? allProjects.slice(0, visibleCount)
-    : allProjects;
-
-  const containerClasses = grid
-    ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-    : "space-y-5";
-
-  return (
-    <div className="pt-5">
-      <div className={containerClasses}>
-        {displayedProjects.map((project) => (
-          <div key={project.id}>
-            <ProjectCard variant={variant} {...project} />
-          </div>
-        ))}
-      </div>
-
-      {showMore && visibleCount < allProjects.length && (
-        <div className="mt-4">
-          <ShowMoreButton
-            visibleCount={visibleCount}
-            totalCount={allProjects.length}
-            onClick={() => setVisibleCount((prev) => prev + 2)}
-          />
-        </div>
-      )}
-    </div>
-  );
-}

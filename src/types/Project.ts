@@ -16,13 +16,16 @@ export type TechnologyName =
   | "FireBase";
 
 export interface ProjectData {
-  id: number;
+  id: string | number;
   translationKey: string;
   title: string;
   githubUrl?: string;
   liveUrl?: string;
   image?: string;
+  imageblur?: string;
   technologies: TechnologyName[];
+  alternativeUrl?: string; // to stejne co dole
+  hasPage?: boolean; // je to kvuli tomu ze ne vsechyn stranky maji svoji page mensi stranky budou okdazovat na github
 }
 
 export interface PostData {

@@ -1,17 +1,42 @@
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiPrisma,
-  SiOpenai,
-  SiJavascript,
-  SiNodedotjs,
-  SiMongodb,
-  SiExpress,
-} from "react-icons/si";
-import { BiLogoWix } from "react-icons/bi";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { GrStripe } from "react-icons/gr";
+import { BiLogoWix } from "react-icons/bi";
+
+// Dynamické importy ikon z react-icons
+const SiNextdotjs = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiNextdotjs)
+);
+const SiTypescript = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiTypescript)
+);
+const SiTailwindcss = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiTailwindcss)
+);
+const SiPrisma = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiPrisma)
+);
+const SiOpenai = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiOpenai)
+);
+const SiJavascript = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiJavascript)
+);
+const SiNodedotjs = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiNodedotjs)
+);
+const SiMongodb = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiMongodb)
+);
+const SiExpress = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiExpress)
+);
+const SiReact = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiReact)
+);
+const SiFirebase = dynamic(() =>
+  import("react-icons/si").then((mod) => mod.SiFirebase)
+);
 
 export const technologyConfig = {
   "Next.js": {
@@ -36,7 +61,7 @@ export const technologyConfig = {
   },
   OpenAI: {
     label: "GPT-o1",
-    icon: <SiOpenai className=" text-black dark:text-white" />,
+    icon: <SiOpenai className="text-black dark:text-white" />,
   },
   Vite: {
     label: "Vite",
@@ -68,7 +93,7 @@ export const technologyConfig = {
     label: "Kaplay",
     icon: (
       <Image
-        src="/kaplay-728x261.png"
+        src="/kaplay-728x261.webp"
         alt="Kaplay Logo"
         width={66}
         height={18}
@@ -101,11 +126,11 @@ export const technologyConfig = {
   },
   React: {
     label: "React",
-    icon: <div className="text-blue-600" />,
+    icon: <SiReact className="text-blue-600" />,
   },
   FireBase: {
     label: "FireBase",
-    icon: <div className="text-yellow-500" />,
+    icon: <SiFirebase className="text-yellow-500" />,
   },
 };
 

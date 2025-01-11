@@ -4,9 +4,9 @@ export type SliderDataType = {
 
 export const sliderData = {
   awarespage: [
-    { image: "/assets/userprofile.webp" },
-    { image: "/assets/loginpage.webp" },
-    { image: "/assets/hashtags.webp" },
+    { image: "/assets/awares/userprofile.webp" },
+    { image: "/assets/awares/loginpage.webp" },
+    { image: "/assets/awares/hashtags.webp" },
   ],
   artstore: [
     { image: "/assets/artstore/mona.webp" },
@@ -24,14 +24,13 @@ export const sliderData = {
     { image: "/assets/nebulatrails/contact.webp" },
   ],
   mtrx: [
-    { image: "/assets/mtrx-mern/trinity.png" },
-    { image: "/assets/mtrx-mern/Screenshot_2.png" },
-    { image: "/assets/mtrx-mern/profile.png" },
+    { image: "/assets/mtrx-mern/trinity.webp" },
+    { image: "/assets/mtrx-mern/profile.webp" },
   ],
   store: [
-    { image: "/assets/store-mern/home.png" },
-    { image: "/assets/store-mern/add.png" },
-    { image: "/assets/store-mern/update.png" },
+    { image: "/assets/store-mern/home.webp" },
+    { image: "/assets/store-mern/add.webp" },
+    { image: "/assets/store-mern/update.webp" },
   ],
   sonicrun: [
     { image: "/assets/sonic-ring-run/sonic3x.webp" },

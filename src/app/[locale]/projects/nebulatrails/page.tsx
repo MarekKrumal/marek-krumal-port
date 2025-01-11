@@ -1,7 +1,13 @@
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
 import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
-import Slider from "@/components/Slider/Slider";
 import { sliderData } from "@/components/Slider/sliderdata";
+import SliderSkeleton from "@/components/Slider/SliderSkeleton";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const Slider = dynamic(() => import("@/components/Slider/Slider"), {
+  loading: () => <SliderSkeleton />,
+});
 
 export default function NebulaTrails() {
   return (
@@ -14,7 +20,9 @@ export default function NebulaTrails() {
         />
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
-        <Slider slides={sliderData.nebulatrails} />
+        <Suspense fallback={<SliderSkeleton />}>
+          <Slider slides={sliderData.nebulatrails} />
+        </Suspense>
       </div>
 
       <div className="mx-auto pt-8 max-w-3xl">
