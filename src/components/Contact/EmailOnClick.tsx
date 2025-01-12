@@ -1,29 +1,27 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
 const EmailOnClick = () => {
   const t = useTranslations("ContactPage");
   const [notification, setNotification] = useState("");
 
-  const copyEmailToClipboard = () => {
+  const handleCopy = useCallback(() => {
     navigator.clipboard.writeText("krumalmarek@gmail.com");
     setNotification("Email zkopírován / copied");
     setTimeout(() => setNotification(""), 2000);
-  };
+  }, []);
 
   return (
     <div className="relative">
       {t("description")}{" "}
       <span
-        className="font-mono text-green-600 hover:text-green-500 dark:text-green-200 dark:hover:text-green-300 transition-all duration-300"
+        className="font-mono text-green-600 hover:text-green-500 dark:text-green-200 dark:hover:text-green-300 transition-all duration-300 cursor-pointer"
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") copyEmailToClipboard();
-        }}
-        onClick={copyEmailToClipboard}
+        onClick={handleCopy}
+        onKeyDown={(e) => e.key === "Enter" && handleCopy()}
       >
         krumalmarek@gmail.com
       </span>
@@ -35,7 +33,7 @@ const EmailOnClick = () => {
       ></a>
       <span>{"."} </span>
       {notification && (
-        <div className="absolute top-full mt-2 left-0  px-4 py-2 rounded shadow-lg transition-opacity duration-300">
+        <div className="absolute top-full mt-2 left-0 px-4 py-2 rounded shadow-lg transition-opacity duration-300">
           {notification}
         </div>
       )}

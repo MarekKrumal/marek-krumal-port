@@ -1,8 +1,8 @@
 import sharp from "sharp";
 import fs from "fs";
 
-const inputPath = "./public/assets/lowtierprojects/todo.webp";
-const outputPath = "./public/assets/lowtierprojects/todosmall.webp";
+const inputPath = "./public/assets/blur.webp";
+const outputPath = "./public/assets/blur-placeholder.webp";
 
 sharp(inputPath)
   .resize(40)

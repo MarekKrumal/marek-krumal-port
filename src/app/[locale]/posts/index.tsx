@@ -1,10 +1,9 @@
-// pages/[locale]/blog/index.tsx
 import { allPosts } from "./PostsData";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function BlogIndexPage() {
-  const t = useTranslations("blog"); // Např. pro nadpisy, atd.
+  const t = useTranslations("blog");
   const locale = useLocale();
 
   return (

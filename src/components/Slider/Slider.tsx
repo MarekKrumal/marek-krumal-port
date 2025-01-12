@@ -51,11 +51,11 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
         <Image
           src={slides[current].image}
           alt={`Slide ${current + 1}`}
-          width={800}
-          height={600}
+          width={1024}
+          height={768}
           className="w-full h-auto rounded-lg cursor-pointer"
           onClick={openModal}
-          loading="lazy"
+          priority={true}
         />
       </div>
 
@@ -84,8 +84,9 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
             <Image
               src={slides[current].image}
               alt={`Slide ${current + 1}`}
-              width={1200}
-              height={800}
+              width={1440}
+              height={1080}
+              quality={100}
               className="w-full h-auto rounded-lg"
               loading="lazy"
             />

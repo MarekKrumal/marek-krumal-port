@@ -3,7 +3,6 @@ import Image from "next/image";
 import { GrStripe } from "react-icons/gr";
 import { BiLogoWix } from "react-icons/bi";
 
-// Dynamické importy ikon z react-icons
 const SiNextdotjs = dynamic(() =>
   import("react-icons/si").then((mod) => mod.SiNextdotjs)
 );
@@ -39,8 +38,8 @@ const SiFirebase = dynamic(() =>
 );
 
 export const technologyConfig = {
-  "Next.js": {
-    label: "Next.js",
+  Nextjs: {
+    label: "Nextjs",
     icon: <SiNextdotjs className="text-black dark:text-white" />,
   },
   TypeScript: {
@@ -70,8 +69,8 @@ export const technologyConfig = {
         src="/logo.svg"
         alt="ViteLogo"
         loading="lazy"
-        width={25}
-        height={25}
+        width={24}
+        height={24}
       />
     ),
   },
@@ -100,8 +99,8 @@ export const technologyConfig = {
       />
     ),
   },
-  "Node.js": {
-    label: "Node.js",
+  Nodejs: {
+    label: "Nodejs",
     icon: (
       <SiNodedotjs
         style={{
@@ -135,7 +134,7 @@ export const technologyConfig = {
 };
 
 export const technologyNames = [
-  "Next.js",
+  "Nextjs",
   "TypeScript",
   "Tailwind",
   "Prisma",

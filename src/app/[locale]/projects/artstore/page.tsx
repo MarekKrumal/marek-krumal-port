@@ -4,21 +4,23 @@ import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
 import dynamic from "next/dynamic";
 import SliderSkeleton from "@/components/Slider/SliderSkeleton";
-import { notFound } from "next/navigation";
-import { AllProjects2 } from "@/app/data/projects";
 
 const Slider = dynamic(() => import("@/components/Slider/Slider"), {
-  loading: () => <SliderSkeleton />,
+  loading: () => (
+    <div className="min-h-[400px] flex items-center justify-center">
+      <SliderSkeleton />
+    </div>
+  ),
 });
-
-export async function generateStaticParams() {
+{
+  /*export async function generateStaticParams() {
   return AllProjects2.map((proj) => ({
     translationKey: proj.translationKey,
   }));
+} */
 }
-
-export default function ArtStore({
-  params,
+{
+  /*  params,
 }: {
   params: { translationKey: string };
 }) {
@@ -28,8 +30,10 @@ export default function ArtStore({
 
   if (!project) {
     notFound();
-  }
+  */
+}
 
+export default function ArtStore() {
   return (
     <div>
       <div className="mx-auto max-w-3xl">

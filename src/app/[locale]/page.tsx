@@ -1,7 +1,7 @@
 import MarekKrumal from "@/components/MarekKrumal";
-import ProjectList from "@/components/Projects/ProjectList";
 import LatestPosts from "@/components/Posts/LatestPosts";
 import Contact from "@/components/Contact/Contact";
+import ProjectListServer from "@/components/Projects/ProjectListServer";
 
 export default function HomePage() {
   return (
@@ -10,12 +10,11 @@ export default function HomePage() {
         <MarekKrumal />
       </div>
       <div className="mx-auto max-w-3xl">
-        <ProjectList variant="full" showMore={true} grid={false} />
+        <ProjectListServer />
       </div>
-      <div className="pt-4 mx-auto max-w-3xl">
+      <div className="pt-1 mx-auto max-w-3xl">
         <LatestPosts />
-
-        <div className="pt-4">
+        <div className="pt-4 mt-4">
           <Contact />
         </div>
       </div>

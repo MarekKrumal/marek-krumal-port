@@ -6,7 +6,11 @@ import SliderSkeleton from "@/components/Slider/SliderSkeleton";
 import { Suspense } from "react";
 
 const Slider = dynamic(() => import("@/components/Slider/Slider"), {
-  loading: () => <SliderSkeleton />,
+  loading: () => (
+    <div className="min-h-[400px] flex items-center justify-center">
+      <SliderSkeleton />
+    </div>
+  ),
 });
 
 export default function MtrxMern() {

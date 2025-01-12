@@ -8,7 +8,7 @@ export const AllProjects2 = [
     image: "/assets/awares/awaresdemo2.webp",
     imageblur:
       "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAABwBgCdASooACAAPtFapU2oJSOiJW5hABoJaQALAEc2NZ4aQtVTxv9qWpkb2plSzjIIur3ecMruSShOFYAA/vobjI3fCSFmcXfOkyNKyvWPX7CXT/go/jXrrgRnU3gZkXNmQlCYb6XYCVunmtY8VQvDKm2tvratWHbAlD/7OyJ0peVMru+/HA81wJf/EoGuabfroV7dvqyvJhE1BDE5JbcpBXx7sjc9YivfygVv/IdAYY8phfbI4aTXLPrmYpIT1c2bVUUPPLZZs5uozt8m3aaB67bf5LvgSJq/tV0Lxh1yAlbN4ZiSXkTQq158H/uAAAA=",
-    technologies: ["Next.js", "TypeScript", "Prisma", "Tailwind"],
+    technologies: ["Nextjs", "TypeScript", "Prisma", "Tailwind"],
     hasPage: true,
   },
   {
@@ -20,7 +20,7 @@ export const AllProjects2 = [
     image: "/assets/artstore/artstoremainpage.webp",
     imageblur:
       "data:image/webp;base64,UklGRhQCAABXRUJQVlA4IAgCAAAwCgCdASooACsAPtFUpEuoJKOhrjv7MQAaCUAZvCH/K5ZLLhCD8iNWt3M8a20f2S8lvyrsH8wv092P6zvsBPfTa+uI+VvrVQB2fD00peJHl9aISsKWdgn2MAAA/vkJhqvhc36R/lyVgQ6xyKBelhl/SzjkGnCpcatHqmokp6V/2wUsRwMj71I0uwn6EnuRwMdLfH3eevr/y7+TWxk0yssbzWgtfpt2ye/8iJqoQNrrqnJxX7YYJUF8jv03NspLxPEmBMhs3huALvxTVcPyVmS1rlp0LyqnBTjv55EO7tagpOb5nVG2xV9Od5JycZ0rysPj4p4lYULhN7cChOHDcKhN9j5yeTpJ81VLKyKY3tgRBhTQ8dTuv9N1/l+LQyvjdJk7KLnuoa4R3KK9FaVB7/ZvWnc4MRG0zNwAMdsKPL43/Su6tHp6P0fnfXfWd9PX3wfohqEvkK4tAhCnH6YToXIJTw4flSeVnFDEpBGR079WVYpYfpn1MFqCch6o+wkwNv7s4upOYu0oiMYBB6VtSryDIz68Xc0c8ldVR4knxSXhd6Sonimdn9wPzvRlWdgWSk4gRepaPNqeDSDtGQKBJ8noEwWdi2jdLJzp6/6ltwTs2aay9resKhvPV469yRa+n38TqECRl42l5wM75by4UWtSLhSAA5VgbsKb/jJrRDkC4KMEBGveAAAA",
-    technologies: ["Next.js", "TypeScript", "WIX", "Tailwind"],
+    technologies: ["Nextjs", "TypeScript", "WIX", "Tailwind"],
     hasPage: true,
   },
   {
@@ -44,7 +44,7 @@ export const AllProjects2 = [
     image: "/assets/nebulatrails/nebulahome.webp",
     imageblur:
       "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASooABUAPtFYp06oJKMiKrgKAQAaCUAYmwFk1cfR6BCtL1Sppi3P5OMo/ll/kNGQAP7lrMWMR9XtpnBCJ4MwVl22WGAoypnDzRwvLx7czKgoWCro2aXQ1Z+m1Cv84vHveSCxfyRjbdp4sWNfehgP/Jb15Iunx4r5DnVj3lv3AKtbQnduaRLDoUKAAgawaAaBAB3LbH6SbB09iCOiOZmyx4vWZHBl1rnA5BQCBsaIjQQYkW0tgt6IZ4AA",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
+    technologies: ["Nextjs", "TypeScript", "Stripe", "Tailwind"],
     hasPage: true,
   },
   {
@@ -56,23 +56,11 @@ export const AllProjects2 = [
     image: "/assets/sonic-ring-run/sonicmain.webp",
     imageblur:
       "data:image/webp;base64,UklGRjICAABXRUJQVlA4ICYCAACQCwCdASooADYAPtFWpU2oJCMiKrQN+QAaCWIAv+QNfAizc/UeH8vmIqmkeQ9M5RlNT/UX9btGtodlFPNkDChchWHeYsjXv1orfKSNT6bKLF3KNViR65XzV4vTdKsGOK96lHiMeAD+765/kwDbPxQVkl/Uxn3Vu/J4cK6/69VcvBbBbiEUPvhcY6d8hkbgvpmcM7zz6M3mHw5HI0n+KslGIerleIqR9l7u+JaZbDUPainIJpEIzi1fGYIGhL76MBU9dB0RzMatz0cf2dYGxGSZXnIwfJ4UXxy/1/4lB2lZGPDDtFqSGMf4Z8LxEdBnHui+S0cmbdwl3RbnAi0/XrmKD/ATG7FNRf80ljJyOrj6vI5H0BTUQSPMWwz9q568Q2LhY+E8Su77G2Lb5JjbSplsk2QslIYC9uEwviMaLOuJGp3tshrvUzG/c+d/GOY566quP53eNdjCB7wQzuEVsyGn/38lkFSIlRx93Kwxu+zdxGpdL1eEZrVKW38Ciylov4ELcCtSqB9ONdSe9plNvz+UtOjX7lrLtYVutc7+fieqkkw6cwCDZA+VrD0nXi0SZpxEcKwt71OWQR2ggWocigHJ+n7PY3DYFcaHtoA8YvImcE//dTRM72yiTCN0MKhQUq4x9/0u05HeuPngdWJIsuPWYBVETgF7xQ9GeatNhPeX5UaknILrBRw/i6IyGtmcv9vrw087mNA8eNmH1I3hzbififITu/gA",
-    technologies: ["Vite", "JavaScript", "Kaplay", "Node.js"],
+    technologies: ["Vite", "JavaScript", "Kaplay", "Nodejs"],
     hasPage: true,
   },
   {
     id: 6,
-    translationKey: "mtrx-mern",
-    title: "mtrx-mern",
-    githubUrl: "https://github.com/MarekKrumal/MTRX",
-    liveUrl: "https://mtrx.onrender.com/",
-    image: "/assets/mtrx-mern/Screenshot_1.webp",
-    imageblur:
-      "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAACwBwCdASooADEAPs1cpkunpaOhsBVaqPAZiWcA02MwKHcaOILHwKmq8iY5lm/0KzJSyqo5BfjWIsa401Unp5AcLF6XSeIAAP73gKcszE5o+WHBMhB1nwbD3CO6NJikmcl39c3z1YmeSXtz6E+603200Tp5LCf4Gtbe6lSgHkSlduGOwy7MWXlMDJ33LnYTZzu6OW/S+/KIfJhqztJWlV9HqyFEIU6XOdaOv3UNVlG3Rzuyb5fEEMCEf6moJJenDg4ol3Y5th7Y0xHQH9porH8iwKilwz7wFPtoK4+n9Vzocjzitpu+gGVMKhvE2QAA",
-    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
-    hasPage: true,
-  },
-  {
-    id: 7,
     translationKey: "store-mern",
     title: "store-mern",
     githubUrl: "https://github.com/MarekKrumal/MERN-store1",
@@ -80,6 +68,18 @@ export const AllProjects2 = [
     image: "/assets/store-mern/mern-main.webp",
     imageblur:
       "data:image/webp;base64,UklGRqgBAABXRUJQVlA4IJwBAADwCACdASooACUAPtFUpUyoJCOiLjgLMQAaCUAXLb9UvJGSNokKkq33bM0M0fcwdpLfYO2XkZi6rR/s/+AJjDsZ/tNUBzPBO49QUuJcgNVtiAD+8NMtAR1n043H67vdDPD3SB4mUadVTuUpAmREIPKhCPkLGTz8bVu2dTfg9GtvT+b7zk62UPFmH02jf9eInqXx8ymadA/LopKm5R6brA+1805pemGGJq+zLEtxhG6WI7e+U1lfTFJGpPRQAFrVwukBvKW4Vbm+CzkXyH3HzWjVZpIsfm2kLBBD7DVA0m29szxg6WQ8Qc345oR/+UWmBLUJcmEfalAx50PUHU6jVd/qD9fNHSE3ey6zPd4ye+oJCsdYJ+bnXBiTPqN2wb0wwTIaOHq3SB/DGsmfu6iP3pTPC4+iIrbc1NItOcQt7d8sPvHvar79AkEucptxkt6zbqpkLf5msXUh5fT7EJEVCzeQRrJAD18/6U5dNLoN8SAwya3BR2HDtyFP7iWd6eAjtbFqaAxPGaBg6Pctx1+OfuImHUBPAIKw2UK8qEAA",
+    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
+    hasPage: true,
+  },
+  {
+    id: 7,
+    translationKey: "mtrx-mern",
+    title: "mtrx-mern",
+    githubUrl: "https://github.com/MarekKrumal/MTRX",
+    liveUrl: "https://mtrx.onrender.com/",
+    image: "/assets/mtrx-mern/Screenshot_1.webp",
+    imageblur:
+      "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAACwBwCdASooADEAPs1cpkunpaOhsBVaqPAZiWcA02MwKHcaOILHwKmq8iY5lm/0KzJSyqo5BfjWIsa401Unp5AcLF6XSeIAAP73gKcszE5o+WHBMhB1nwbD3CO6NJikmcl39c3z1YmeSXtz6E+603200Tp5LCf4Gtbe6lSgHkSlduGOwy7MWXlMDJ33LnYTZzu6OW/S+/KIfJhqztJWlV9HqyFEIU6XOdaOv3UNVlG3Rzuyb5fEEMCEf6moJJenDg4ol3Y5th7Y0xHQH9porH8iwKilwz7wFPtoK4+n9Vzocjzitpu+gGVMKhvE2QAA",
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
     hasPage: true,
   },

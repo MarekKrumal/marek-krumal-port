@@ -1,5 +1,5 @@
 export type TechnologyName =
-  | "Next.js"
+  | "Nextjs"
   | "TypeScript"
   | "Tailwind"
   | "Prisma"
@@ -9,7 +9,7 @@ export type TechnologyName =
   | "Stripe"
   | "JavaScript"
   | "Kaplay"
-  | "Node.js"
+  | "Nodejs"
   | "MongoDB"
   | "Express"
   | "React"
@@ -23,7 +23,7 @@ export interface ProjectData {
   liveUrl?: string;
   image?: string;
   imageblur?: string;
-  technologies: TechnologyName[];
+  technologies: TechnologyName[] | string[];
   alternativeUrl?: string; // to stejne co dole
   hasPage?: boolean; // je to kvuli tomu ze ne vsechyn stranky maji svoji page mensi stranky budou okdazovat na github
 }

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { allPosts } from "./PostsData";
+import { allPosts } from "../PostsData";
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
