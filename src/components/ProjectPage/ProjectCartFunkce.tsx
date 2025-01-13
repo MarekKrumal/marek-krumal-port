@@ -41,7 +41,7 @@ export default function ProjectCartFunkce({
 
   return (
     <div className="z-10 mx-auto mt-0 p-4 sm:p-6 md:p-8 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-4xl hover:shadow-sky-500/20 hover:shadow-2xl transition-shadow duration-300">
-      <div className="space-y-6">
+      <div className="space-y-3">
         {/* Proč byla aplikace vytvořena */}
         <h2 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl font-mono">
           {t("whyWasItCreatedTitle")}

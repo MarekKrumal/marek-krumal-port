@@ -7,12 +7,14 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogPostDetail({
+export default async function BlogPostDetail({
   params,
 }: {
   params: { slug: string };
 }) {
-  const post = allPosts.find((p) => p.slug === params.slug);
+  const { slug } = await Promise.resolve(params);
+
+  const post = allPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();

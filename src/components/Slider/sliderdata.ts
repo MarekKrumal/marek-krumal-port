@@ -23,11 +23,11 @@ export const sliderData = {
     { image: "/assets/nebulatrails/stripe.webp" },
     { image: "/assets/nebulatrails/contact.webp" },
   ],
-  mtrx: [
+  "mtrx-mern": [
     { image: "/assets/mtrx-mern/trinity.webp" },
     { image: "/assets/mtrx-mern/profile.webp" },
   ],
-  store: [
+  "store-mern": [
     { image: "/assets/store-mern/home.webp" },
     { image: "/assets/store-mern/add.webp" },
     { image: "/assets/store-mern/update.webp" },

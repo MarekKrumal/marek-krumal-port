@@ -1,4 +1,17 @@
-export const AllProjects2 = [
+export interface ProjectData {
+  id: number;
+  translationKey: string;
+  title: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  image: string;
+  imageblur: string;
+  technologies: string[];
+  hasPage?: boolean;
+  alternativeUrl?: string;
+}
+
+export const AllProjects2: ProjectData[] = [
   {
     id: 1,
     translationKey: "awarespage",

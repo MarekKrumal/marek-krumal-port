@@ -364,15 +364,111 @@
     },
     "weather-app": {
       "title": "Aplikace pro zobrazení počasí",
-      "description": "Webová aplikace, která umožňuje zobrazení počasí v zadatelných městech. Aplikace je jednoduchá využívá weather API"
+      "description": "Webová aplikace, která umožňuje zobrazení počasí v zadatelných městech. Aplikace je jednoduchá využívá weather API",
+      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedDesc": "Tahle aplikace byla moje úplně první v Reactu. Jako pozadí jsem si dal obrázek Olomouce a vytvořil jednoduché vyhledávání pro zadávání měst. Později jsem aplikaci vylepšil, aby místo jednoho dne ukazovala předpověď na 5 dní.",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "React, Tailwind",
+        "func2": "Weather API",
+        "func3": "Deployment na vercel.com",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
     },
     "netflix-clone": {
       "title": "Netflix clone",
-      "description": "Netflix clone v Reactu jeden z mých prvních projektů, backend ve firebase. Poznámka: je možné že autentifikace už nefunguje firebase po delší neaktivitě databáze deaktivuje."
+      "description": "Netflix clone v Reactu jeden z mých prvních projektů, backend ve firebase. Poznámka: je možné že autentifikace už nefunguje firebase po delší neaktivitě databáze deaktivuje.",
+      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedDesc": "Tahle aplikace byla jedna z mých prvních v Reactu. Použil jsem Movie API, Firebase a Firestore, což je cloudové úložiště pro Firebase, na ukládání dat uživatelů. Pro API volání jsem využil Axios. Při práci na téhle aplikaci jsem se hodně naučil o React hooks.",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "React, Tailwind, Firebase",
+        "func2": "API calls přes Axios",
+        "func3": "Deployment na netlify.com",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
     },
     "to-do": {
       "title": "To-do",
-      "description": "To-do aplikace v Typescriptu celkem dost funkcí mazaní, vytváření, editování To-Dos."
+      "description": "To-do aplikace v Typescriptu celkem dost funkcí mazaní, vytváření, editování To-Dos.",
+      "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
+      "whyWasItCreatedDesc": "Ne klasická To-Do appka",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "Typescript, Vite, Tailwind",
+        "func2": "Deployment na vercel.com",
+        "func3": "",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
     }
   },
   "posts": {

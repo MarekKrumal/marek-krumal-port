@@ -26,7 +26,7 @@ export const allPosts: BlogPost[] = [
       `,
   },
   {
-    slug: "nextjs-overview",
+    slug: "nextjs-overview2",
     title: "Next.js Overview",
     date: "2025-01-01",
     content: `
@@ -44,7 +44,7 @@ export const allPosts: BlogPost[] = [
       `,
   },
   {
-    slug: "nextjs-overview",
+    slug: "nextjs-overview3",
     title: "Next.js Overview",
     date: "2025-01-01",
     content: `
@@ -62,7 +62,7 @@ export const allPosts: BlogPost[] = [
       `,
   },
   {
-    slug: "nextjs-overview",
+    slug: "nextjs-overview4",
     title: "Next.js Overview",
     date: "2025-01-01",
     content: `
@@ -80,7 +80,7 @@ export const allPosts: BlogPost[] = [
       `,
   },
   {
-    slug: "nextjs-overview",
+    slug: "nextjs-overview5",
     title: "Next.js Overview",
     date: "2025-01-01",
     content: `
@@ -98,7 +98,7 @@ export const allPosts: BlogPost[] = [
       `,
   },
   {
-    slug: "nextjs-overview",
+    slug: "nextjs-overview6",
     title: "Next.js Overview",
     date: "2025-01-01",
     content: `

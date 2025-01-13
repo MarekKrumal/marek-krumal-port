@@ -1,11 +1,12 @@
+// Slider.tsx
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   RxDoubleArrowRight,
   RxDoubleArrowLeft,
   RxCross1,
 } from "react-icons/rx";
-import Image from "next/image";
 
 type SliderDataType = {
   image: string;
@@ -19,6 +20,11 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalContentVisible, setIsModalContentVisible] = useState(false);
+
+  // Pokud je slides prázdné, zobraz fallback text (nebo nic).
+  if (!slides || slides.length === 0) {
+    return null;
+  }
 
   const nextSlide = () => {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -46,7 +52,6 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 
   return (
     <div className="relative lg:max-w-[1200px] mx-auto">
-      {/* Main Slider */}
       <div className="relative overflow-hidden">
         <Image
           src={slides[current].image}
@@ -55,18 +60,21 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
           height={768}
           className="w-full h-auto rounded-lg cursor-pointer"
           onClick={openModal}
-          priority={true}
+          priority
         />
       </div>
 
       <RxDoubleArrowLeft
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-300"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer
+                   select-none z-10 hover:scale-110 transition-transform duration-300"
         size={30}
       />
+
       <RxDoubleArrowRight
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-300"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer
+                   select-none z-10 hover:scale-110 transition-transform duration-300"
         size={30}
       />
 
@@ -94,7 +102,9 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
               <>
                 <button
                   onClick={closeModal}
-                  className="absolute top-4 right-4 text-white text-2xl px-2 py-1 border border-white/50 rounded-md hover:scale-110 hover:bg-white/10 hover:text-red-400 transition-transform duration-200"
+                  className="absolute top-4 right-4 text-white text-2xl px-2 py-1
+                             border border-white/50 rounded-md hover:scale-110
+                             hover:bg-white/10 hover:text-red-400 transition-transform duration-200"
                 >
                   <RxCross1 />
                 </button>
@@ -103,7 +113,8 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                     e.stopPropagation();
                     prevSlide();
                   }}
-                  className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
+                  className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white cursor-pointer
+                             select-none z-10 hover:scale-110 transition-transform duration-200"
                   size={40}
                 />
                 <RxDoubleArrowRight
@@ -111,7 +122,8 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                     e.stopPropagation();
                     nextSlide();
                   }}
-                  className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer select-none z-10 hover:scale-110 transition-transform duration-200"
+                  className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white cursor-pointer
+                             select-none z-10 hover:scale-110 transition-transform duration-200"
                   size={40}
                 />
               </>
