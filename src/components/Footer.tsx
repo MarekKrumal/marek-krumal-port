@@ -22,7 +22,10 @@ export default function Footer() {
           <div className="flex items-center">
             <a
               href="https://github.com/marekkrumal"
-              className="inline dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-500 hover:text-indigo-700 hover:underline font-mono font-semibold transition-colors duration-300"
+              className="inline dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-800 hover:text-indigo-900 hover:underline font-mono font-semibold transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github"
             >
               {t("github")}
             </a>

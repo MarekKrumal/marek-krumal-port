@@ -20,7 +20,8 @@ export default function ProjectsIndexPage() {
           <Link
             key={`${project.id}-${project.translationKey}`}
             href={`/${locale}/projects/${project.translationKey}`}
-            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-stone-200 flex flex-col border hover:scale-105 transition-transform duration-300 bg-stone-50 dark:bg-[#222222] p-4 hover:shadow-2xl dark:hover:shadow-white/5"
+            aria-label="visit project"
+            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-stone-200 flex flex-col border hover:scale-105 transition-transform duration-300 bg-stone-100 dark:bg-[#222222] p-4 hover:shadow-2xl dark:hover:shadow-white/5"
           >
             <div className="flex items-center justify-between mb-4">
               <SlFolder

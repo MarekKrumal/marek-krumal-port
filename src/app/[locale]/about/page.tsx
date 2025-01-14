@@ -4,7 +4,7 @@ const Page = () => {
   const t = useTranslations("AboutPage");
 
   return (
-    <div className="relative z-10 mx-auto pt-5 md:pt-6 border dark:bg-black/10 bg-stone-50 max-w-3xl">
+    <div className="relative z-10 mx-auto pt-5 md:pt-6 border dark:bg-black/10 bg-stone-100 max-w-3xl">
       <div className="space-y-4 px-7">
         <h1 className="text-md sm:text-xl md:text-2xl font-mono uppercase mb-5 font-bold">
           {t("title")}

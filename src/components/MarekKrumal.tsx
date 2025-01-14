@@ -9,7 +9,7 @@ const MarekKrumal = () => {
   const locale = useLocale();
 
   return (
-    <div className="relative z-10 mx-auto p-6 sm:p-8 md:p-10 border dark:bg-black/10 bg-stone-50">
+    <div className="relative z-10 mx-auto p-6 sm:p-8 md:p-10 border dark:bg-black/10 bg-stone-100">
       <div className="space-y-4">
         {/* Header */}
         <h1 className="font-bold uppercase text-2xl md:text-3xl lg:text-4xl font-mono">
@@ -26,7 +26,8 @@ const MarekKrumal = () => {
         <p className="text-gray-700 dark:text-gray-300">{t("description")}</p>
         <Link
           href={`/${locale}/projects`}
-          className="inline font-mono lowercase dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-500 hover:text-indigo-700 hover:underline"
+          className="inline font-mono lowercase dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-700 hover:text-indigo-800 hover:underline"
+          aria-label="visit projects"
         >
           {t("descriptionlink")}
         </Link>
@@ -35,7 +36,8 @@ const MarekKrumal = () => {
         </p>
         <Link
           href={`/${locale}/posts`}
-          className="font-mono lowercase dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-500 hover:text-indigo-700 hover:underline"
+          className="font-mono lowercase dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-700 hover:text-indigo-800 hover:underline"
+          aria-label="visit posts"
         >
           {t("descriptionlink2")}
         </Link>
@@ -53,15 +55,15 @@ const MarekKrumal = () => {
               <BiCaretRight />
               <span className="text-black/80 dark:text-white/80">Next.js</span>
             </li>
-            <li className="flex items-center gap-2 text-blue-400 text-md md:text-lg">
+            <li className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-md md:text-lg">
               <BiCaretRight />
               React.js
             </li>
-            <li className="flex items-center gap-2 text-blue-500 text-md md:text-lg">
+            <li className="flex items-center gap-2 text-blue-700 dark:text-blue-500 text-md md:text-lg">
               <BiCaretRight />
               TypeScript
             </li>
-            <li className="flex items-center gap-2 text-yellow-500 text-md md:text-lg">
+            <li className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 text-md md:text-lg">
               <BiCaretRight />
               JavaScript
             </li>
@@ -71,11 +73,11 @@ const MarekKrumal = () => {
               <BiCaretRight />
               Vite
             </li>
-            <li className="flex items-center gap-2 text-sky-500 text-md md:text-lg">
+            <li className="flex items-center gap-2 text-sky-600 dark:text-sky-400 text-md md:text-lg">
               <BiCaretRight />
               TailwindCSS
             </li>
-            <li className="flex items-center gap-2 text-green-600 text-md md:text-lg">
+            <li className="flex items-center gap-2 text-green-700 dark:text-green-400 text-md md:text-lg">
               <BiCaretRight />
               Node.js
             </li>
@@ -100,12 +102,14 @@ const MarekKrumal = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-125 transition-transform"
+          aria-label="github"
         >
           <SiGithub size={22} />
         </a>
         <a
           href="mailto:krumalmarek@gmail.com"
           className="hover:scale-125  transition-transform"
+          aria-label="email"
         >
           <MdOutlineEmail size={24} />
         </a>

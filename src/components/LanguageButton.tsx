@@ -11,6 +11,7 @@ export default function LanguageButton() {
   };
   return (
     <button
+      aria-label="Change language"
       onClick={toggleLanguage}
       className="px-3 py-1 border dark:bg-transparent bg-transparent hover:bg-gray-100 dark:hover:bg-black/10"
     >

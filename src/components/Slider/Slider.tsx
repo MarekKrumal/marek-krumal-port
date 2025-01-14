@@ -101,6 +101,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
             {isModalContentVisible && (
               <>
                 <button
+                  aria-label="Close modal"
                   onClick={closeModal}
                   className="absolute top-4 right-4 text-white text-2xl px-2 py-1
                              border border-white/50

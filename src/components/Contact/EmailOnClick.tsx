@@ -17,8 +17,9 @@ const EmailOnClick = () => {
   return (
     <span className="relative">
       <span
-        className="font-mono text-green-600 hover:text-green-500 dark:text-green-200 dark:hover:text-green-300 cursor-pointer"
+        className="font-mono text-green-700 hover:text-green-500 dark:text-green-200 dark:hover:text-green-300 cursor-pointer"
         role="button"
+        aria-label="Copy Email"
         tabIndex={0}
         onClick={handleCopy}
         onKeyDown={(e) => e.key === "Enter" && handleCopy()}

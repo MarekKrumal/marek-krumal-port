@@ -6,7 +6,7 @@ const Page = () => {
   const t = useTranslations("ContactPage");
 
   return (
-    <div className="relative z-10 mx-auto pt-5 md:pt-6 border dark:bg-black/10 bg-stone-50 max-w-3xl">
+    <div className="relative z-10 mx-auto pt-5 md:pt-6 border dark:bg-black/10 bg-stone-100 max-w-3xl">
       <div className="space-y-4 px-7">
         <h1 className="text-md sm:text-xl md:text-2xl font-mono uppercase mb-5 font-bold">
           {t("title")}
@@ -27,6 +27,7 @@ const Page = () => {
           <a
             href="mailto:krumalmarek@gmail.com"
             className="flex items-center justify-center p-2 hover:scale-110 transition-transform duration-300"
+            aria-label="email"
           >
             <BiMailSend size={45} />
           </a>
@@ -44,6 +45,7 @@ const Page = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center p-2 hover:scale-110 transition-transform duration-300"
+            aria-label="github"
           >
             <BiLogoGithub size={45} />
           </a>
@@ -59,6 +61,7 @@ const Page = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center p-2 hover:scale-110 transition-transform duration-300"
+            aria-label="linkedin"
           >
             <BiLogoLinkedinSquare size={45} />
           </a>

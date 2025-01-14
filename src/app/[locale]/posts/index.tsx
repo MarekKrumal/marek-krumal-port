@@ -12,7 +12,10 @@ export default function BlogIndexPage() {
       <ul>
         {allPosts.map((post) => (
           <li key={post.slug} className="mb-2">
-            <Link href={`/${locale}/posts/${post.slug}`}>
+            <Link
+              href={`/${locale}/posts/${post.slug}`}
+              aria-label="visit post"
+            >
               <span className="text-blue-600 hover:underline">
                 {post.title}
               </span>

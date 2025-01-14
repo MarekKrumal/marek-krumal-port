@@ -34,6 +34,7 @@ export default function ProjectCard({
           href={projectLink}
           target={!hasPage ? "_blank" : undefined}
           rel={!hasPage ? "noopener noreferrer" : undefined}
+          aria-label={projectTitle}
         >
           {children}
         </a>
@@ -56,6 +57,7 @@ export default function ProjectCard({
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, 50vw"
                   quality={75}
+                  priority
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL={imageblur || image}
@@ -68,7 +70,7 @@ export default function ProjectCard({
         )}
 
         {/* Title, Description & Tech */}
-        <div className="absolute inset-x-0 bottom-0 border-t bg-stone-50 dark:bg-[#222222] pt-4 mx-auto md:p-8 pb-0 md:pb-1 md:pt-4 p-4">
+        <div className="absolute inset-x-0 bottom-0 border-t bg-stone-100 dark:bg-[#222222] pt-4 mx-auto md:p-8 pb-0 md:pb-1 md:pt-4 p-4">
           {renderLink(
             <>
               <h2 className="sm:text-xl md:text-2xl font-mono font-bold uppercase ">
@@ -106,6 +108,7 @@ export default function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 hover:scale-105 transition-transform"
+                aria-label="visit github repo"
               >
                 <SiGithub size={20} />
               </a>
@@ -116,6 +119,7 @@ export default function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1 hover:scale-105 transition-transform"
+                aria-label="visit live site"
               >
                 <SiPolygon size={20} />
               </a>

@@ -16,7 +16,11 @@ export default function Navbar() {
   return (
     <header className="font-mono sticky top-0 z-50 bg-background border-b">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5">
-        <Link href="/" className="font-bold text-xl uppercase hidden md:flex">
+        <Link
+          href="/"
+          className="font-bold text-xl uppercase hidden md:flex"
+          aria-label="marekkrumal homepage"
+        >
           {t("marekkrumal")}
         </Link>
         <nav className="hidden md:flex space-x-8 font-semibold uppercase">
@@ -25,6 +29,7 @@ export default function Navbar() {
               className="font-semibold uppercase focus:outline-none"
               aria-haspopup="true"
               aria-expanded="false"
+              aria-label="Projects"
             >
               {t("projects")}
             </button>
@@ -58,21 +63,29 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className="block px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                  aria-label="visit project"
                 >
                   {label}
                 </Link>
               ))}
             </div>
           </div>
-          <Link href={`/${locale}/about`}>{t("about")}</Link>
-          <Link href={`/${locale}/posts`}>{t("posts")}</Link>
-          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+          <Link href={`/${locale}/about`} aria-label="about">
+            {t("about")}
+          </Link>
+          <Link href={`/${locale}/posts`} aria-label="posts">
+            {t("posts")}
+          </Link>
+          <Link href={`/${locale}/contact`} aria-label="contact">
+            {t("contact")}
+          </Link>
         </nav>
         <div className="flex items-center space-x-3">
           <ThemeToggle />
           <LanguageButton />
         </div>
         <button
+          aria-label="Menu"
           onClick={() => setMenuOpen((prev) => !prev)}
           className="md:hidden flex items-center cursor-pointer z-50 p-2 relative"
         >
@@ -91,6 +104,7 @@ export default function Navbar() {
               href="/"
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
+              aria-label="marekkrumal homepage"
             >
               {t("home")}
             </Link>
@@ -99,6 +113,7 @@ export default function Navbar() {
               href={`/${locale}/projects`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase w-60 font-bold"
+              aria-label="Projects"
             >
               {t("projects")}
             </Link>
@@ -107,6 +122,7 @@ export default function Navbar() {
               href={`/${locale}/about`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
+              aria-label="about"
             >
               {t("about")}
             </Link>
@@ -115,6 +131,7 @@ export default function Navbar() {
               href={`/${locale}/posts`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
+              aria-label="posts"
             >
               {t("posts")}
             </Link>
@@ -123,6 +140,7 @@ export default function Navbar() {
               href={`/${locale}/contact`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
+              aria-label="contact"
             >
               {t("contact")}
             </Link>
