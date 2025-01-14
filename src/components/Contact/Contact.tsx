@@ -7,13 +7,15 @@ const Page = () => {
 
   return (
     <div className="relative z-10 mx-auto pt-5 md:pt-6 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-3xl hover:shadow-sky-500/20 hover:shadow-2xl transition-shadow duration-300">
-      <div className="space-y-2">
-        <h1 className="text-md pl-7 sm:text-xl md:text-2xl font-mono text-blue-700 dark:text-cyan-100 uppercase mb-5 font-bold">
+      <div className="space-y-4 px-7">
+        <h1 className="text-md sm:text-xl md:text-2xl font-mono text-blue-700 dark:text-cyan-100 uppercase mb-5 font-bold">
           {t("title")}
         </h1>
-        <h2 className="pl-7 pr-2">
+        <p className="text-base text-gray-800 dark:text-gray-200 md:pr-40">
+          {t("description")}
           <EmailOnClick />
-        </h2>
+          {t("description2")}
+        </p>
       </div>
 
       <div className="flex justify-around space-x-2 mt-8">
@@ -24,7 +26,7 @@ const Page = () => {
           >
             <BiMailSend size={45} />
           </a>
-          <span className="font-mono text-xs text-gray-600 dark:text-gray-300">
+          <span className="text-xs text-gray-600 dark:text-gray-300">
             E-mail
           </span>
           <p className="text-xs font-mono font-extralight break-words max-w-[164px] text-center">
@@ -56,7 +58,7 @@ const Page = () => {
           >
             <BiLogoLinkedinSquare size={45} />
           </a>
-          <span className="font-mono text-xs text-gray-600 dark:text-gray-300">
+          <span className="text-xs text-gray-600 dark:text-gray-300">
             LinkedIn
           </span>
           <p className="text-xs font-mono font-extralight pb-8">Marek Krumal</p>

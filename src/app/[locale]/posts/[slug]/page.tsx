@@ -28,11 +28,6 @@ export default async function BlogPostDetail({
         className="prose dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
-      {post.codeExample && (
-        <pre className="mt-4 p-2 border overflow-auto">
-          <code>{post.codeExample}</code>
-        </pre>
-      )}
     </div>
   );
 }

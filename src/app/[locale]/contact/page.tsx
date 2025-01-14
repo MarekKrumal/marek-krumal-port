@@ -4,7 +4,6 @@ const Page = () => {
   return (
     <div>
       <Contact />
-      <div className="pt-14 pb-20"></div>
     </div>
   );
 };

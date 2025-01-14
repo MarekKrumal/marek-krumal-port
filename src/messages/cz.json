@@ -48,9 +48,8 @@
   },
   "ContactPage": {
     "title": "Kontakt",
-    "description": "Ozvěte se mi na",
-    "description2": "nebo přes",
-    "description3": "Většinou odpovídám do jednoho dne."
+    "description": "Můžete mě kontaktovat na emailové adrese ",
+    "description2": ". Většinou odpovídám do jednoho dne."
   },
   "ThemeToggle": {
     "light": "Světelný režim",
@@ -60,18 +59,14 @@
     "olomouc": "Olomouc",
     "projekt": "Projekty"
   },
-  "TicTacToe": {
-    "playagain": "hrát znovu",
-    "draw": "remíza!",
-    "winner": "vítěz"
-  },
+
   "ShowMoreButton": {
-    "showMore": "Více projektů..."
+    "showMore": "Více projektů →"
   },
   "LatestPosts": {
     "title": "Moje poslední příspěvky",
     "headerdesc": "Na mém blogu sdílím své zkušenosti a myšlenky spojené s programováním.",
-    "showMore": "Více príspěvků..."
+    "showMore": "Více príspěvků →"
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
@@ -102,7 +97,6 @@
 
   "projects": {
     "title": "Projekty",
-    "button": "Více projektů →",
     "awarespage": {
       "title": "Sociální síť Aware",
       "description": "Full-stack aplikace AWARE nabízí funkce jako nekonečné načítání, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání příspěvků do záložek a další.",
