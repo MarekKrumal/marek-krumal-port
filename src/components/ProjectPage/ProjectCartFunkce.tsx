@@ -40,10 +40,10 @@ export default function ProjectCartFunkce({
     .slice(0, 23);
 
   return (
-    <div className="z-10 mx-auto mt-0 p-4 sm:p-6 md:p-8 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-4xl hover:shadow-sky-500/20 hover:shadow-2xl transition-shadow duration-300">
+    <div className="z-10 mx-auto mt-0 p-4 sm:p-6 md:p-8 border shadow-sm dark:bg-black/10 bg-stone-50 max-w-4xl  hover:shadow-2xl transition-shadow duration-300">
       <div className="space-y-3">
         {/* Proč byla aplikace vytvořena */}
-        <h2 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl font-mono">
+        <h2 className="font-bold uppercase  text-xl font-mono">
           {t("whyWasItCreatedTitle")}
         </h2>
         <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
@@ -51,7 +51,7 @@ export default function ProjectCartFunkce({
         </p>
 
         {/* Výpis funkcí a technologií */}
-        <h2 className="font-bold uppercase text-blue-700 dark:text-cyan-100 text-xl font-mono">
+        <h2 className="font-bold uppercase  text-xl font-mono">
           {t("featuresTitle")}
         </h2>
         <ul

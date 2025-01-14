@@ -32,7 +32,7 @@
     "description": "Toto je hlavní stránka mého portfolia."
   },
   "AboutPage": {
-    "title": "O nás",
+    "title": "O mně",
     "description": "Dozvíte se více o mně a mé práci."
   },
   "ProfilePage": {
@@ -49,7 +49,7 @@
   "ContactPage": {
     "title": "Kontakt",
     "description": "Můžete mě kontaktovat na emailové adrese ",
-    "description2": ". Většinou odpovídám do jednoho dne."
+    "description2": "Většinou odpovídám do jednoho dne."
   },
   "ThemeToggle": {
     "light": "Světelný režim",
@@ -57,7 +57,13 @@
   },
   "MarekKrumal": {
     "olomouc": "Olomouc",
-    "projekt": "Projekty"
+    "projekt": "Projekty",
+    "technologies": " Moje technologie:",
+    "description": "Jsem 24letý full-stack web developer specializující se na vývoj moderních webových stránek a aplikací. Pokud se o mně chcete dozvědět více, prohlédněte si mé ",
+    "description2": " nebo si přečtěte",
+    "description3": " kde sdílím své zkušenosti.",
+    "descriptionlink2": " Moje poslední příspěvky",
+    "descriptionlink": "Projekty"
   },
 
   "ShowMoreButton": {

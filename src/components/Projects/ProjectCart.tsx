@@ -44,7 +44,7 @@ export default function ProjectCard({
 
   return (
     <div className="pt-4">
-      <div className="relative group overflow-hidden border shadow-sm hover:shadow-2xl transition-shadow duration-300 w-full hover:shadow-sky-500/20">
+      <div className="relative group overflow-hidden border w-full">
         {image && (
           <>
             {renderLink(
@@ -60,18 +60,18 @@ export default function ProjectCard({
                   placeholder="blur"
                   blurDataURL={imageblur || image}
                 />
-                <div className="absolute inset-0 transition-colors duration-300 pointer-events-none" />
-                <div className="absolute inset-0 pointer-events-none group-hover:shadow-inner group-hover:shadow-black/20 transition-shadow duration-300" />
+                <div className="absolute inset-0 transition-colors pointer-events-none" />
+                <div className="absolute inset-0 pointer-events-none " />
               </div>
             )}
           </>
         )}
 
         {/* Title, Description & Tech */}
-        <div className="absolute inset-x-0 bottom-0 border-t bg-stone-50 dark:bg-[#222222] shadow-sm pt-4 px-7 pb-2">
+        <div className="absolute inset-x-0 bottom-0 border-t bg-stone-50 dark:bg-[#222222] pt-4 mx-auto md:p-8 pb-0 md:pb-1 md:pt-4 p-4">
           {renderLink(
             <>
-              <h2 className="sm:text-xl md:text-2xl font-mono font-bold uppercase text-blue-700 dark:text-cyan-100">
+              <h2 className="sm:text-xl md:text-2xl font-mono font-bold uppercase ">
                 {projectTitle}
               </h2>
               <p className="mt-2 text-sm sm:text-md text-gray-700 dark:text-gray-400">
@@ -105,7 +105,7 @@ export default function ProjectCard({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-transform"
+                className="p-1 hover:scale-105 transition-transform"
               >
                 <SiGithub size={20} />
               </a>
@@ -115,7 +115,7 @@ export default function ProjectCard({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-1 hover:scale-105 hover:text-sky-800 dark:hover:text-sky-100 transition-transform"
+                className="p-1 hover:scale-105 transition-transform"
               >
                 <SiPolygon size={20} />
               </a>

@@ -15,17 +15,18 @@ export default function Footer() {
             <Heart
               size={15}
               strokeWidth={3}
-              className="inline text-red-400 hover:text-pink-500 mx-1 transition-transform duration-500 ease-in-out hover:rotate-12 hover:scale-125"
+              className="inline text-orange-400 hover:text-orange-500 mx-1 transition-transform duration-500 ease-in-out hover:rotate-12 hover:scale-125"
             />{" "}
             {t("usingTechnologies")}
           </div>
           <div className="flex items-center">
             <a
               href="https://github.com/marekkrumal"
-              className="inline text-cyan-600 hover:text-cyan-400 font-mono font-semibold transition-colors duration-300"
+              className="inline dark:text-indigo-300 dark:hover:text-indigo-500 text-indigo-500 hover:text-indigo-700 hover:underline font-mono font-semibold transition-colors duration-300"
             >
               {t("github")}
             </a>
+            <p> .</p>
           </div>
         </div>
       </nav>

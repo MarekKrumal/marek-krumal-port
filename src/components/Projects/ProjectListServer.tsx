@@ -10,7 +10,7 @@ export default function ProjectListServer() {
   const visibleProjects = AllProjects2.slice(0, 6);
 
   return (
-    <div className="pt-5">
+    <div>
       <div>
         {visibleProjects.map((project) => (
           <ProjectCart

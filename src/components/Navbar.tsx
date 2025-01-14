@@ -28,7 +28,7 @@ export default function Navbar() {
             >
               {t("projects")}
             </button>
-            <div className="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-48 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 mt-2 p-2 rounded shadow-md z-50">
+            <div className="absolute left-0 top-full hidden group-hover:block group-focus-within:block w-48 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 mt-2 p-2 z-50">
               {[
                 { href: `/${locale}/projects`, label: t("allProjects") },
                 {
@@ -57,7 +57,7 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className="block px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700 rounded"
+                  className="block px-4 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-700"
                 >
                   {label}
                 </Link>

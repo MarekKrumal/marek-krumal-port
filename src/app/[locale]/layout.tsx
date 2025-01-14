@@ -33,7 +33,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>

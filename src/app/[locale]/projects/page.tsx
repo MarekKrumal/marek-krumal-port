@@ -20,7 +20,7 @@ export default function ProjectsIndexPage() {
           <Link
             key={`${project.id}-${project.translationKey}`}
             href={`/${locale}/projects/${project.translationKey}`}
-            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-blue-100 flex flex-col border hover:scale-110 shadow-md hover:shadow-xl hover:shadow-sky-500/20 transition-transform duration-300 bg-stone-50 dark:bg-[#222222] p-4"
+            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-stone-200 flex flex-col border hover:scale-105 transition-transform duration-300 bg-stone-50 dark:bg-[#222222] p-4 hover:shadow-2xl dark:hover:shadow-white/5"
           >
             <div className="flex items-center justify-between mb-4">
               <SlFolder
@@ -47,7 +47,7 @@ export default function ProjectsIndexPage() {
               </div>
             </div>
 
-            <h2 className="text-lg font-bold text-blue-700 dark:text-cyan-100 uppercase mb-2">
+            <h2 className="text-lg font-bold  uppercase mb-2">
               {project.title}
             </h2>
 

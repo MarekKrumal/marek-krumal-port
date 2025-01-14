@@ -1,41 +1,19 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { GrStripe } from "react-icons/gr";
 import { BiLogoWix } from "react-icons/bi";
-
-const SiNextdotjs = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiNextdotjs)
-);
-const SiTypescript = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiTypescript)
-);
-const SiTailwindcss = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiTailwindcss)
-);
-const SiPrisma = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiPrisma)
-);
-const SiOpenai = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiOpenai)
-);
-const SiJavascript = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiJavascript)
-);
-const SiNodedotjs = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiNodedotjs)
-);
-const SiMongodb = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiMongodb)
-);
-const SiExpress = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiExpress)
-);
-const SiReact = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiReact)
-);
-const SiFirebase = dynamic(() =>
-  import("react-icons/si").then((mod) => mod.SiFirebase)
-);
+import {
+  SiExpress,
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiOpenai,
+  SiPrisma,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 export const technologyConfig = {
   Nextjs: {

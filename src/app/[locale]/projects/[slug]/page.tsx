@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { AllProjects2 } from "@/app/data/projects";
 import ProjectCartInfo from "@/components/ProjectPage/ProjectCartInfo";
 import ProjectCartFunkce from "@/components/ProjectPage/ProjectCartFunkce";
@@ -39,7 +39,7 @@ export default async function ProjectDetailPage({
   }
 
   if (!project.hasPage && project.alternativeUrl) {
-    if (typeof window !== "undefined") {
+    if (redirect(project.alternativeUrl)) {
       window.open(project.alternativeUrl, "_blank");
     }
   }

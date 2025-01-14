@@ -58,7 +58,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
           alt={`Slide ${current + 1}`}
           width={1024}
           height={768}
-          className="w-full h-auto rounded-lg cursor-pointer"
+          className="w-full h-auto cursor-pointer"
           onClick={openModal}
           priority
         />
@@ -95,7 +95,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
               width={1440}
               height={1080}
               quality={100}
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto"
               loading="lazy"
             />
             {isModalContentVisible && (
@@ -103,8 +103,8 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                 <button
                   onClick={closeModal}
                   className="absolute top-4 right-4 text-white text-2xl px-2 py-1
-                             border border-white/50 rounded-md hover:scale-110
-                             hover:bg-white/10 hover:text-red-400 transition-transform duration-200"
+                             border border-white/50
+                             hover:bg-white/10  transition-transform duration-200"
                 >
                   <RxCross1 />
                 </button>
