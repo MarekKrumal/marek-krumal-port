@@ -7,7 +7,7 @@ import SliderSkeleton from "@/components/Slider/SliderSkeleton";
 import { Suspense } from "react";
 import { sliderData } from "@/components/Slider/sliderdata";
 
-// Lazy-load the Slider component with a loading fallback
+// 1) Lazy-load the Slider component with a loading fallback
 const Slider = dynamic(() => import("@/components/Slider/Slider"), {
   loading: () => (
     <div className="min-h-[400px] flex items-center justify-center">
@@ -16,46 +16,36 @@ const Slider = dynamic(() => import("@/components/Slider/Slider"), {
   ),
 });
 
+// 2) Type definitions:
 type SliderKey = keyof typeof sliderData;
 
-// 1) Define a "Params" type as a Promise so TypeScript knows we must await it.
-//    Here we assume `slug` is an array of strings, e.g. [ 'my-slug' ].
-//    Adjust if your route only uses a single string, e.g. { slug: string }.
-type MyParams = Promise<{ slug: string[] }>;
+// We only need a single string here, e.g. /projects/[slug]
+// So define a promise-based type (like Mohsin Parvi’s approach)
+export type ParamsType = Promise<{ slug: string }>;
 
+// 3) generateStaticParams for SSR/SSG:
 export async function generateStaticParams() {
   return AllProjects2.map((proj) => ({
-    slug: [proj.translationKey], // or just slug: proj.translationKey if your route expects a single string
+    slug: String(proj.translationKey), // must be a string
   }));
 }
 
-// 2) Await the 'params' inside the server component
-export default async function ProjectDetailPage({
-  // The shape here matches MyParams
-  params,
-}: {
-  params: MyParams;
-}) {
-  // 2a) Await the resolved params
-  const { slug } = await params;
+// 4) The page itself, expecting `props: { params: ParamsType }`
+export default async function ProjectDetailPage(props: { params: ParamsType }) {
+  // 4a) Await the promise
+  const { slug } = await props.params;
 
-  // 2b) If your route uses an array, take the first element:
-  const slugValue = Array.isArray(slug) ? slug[0] : slug;
-
-  // 3) Find the project
-  const project = AllProjects2.find((p) => p.translationKey === slugValue);
+  // 4b) Find the matching project
+  const project = AllProjects2.find((p) => p.translationKey === slug);
   if (!project) {
     notFound();
   }
 
-  // 4) If the project doesn't have its own page, redirect (and open new tab)
+  // 4c) If there's no page for this project, do a redirect (or open new tab)
   if (!project.hasPage && project.alternativeUrl) {
-    // The 'redirect' call typically ends the response,
-    // but if you also want to open a new tab:
     redirect(project.alternativeUrl);
-    // Note: In Next.js server components, `window.open` won't actually run (no browser context).
-    // If you truly need a new tab, you'd typically do so on the client.
-    // This snippet is just to illustrate the approach from your code.
+    // Note: `window.open` does not work in a server component,
+    // so if you want a new tab, you must do it client-side.
   }
 
   // 5) Render the page
