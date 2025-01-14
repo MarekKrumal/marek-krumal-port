@@ -1,4 +1,3 @@
-import { Locale, routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -21,17 +20,20 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params,
-}: Readonly<{
+  params: rawParams,
+}: {
   children: React.ReactNode;
-  params: { locale: Locale };
-}>) {
-  const { locale } = await params;
-  if (!routing.locales.includes(locale as Locale)) {
+  params: Promise<{ locale: string }>;
+}) {
+  const params = await rawParams;
+  const { locale } = params;
+
+  const supportedLocales = ["cz", "en"];
+  if (!supportedLocales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
