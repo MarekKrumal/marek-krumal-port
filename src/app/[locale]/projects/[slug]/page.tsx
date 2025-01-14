@@ -26,10 +26,11 @@ export async function generateStaticParams() {
     slug: proj.translationKey,
   }));
 }
+//export default async function Page({ params }: { params: { slug: string[] } } as any)
 
 export default async function ProjectDetailPage({
   params,
-}: ProjectDetailPageProps) {
+}: { params: { slug: string[] } } & ProjectDetailPageProps) {
   const { slug } = await Promise.resolve(params);
 
   const project = AllProjects2.find((p) => p.translationKey === slug);
