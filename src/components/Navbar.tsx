@@ -70,9 +70,9 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <Link href={`/${locale}/about`} aria-label="about">
+          {/*<Link href={`/${locale}/about`} aria-label="about">
             {t("about")}
-          </Link>
+          </Link>*/}
           <Link href={`/${locale}/posts`} aria-label="posts">
             {t("posts")}
           </Link>
@@ -118,14 +118,14 @@ export default function Navbar() {
               {t("projects")}
             </Link>
             <hr className="border-t border mx-auto w-60 my-2" />
-            <Link
+            {/*<Link
               href={`/${locale}/about`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
               aria-label="about"
             >
               {t("about")}
-            </Link>
+            </Link>*/}
             <hr className="border-t border w-60 mx-auto my-2" />
             <Link
               href={`/${locale}/posts`}

@@ -26,7 +26,7 @@ export default function BlogIndexPage() {
                   {post.title}
                 </h3>
                 <p className="text-sm text-gray-700 dark:text-gray-400 mt-1 line-clamp-2">
-                  {post.content.slice(36, 82)}...
+                  {post.problog}...
                 </p>
               </div>
             </Link>

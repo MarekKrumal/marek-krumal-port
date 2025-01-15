@@ -42,7 +42,29 @@ export default function ProjectCartInfo({
             </a>
           </div>
         </div>
-        <p>{t("description")}</p>
+        <p className="pb-6">{t("description")}</p>
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl pr-2 font-mono font-semibold uppercase text-blue-700 dark:text-blue-400"
+            aria-label="visit GitHub repo"
+          >
+            SourceCode
+          </a>
+        )}
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl font-mono uppercase font-semibold text-red-700 dark:text-red-400"
+            aria-label="visit live site"
+          >
+            Demo
+          </a>
+        )}
       </div>
     </div>
   );

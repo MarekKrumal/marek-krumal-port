@@ -33,7 +33,7 @@ export default function ProjectsIndexPage() {
                   <OnclickFunkce url={project.githubUrl}>
                     <SiGithub
                       size={20}
-                      className="text-gray-600 dark:text-gray-300"
+                      className="text-gray-600 dark:text-gray-300 hover:scale-110 transition-transform duration-300"
                     />
                   </OnclickFunkce>
                 )}
@@ -41,7 +41,7 @@ export default function ProjectsIndexPage() {
                   <OnclickFunkce url={project.liveUrl}>
                     <SiPolygon
                       size={20}
-                      className="text-gray-600 dark:text-gray-300"
+                      className="text-gray-600 dark:text-gray-300 hover:scale-110 transition-transform duration-300"
                     />
                   </OnclickFunkce>
                 )}

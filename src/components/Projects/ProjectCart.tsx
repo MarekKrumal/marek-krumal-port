@@ -58,7 +58,6 @@ export default function ProjectCard({
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, 50vw"
                   quality={75}
                   priority
-                  loading="lazy"
                   placeholder="blur"
                   blurDataURL={imageblur || image}
                 />
@@ -91,7 +90,7 @@ export default function ProjectCard({
                 return (
                   <div key={tech} className="flex flex-col items-center">
                     {cfg.icon}
-                    <p className="text-sm p-2 font-mono text-gray-500 dark:text-gray-400 text-center">
+                    <p className="text-sm p-2 font-mono text-gray-800 dark:text-gray-300 text-center">
                       {cfg.label}
                     </p>
                   </div>
