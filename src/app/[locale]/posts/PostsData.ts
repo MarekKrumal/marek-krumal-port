@@ -9,6 +9,38 @@ export interface BlogPost {
 
 export const allPosts: BlogPost[] = [
   {
+    slug: "tvorba-tohoto-webu",
+    title: "Tvorba tohoto webu",
+    date: "2025-01-15",
+    problog:
+      "Tato stránka vznikla především proto, abych mohl představit své projekty a seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji chci vyvíjet v Next.js – stejně jako většinu svých projektů.",
+    content: `<div>
+      <h2 style="color: #3b82f6;">Úvod</h2>
+      <p>
+        Tato stránka vznikla především proto, abych mohl představit své projekty a seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji chci vyvíjet v Next.js, TypeScriptu a Tailwindu – stejně jako většinu svých projektů.
+      </p>
+      <br />
+      <h2 style="color: #3b82f6;">Přístup a vývoj</h2>
+      <p>
+        Na začátku jsem měl jasnou představu o tom, jak by měl web vypadat a fungovat. Jak jsem ale na projektu pracoval, postupně se ta představa měnila – přišel jsem na lepší řešení, díky kterým jsem mohl původní nápad výrazně vylepšit. Nakonec jsem vytvořil web, který je nejen rychlý, ale také snadno použitelný, což potvrzují i skvělé výsledky na PageSpeed Insights.
+      </p>
+      <br />
+      <h2 style="color: #3b82f6;">Technologie a optimalizace</h2>
+      <p>
+        Pro posty a projekty využívám slug, většinu obsahu mám předgenerovanou jako statický HTML pomocí funkcí jako <code>generateStaticParams</code> v novém App Routeru. Stylování jsem vytvářel ručně – původně bylo vše barevné, ale nakonec jsem se rozhodl pro jednoduchý a nedráždivý desing.
+      </p>
+      <p>
+        Také jsem se naučil předrenderovat obrázky pomocí knihovny Sharp, o čemž píšu více v mém příspěvku <a href="https://marek-krumal-port.vercel.app/en/posts/procnextjs" style="color: #8b5cf6; ">Proč mě zaujal Next.js?</a>. Jedním z problémů, které jsem při samostatném přístupu ke stylování zažil, bylo nutné ladit barvy zvlášť pro Light a Dark 
+        // mode ale nakonec jsm si poradil.Další komplikace nastala při použití Reactu v19 a Next.js 15, kdy Next.js požadoval awaitování params, což mi způsobilo nefunkčnost některých částí aplikace. Ani ChatGPT mi v této situaci nedokázal pomoci. Nakonec jsem po dlouhém hledání narazil na řešení díky uživateli <a href="https://github.com/orgs/community/discussions/142577" style="color: #8b5cf6;">night-fury-3</a>, který na GitHubu popsal správný postup.
+      </p>
+      <br />
+      <h2 style="color: #3b82f6;">Závěr</h2>
+      <p>
+        Celkově jsem při vývoji tohoto webu získal mnoho zkušeností, ať už v oblasti optimalizace výkonu, přístupnosti či jednoduchosti designu.
+      </p>
+    </div>`,
+  },
+  {
     slug: "procnextjs",
     title: "Proč mě zaujal Next.js?",
     date: "2025-01-13",
@@ -112,7 +144,6 @@ export const allPosts: BlogPost[] = [
       </p>
       <ul>
         <li><strong>Rychlost:</strong> Statické soubory se načítají okamžitě, což vede k lepšímu uživatelskému zážitku.</li>
-        <li><strong>Bezpečnost:</strong> Menší povrch pro útoky, protože neobsahují dynamicky generovaný obsah při každém requestu.</li>
         <li><strong>SEO optimalizace:</strong> Vyhledávače snadno indexují statické stránky, což zlepšuje pozici ve výsledcích vyhledávání.</li>
       </ul>
       <br />
@@ -136,38 +167,6 @@ export const allPosts: BlogPost[] = [
       
       <p>
         Next.js 15 svým přístupem ke statické generaci obsahu nabízí silný nástroj, který pomáhá vývojářům vytvářet rychlé, bezpečné a SEO optimalizované webové aplikace. Pokud se i vy chcete zaměřit na zrychlení načítání stránek a zároveň využít moderní technologie, rozhodně stojí za to prozkoumat možnosti, které SSG v Next.js 15 nabízí.
-      </p>
-    </div>`,
-  },
-  {
-    slug: "tvorba-tohoto-webu",
-    title: "Tvorba tohoto webu",
-    date: "2025-01-15",
-    problog:
-      "Tato stránka vznikla především proto, abych mohl představit své projekty a seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji chci vyvíjet v Next.js – stejně jako většinu svých projektů.",
-    content: `<div>
-      <h2 style="color: #3b82f6;">Úvod</h2>
-      <p>
-        Tato stránka vznikla především proto, abych mohl představit své projekty a seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji chci vyvíjet v Next.js, TypeScriptu a Tailwindu – stejně jako většinu svých projektů.
-      </p>
-      <br />
-      <h2 style="color: #3b82f6;">Přístup a vývoj</h2>
-      <p>
-        Na začátku jsem měl jasnou představu o tom, jak by měl web vypadat a fungovat. Jak jsem ale na projektu pracoval, postupně se ta představa měnila – přišel jsem na lepší řešení, díky kterým jsem mohl původní nápad výrazně vylepšit. Nakonec jsem vytvořil web, který je nejen rychlý, ale také snadno použitelný, což potvrzují i skvělé výsledky na PageSpeed Insights.
-      </p>
-      <br />
-      <h2 style="color: #3b82f6;">Technologie a optimalizace</h2>
-      <p>
-        Pro posty a projekty využívám slug, většinu obsahu mám předgenerovanou jako statický HTML pomocí funkcí jako <code>generateStaticParams</code> v novém App Routeru. Stylování jsem vytvářel ručně – původně bylo vše barevné, ale nakonec jsem se rozhodl pro jednoduchý a nedráždivý desing.
-      </p>
-      <p>
-        Také jsem se naučil předrenderovat obrázky pomocí knihovny Sharp, o čemž píšu více v mém příspěvku <a href="https://marek-krumal-port.vercel.app/en/posts/procnextjs" style="color: #8b5cf6; ">Proč mě zaujal Next.js?</a>. Jedním z problémů, které jsem při samostatném přístupu ke stylování zažil, bylo nutné ladit barvy zvlášť pro Light a Dark 
-        // mode ale nakonec jsm si poradil.Další komplikace nastala při použití Reactu v19 a Next.js 15, kdy Next.js požadoval awaitování params, což mi způsobilo nefunkčnost některých částí aplikace. Ani ChatGPT mi v této situaci nedokázal pomoci. Nakonec jsem po dlouhém hledání narazil na řešení díky uživateli <a href="https://github.com/orgs/community/discussions/142577" style="color: #8b5cf6;">night-fury-3</a>, který na GitHubu popsal správný postup.
-      </p>
-      <br />
-      <h2 style="color: #3b82f6;">Závěr</h2>
-      <p>
-        Celkově jsem při vývoji tohoto webu získal mnoho zkušeností, ať už v oblasti optimalizace výkonu, přístupnosti či jednoduchosti designu.
       </p>
     </div>`,
   },

@@ -26,7 +26,13 @@ export const technologyConfig = {
   },
   Tailwind: {
     label: "Tailwind",
-    icon: <SiTailwindcss className="text-sky-500" />,
+    icon: (
+      <SiTailwindcss
+        style={{
+          color: "#38BDF8",
+        }}
+      />
+    ),
   },
   Prisma: {
     label: "Prisma",
@@ -64,7 +70,13 @@ export const technologyConfig = {
   },
   JavaScript: {
     label: "JavaScript",
-    icon: <SiJavascript className="text-yellow-500" />,
+    icon: (
+      <SiJavascript
+        style={{
+          color: "#F7DF1E",
+        }}
+      />
+    ),
   },
   Kaplay: {
     label: "Kaplay",
