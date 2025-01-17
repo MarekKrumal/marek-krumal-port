@@ -117,8 +117,8 @@ export default function Navbar() {
             >
               {t("projects")}
             </Link>
-            <hr className="border-t border mx-auto w-60 my-2" />
-            {/*<Link
+            {/*<hr className="border-t border mx-auto w-60 my-2" />
+            <Link
               href={`/${locale}/about`}
               onClick={closeMenu}
               className="py-4 text-lg uppercase font-bold"
