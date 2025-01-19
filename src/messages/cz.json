@@ -472,7 +472,7 @@
     },
     "Pack-Man": {
       "title": "pack man",
-      "description": "Vytvořil jsem light verzy hry Pac-Man. Hra obsahuje 3 duchy, hráč má 3 životy a cílem je dosáhnout co nejvyššího skóre. Chtěl jsem vyzkoušet jiný programovací jazyk než JS/TS.",
+      "description": "Vytvořil jsem light verzi hry Pac-Man. Hra obsahuje 3 duchy, hráč má 3 životy a cílem je dosáhnout co nejvyššího skóre. Chtěl jsem vyzkoušet jiný programovací jazyk než JS/TS.",
       "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
       "whyWasItCreatedDesc": "Ne klasická To-Do appka",
 
