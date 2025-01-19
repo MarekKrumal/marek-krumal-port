@@ -25,7 +25,7 @@ const Page = () => {
       <div className="flex justify-around space-x-2 mt-8">
         <div className="font-mono flex flex-col items-center space-y-2">
           <a
-            href="mailto:krumalmarek@gmail.com"
+            href="mailto:marekkrumal11@gmail.com"
             className="flex items-center justify-center p-2 hover:scale-110 transition-transform duration-300"
             aria-label="email"
           >
@@ -35,7 +35,7 @@ const Page = () => {
             E-mail
           </span>
           <p className="text-xs font-mono font-extralight break-words max-w-[164px] text-center">
-            krumalmarek@gmail.com
+            marekkrumal11@gmail.com
           </p>
         </div>
 

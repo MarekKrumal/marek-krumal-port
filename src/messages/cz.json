@@ -61,7 +61,7 @@
     "technologies": " Moje technologie:",
     "description": "Jsem 24letý nadšenec pro web. Pokud vás moje práce zajimá, prohlédněte si mé ",
     "description2": " nebo si přečtěte",
-    "description3": " ,kde sdílím své zkušenosti.",
+    "description3": ", kde sdílím své zkušenosti.",
     "descriptionlink2": " Moje poslední příspěvky",
     "descriptionlink": "Projekty"
   },
@@ -107,7 +107,7 @@
       "title": "Sociální síť Aware",
       "description": "Full-stack aplikace AWARE nabízí funkce jako nekonečné načítání, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání příspěvků do záložek a další.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Toto je můj největší projekt – full-stack aplikace postavená na Next.js. Uživatelé se nejprve musí přihlásit nebo zaregistrovat, přičemž je k dispozici možnost přihlášení přes Google, autentifikaci zajišťuje Lucia. Samozřejmostí je real-time validace formulářů díky knihovně React Hook Form. Pro feed jsem využil knihovnu React Query, která umožňuje efektivní fetching dat, jejich ukládání do cache a revalidaci dat podle potřeby. Díky React Query je implementováno také infinite loading a optimistic updates. To znamená, že při akcích, jako je lajkování nebo sledování uživatele, se změna stavu okamžitě projeví na klientovi ještě před odesláním requestu do databáze. Aplikace podporuje vytváření příspěvků s obrázky nebo videi (s limitem velikosti souboru), přičemž upload je řešen přes knihovnu UploadThing. Součástí je také funkce drag-and-drop, která usnadňuje nahrávání souborů. Příspěvky lze komentovat díky plně funkčnímu systému komentářů. Vyhledávání je možné pomocí hashtagů (#example) nebo zmínek (@example). Funkce trending hashtags byla navržena tak, aby hashtagy byly cachovány každé 3 hodiny. Uživatelé mohou upravovat svou profilovou stránku, měnit profilový obrázek (s možností oříznutí přímo v aplikaci) a aktualizovat své bio. Fungují také notifikace – uživatelé jsou informováni o nových sledujících, lajkech na jejich příspěvcích, zmínkách nebo příchozích zprávách.  Aplikace obsahuje i DM systém, který je integrován přes třetí stranu, Stream. Ten nabízí bohatou škálu funkcí, jako jsou skupinové chaty, nahrávání souborů, reakce na zprávy a další. Mám také nastavený cron job, který každých 24 hodin automaticky maže nahrané soubory, které nebyly použity (například když uživatel nahrál obrázek k příspěvku, ale příspěvek nakonec neodeslal). Poslední přidanou funkcí je možnost repostování. ",
 
       "updateTitle": "Aktualizace",
@@ -144,7 +144,7 @@
       "title": "Art(Raven) Store",
       "description": "E-shop zaměřen na prodej obrazů, oblečení, AI obrázků a dalšího sortimentu. Autentizace, zpracování plateb a ukládání dat je postaveno na WixClient.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tuhle aplikaci jsem vytvořil, protože mě při práci na projektu AWARE hodně bavilo dělat full-stack, a chtěl jsem si ten proces zopakovat. Aplikace je postavena na Wix Studiu pro backend. Díky tomu je práce s přidáváním a správou produktů mnohem jednodušší. Můžu snadno přidávat vlastnosti jako barvu, velikost a podobně, nebo produkty mazat. Samotná aplikace taky umí vyhledávat produkty podle ceny (max/min) nebo kategorie, což jsem si chtěl vyzkoušet implementovat. Poznámka: Pokud vám nefunguje login, checkout nebo se některé položky ve storu nenačítají, je to proto, že nemám aktivní předplatné Wix. ",
 
       "updateTitle": "Aktualizace",
@@ -179,9 +179,9 @@
     },
     "neuralnetwork": {
       "title": "Neural Network Visualizer",
-      "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí Vite, Reactu a nového modelu od OpenAI – GPT-o1.",
+      "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí framerworku Vite s Reactem a nového modelu od OpenAI – GPT-o1.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tato aplikace vznikla jako experiment, abych zjistil, co všechno dokáže OpenAI. Ačkoliv to není ideální přístup, pokud se chcete skutečně naučit programovat, vybral jsem si záměrně složité téma – neuronové sítě – abych vyvážil využití AI a zároveň se něco nového naučil. Po získání inspirace z různých zdrojů na internetu jsem vytvořil vizualizátor neuronových sítí. Na tomto projektu jsem nenapsal téměř žádný kód, většinu práce odvedl model od OpenAI. To ale neznamená, že to bylo snadné. Projekt jsem původně začal v Next.js, ale kvůli problémům s kompatibilitou některých knihoven, jako jsou react-latex a react-mathjax, jsem musel přejít na Vite. Ani s použitím příznaku --legacy-peer-deps a vynucením instalace se mi tyto knihovny v Next.js 15 nepodařilo zprovoznit. I přesto mi tento projekt pomohl lépe pochopit, jak neuronové sítě fungují a k čemu slouží. Díky tomu jsem získal solidní přehled o jejich praktickém využití a významu v oblasti strojového učení a umělé inteligence.",
 
       "updateTitle": "Aktualizace",
@@ -218,7 +218,7 @@
       "title": "Nebula Trails",
       "description": "Projekt začal jako jednoduchá landing page. Postupně jsem se na něm učil převádět soubory z .js, .html, .css na .jsx a na .tsx. Nakonec jsem přidal integraci Stripe plateb.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tento web byl původně vytvořen v Reactu s využitím souborů typu .js, .html a .css. Když jsem později zjistil, že existuje něco jako formát .jsx, rozhodl jsem se projekt přepracovat. Jakmile jsem začal pracovat s TypeScriptem, rozhodl jsem se aplikaci znovu vytvořit, tentokrát v Next.js s využitím formátu .tsx. Postupně jsem do aplikace přidal další funkce, například podporu češtiny pomocí knihovny i18n a možnost platby přes Stripe za jednotlivé karty. Aplikace také obsahuje režim dark/light, který jsem však skryl, protože pozadí na hlavní stránce tvoří obrázky nebo videa, což by mohlo způsobit problémy s estetikou a čitelností.",
 
       "updateTitle": "Aktualizace",
@@ -255,7 +255,7 @@
       "title": "Sonic Run",
       "description": "Sonic Run je jednoduchá 1-button hra vytvořená v JS pomocí knihovny Kaplay. Cílem je dosáhnout co nejvyššího skóre. Hra se postupně zrychluje, což zvyšuje její obtížnost.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tuto aplikaci jsem vytvořil, protože mě inspirovaly vzpomínky na dětství, kdy jsme s kamarády hrávali jednoduché hry v prohlížeči během hodin informatiky nebo ve školní družině. Už jsem měl za sebou několik webových aplikací, ale upřímně se mi nechtělo dělat další klasický web nebo landing page. Chtěl jsem zkusit něco úplně jiného a vždycky mě zajímalo, jak se hry vlastně vytvářejí. K mému překvapení to bylo mnohem jednodušší, než jsem si představoval. Myslel jsem, že mě čeká spousta komplikovaných funkcí, objektů atd., ale díky knihovně Kaplay.js to šlo až nečekaně hladce. Bylo skvělé vidět, jak rychle se moje představa mění ve fungující hru. Tento projekt mi připomněl, jak mě baví učit se nové věci.",
 
       "updateTitle": "Aktualizace",
@@ -292,7 +292,7 @@
       "title": "MTRX Sociální síť",
       "description": "Moderní aplikace na MERN stacku s podporou Socket.io a Chakra UI. Nabízí autentizaci JWT, správu příspěvků, sledování uživatelů, přepínání režimů, responzivní design a chat s obrázky.",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tato aplikace vznikla jako můj první ambiciózní projekt, jehož cílem bylo důkladně pochopit spolupráci mezi frontendem a backendem. Při jejím vývoji jsem postupoval podle jednoho podrobného tutoriálu, který mi pomohl osvojit si základní principy full-stack vývoje. Vývoj trval delší dobu, protože jsem se soustředil na zvládnutí jednotlivých částí projektu a jejich propojení. Aplikace je postavená na Reactu a Vite, přičemž vše je zpracováváno na straně klienta. To bohužel způsobuje problémy, jako je delší načítání obsahu. Databáze MongoDB má také omezení – například při odstranění uživatele zůstanou v databázi jeho komentáře, což je problém, který nebyl v této aplikaci vyřešen. Přesto aplikace obsahuje funkční základní prvky, jako jsou lajkování, vytváření příspěvků a uživatelské přihlašování. Dokonce jsem implementoval jednoduchou chatovací aplikaci, která umožňuje posílání zpráv jiným uživatelům, avšak je nutné přesně zadat jméno příjemce.Ačkoliv má aplikace své limity, byla pro mě důležitým krokem v učení a praktickém osvojování dovedností v oblasti vývoje webových aplikací.",
 
       "updateTitle": "Aktualizace",
@@ -329,7 +329,7 @@
       "title": "Obchod MERN",
       "description": "Jednoduchá webová aplikace pro správu produktů, která umožňuje přidávat, upravovat a mazat produkty. Aplikace je postavená na technologickém stacku MERN (MongoDB, Express.js, React.js a Node.js).",
 
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tento projekt byl jedním z mých prvních, kde jsem spojoval backend s frontendem, což mě naučilo pracovat s databází MongoDB a nastavovat její propojení s aplikací. Chtěl jsem se zdokonalit ve vývoji full-stack aplikací, a právě tato aplikace byla mým prvním kompletním projektem tohoto druhu.",
 
       "updateTitle": "Aktualizace",
@@ -365,7 +365,7 @@
     "weather-app": {
       "title": "Aplikace pro zobrazení počasí",
       "description": "Webová aplikace, která umožňuje zobrazení počasí v zadatelných městech. Aplikace je jednoduchá využívá weather API",
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tahle aplikace byla moje úplně první v Reactu. Jako pozadí jsem si dal obrázek Olomouce a vytvořil jednoduché vyhledávání pro zadávání měst. Později jsem aplikaci vylepšil, aby místo jednoho dne ukazovala předpověď na 5 dní.",
 
       "updateTitle": "",
@@ -400,8 +400,8 @@
     },
     "netflix-clone": {
       "title": "Netflix clone",
-      "description": "Netflix clone v Reactu jeden z mých prvních projektů, backend ve firebase. Poznámka: je možné že autentifikace už nefunguje firebase po delší neaktivitě databáze deaktivuje.",
-      "whyWasItCreatedTitle": "O Aplikaci Proč a jak byla vytvořena?",
+      "description": "Netflix clone v Reactu je jeden z mých prvních projektů, backend ve firebase. Poznámka: je možné že autentifikace už nefunguje, firebase po delší neaktivitě databáze deaktivuje.",
+      "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
       "whyWasItCreatedDesc": "Tahle aplikace byla jedna z mých prvních v Reactu. Použil jsem Movie API, Firebase a Firestore, což je cloudové úložiště pro Firebase, na ukládání dat uživatelů. Pro API volání jsem využil Axios. Při práci na téhle aplikaci jsem se hodně naučil o React hooks.",
 
       "updateTitle": "",
@@ -435,8 +435,8 @@
       }
     },
     "to-do": {
-      "title": "To-do",
-      "description": "To-do aplikace v Typescriptu celkem dost funkcí mazaní, vytváření, editování To-Dos.",
+      "title": "To-Do",
+      "description": "Velmi Jednoduchá To-Do aplikace v Typescriptu nabízí funkce jako: mazaní, vytváření, editování To-Dos.",
       "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
       "whyWasItCreatedDesc": "Ne klasická To-Do appka",
 
@@ -447,6 +447,78 @@
       "features": {
         "func1": "Typescript, Vite, Tailwind",
         "func2": "Deployment na vercel.com",
+        "func3": "",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
+    },
+    "Pack-Man": {
+      "title": "pack man",
+      "description": "Vytvořil jsem light verzy hry Pac-Man. Hra obsahuje 3 duchy, hráč má 3 životy a cílem je dosáhnout co nejvyššího skóre. Chtěl jsem vyzkoušet jiný programovací jazyk než JS/TS.",
+      "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
+      "whyWasItCreatedDesc": "Ne klasická To-Do appka",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "",
+        "func2": "",
+        "func3": "",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
+    },
+    "Employee-Manager": {
+      "title": "Employee Manager",
+      "description": "Malá ukázková aplikace vyvinutá v Reactu a TypeScriptu, která slouží k základní správě zaměstnanců. Data jsou ukládána pomocí Reduxu a LocalStorage, aplikace využívá Webpack pro balíčkování.",
+      "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
+      "whyWasItCreatedDesc": "",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "",
+        "func2": "",
         "func3": "",
         "func4": "",
         "func5": "",

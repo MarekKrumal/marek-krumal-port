@@ -30,8 +30,8 @@ export const allPosts: BlogPost[] = [
         Pro posty a projekty využívám slug, většinu obsahu mám předgenerovanou jako statický HTML pomocí funkcí jako <code>generateStaticParams</code> v novém App Routeru. Stylování jsem vytvářel ručně – původně bylo vše barevné, ale nakonec jsem se rozhodl pro jednoduchý a nedráždivý desing.
       </p>
       <p>
-        Také jsem se naučil předrenderovat obrázky pomocí knihovny Sharp, o čemž píšu více v mém příspěvku <a href="https://marek-krumal-port.vercel.app/en/posts/procnextjs" style="color: #8b5cf6; ">Proč mě zaujal Next.js?</a>. Jedním z problémů, které jsem při samostatném přístupu ke stylování zažil, bylo nutné ladit barvy zvlášť pro Light a Dark 
-        // mode ale nakonec jsm si poradil.Další komplikace nastala při použití Reactu v19 a Next.js 15, kdy Next.js požadoval awaitování params, což mi způsobilo nefunkčnost některých částí aplikace. Ani ChatGPT mi v této situaci nedokázal pomoci. Nakonec jsem po dlouhém hledání narazil na řešení díky uživateli <a href="https://github.com/orgs/community/discussions/142577" style="color: #8b5cf6;">night-fury-3</a>, který na GitHubu popsal správný postup.
+        Také jsem se naučil předrenderovat obrázky pomocí knihovny Sharp, o čemž píšu více v mém příspěvku <a href="https://marek-krumal-port.vercel.app/en/posts/procnextjs" style="color: #8b5cf6; ">Proč mě zaujal Next.js?</a>. Jeden z problémů, se kterým jsem se při samostatné tvorbě stylování setkal, byla nutnost ladit barvy zvlášť pro Dark a Light
+        // mode ale nakonec jsem si poradil. Další komplikace nastala při použití Reactu v19 a Next.js 15, kdy Next.js požadoval awaitování params, což mi způsobilo nefunkčnost některých částí aplikace. Ani ChatGPT mi v této situaci nedokázal pomoci. Nakonec jsem po dlouhém hledání narazil na řešení díky uživateli <a href="https://github.com/orgs/community/discussions/142577" style="color: #8b5cf6;">night-fury-3</a>, který na GitHubu popsal správný postup.
       </p>
       <br />
       <h2 style="color: #3b82f6;">Závěr</h2>
@@ -82,7 +82,7 @@ export const allPosts: BlogPost[] = [
     </p>
     <p>
       Ze začátku mě překvapilo, že Next.js používá složku <code style="color: #22c55e;">app</code>. Ano, od začátku jsem pracoval s verzí Next.js 14/15, která používá
-      App Router. Zásadní rozdíl oproti Pages Routeru je například v tom, že App Router má footer a navbar v layoutu tak jako je tomu na této stránce.
+      App Router. Zásadní rozdíl oproti Pages Routeru je například v tom, že App Router má footer a navbar v layoutu tak, jako je tomu na této stránce.
     </p>
     <p>
       Další zásadní věcí je, že App Router má <strong>Server Components</strong> jako výchozí. V App Routeru se také nesetkáte s funkcemi jako
@@ -109,7 +109,7 @@ export const allPosts: BlogPost[] = [
       Potom můžu použít React Query, pomocí kterého můžu dělat requesty na tento endpoint.
     </p>
     </br>
-    <h2 style="color: #3b82f6;">TypeScript , tailwindcss a deployment na Vercel</h2>
+    <h2 style="color: #3b82f6;">TypeScript , TailwindCSS a Deployment na Vercel</h2>
     <p>
      Ze začátku jsem se TypeScriptu hodně vyhýbal, protože jsem nechápal, proč bych se ho měl učit, když jsem měl pocit, že ani pořádně neumím JavaScript. Postupem času jsem ale zjistil, že je lepší mít TypeScript v projektu. 
      </br>
@@ -118,7 +118,7 @@ export const allPosts: BlogPost[] = [
   </br>
   S Tailwindem jsem začal prakticky od samého začátku, kdy jsem začal používat JSX, a od té doby jsem na klasické CSS skoro nesáhl. A nasazení na Vercel mi připadá neskutečně jednoduché,
    obzvlášť s Next.js – možná proto, že Vercel vlastně vytvořil Next.js jako open-source framework. Vercel navíc automaticky nasazuje všechny změny, které commitnu do hlavní branch na GitHubu.
-  Proto u mých projektů často uvidíte Next.js, TypeScript, tailwindcss a deploymnet na Vercel.com.
+  Proto u mých projektů často uvidíte Next.js, TypeScript, TailwindCSS a Deploymnet na Vercel.com.
   
     </p>
   </div>`,

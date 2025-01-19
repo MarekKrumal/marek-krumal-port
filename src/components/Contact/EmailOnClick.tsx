@@ -4,7 +4,7 @@ import React from "react";
 
 const EmailOnClick = () => {
   const handleCopy = () => {
-    navigator.clipboard.writeText("krumalmarek@gmail.com");
+    navigator.clipboard.writeText("marekkrumal11@gmail.com");
     const notification = document.getElementById("notification");
     if (notification) {
       notification.style.display = "inline";
@@ -24,7 +24,7 @@ const EmailOnClick = () => {
         onClick={handleCopy}
         onKeyDown={(e) => e.key === "Enter" && handleCopy()}
       >
-        krumalmarek@gmail.com
+        marekkrumal11@gmail.com
       </span>
       <span
         id="notification"

@@ -107,7 +107,7 @@ const MarekKrumal = () => {
           <SiGithub size={22} />
         </a>
         <a
-          href="mailto:krumalmarek@gmail.com"
+          href="mailto:marekkrumal11@gmail.com"
           className="hover:scale-125  transition-transform"
           aria-label="email"
         >
