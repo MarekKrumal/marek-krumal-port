@@ -9,6 +9,67 @@ export interface BlogPost {
 
 export const allPosts: BlogPost[] = [
   {
+    slug: "docker-kubernetes-CI-CD",
+    title: "Docker, Kubernetes a CI/CD",
+    date: "2025-02-02",
+    problog:
+      "Tento článek jednoduše vysvětluje, co dělají Docker, Kubernetes a CI/CD pipelines, a jak spolupracují při vývoji a nasazení softwaru.",
+    content: `
+    <div>
+      <h2 style="color: #3b82f6;">Úvod</h2>
+      <p>
+        V tomto článku se podíváme na tři technologie, které se vzájemně doplňují a usnadňují práci s aplikacemi: <strong>Docker</strong>, <strong>Kubernetes</strong> a <strong>CI/CD pipelines</strong>. Vysvětlíme si, co každá z nich dělá, a jak spolupracují.
+      </p>
+      
+      <br />
+  
+      <h2 style="color: #3b82f6;">Co je Docker?</h2>
+      <p>
+        Docker je nástroj, který umožňuje zabalit aplikaci spolu se všemi jejími závislostmi do samostatného balíčku, zvaného <strong>kontejner</strong>. Díky tomu aplikace poběží stejně, ať ji spustíte kdekoli.
+      </p>
+      <ul>
+        <li><strong>Izolace:</strong> Každý kontejner běží nezávisle, což zajišťuje, že se vzájemně neovlivňují.</li>
+        <li><strong>Portabilita:</strong> Kontejnery lze snadno přesouvat mezi různými systémy a prostředími.</li>
+        <li><strong>Jednoduchá správa:</strong> Verze aplikací a jejich závislostí jsou jednoduše spravovatelné díky Docker image.</li>
+      </ul>
+      
+      <br />
+  
+      <h2 style="color: #3b82f6;">Co je Kubernetes?</h2>
+      <p>
+        Kubernetes je systém pro správu a orchestraci kontejnerů. Když máte spoustu kontejnerů, Kubernetes se postará o jejich efektivní nasazení a správu.
+      </p>
+      <ul>
+        <li><strong>Automatické nasazení a škálování:</strong> Při zvýšené zátěži spustí více instancí kontejnerů, nebo naopak sníží jejich počet.</li>
+        <li><strong>Monitorování:</strong> Neustále sleduje stav kontejnerů a v případě problémů je automaticky restartuje.</li>
+        <li><strong>Vyvažování zátěže:</strong> Rozděluje provoz rovnoměrně mezi všechny běžící kontejnery, čímž zajišťuje plynulý chod aplikace.</li>
+      </ul>
+      
+      <br />
+  
+      <h2 style="color: #3b82f6;">Co je CI/CD?</h2>
+      <p>
+        CI/CD je zkratka pro <strong>Continuous Integration</strong> (průběžná integrace) a <strong>Continuous Delivery/Deployment</strong> (průběžné doručování či nasazení). Jedná se o automatizaci celého procesu od testování kódu až po jeho nasazení do produkce.
+      </p>
+      <ul>
+        <li><strong>Continuous Integration:</strong> Automaticky se spouští testy při každé změně kódu, aby se chyby odhalily co nejdříve.</li>
+        <li><strong>Continuous Delivery/Deployment:</strong> Po úspěšném testování se nová verze aplikace automaticky sestaví a nasadí, což urychluje celý vývojový cyklus.</li>
+      </ul>
+      
+      <br />
+  
+      <h2 style="color: #3b82f6;">Závěr</h2>
+      <p>
+        Docker, Kubernetes a CI/CD pipelines společně vytvářejí silný základ pro moderní vývoj a nasazení softwaru. Docker zajišťuje, že aplikace poběží konzistentně v izolovaných kontejnerech, Kubernetes se postará o správu a škálování těchto kontejnerů, a CI/CD automatizuje celý proces od testování po nasazení. Tento přístup pomáhá zrychlit vývoj, snížit počet chyb a zajistit spolehlivý provoz aplikací.
+      </p>
+      </br>
+    <h2 style="color: #3b82f6;">Moje zkušenost</h2>
+      <p>
+      Z vlastní zkušenosti, ačkoliv s Kubernetes přímo nemám osobní zkušenosti, hodně jsem pracoval s Next.js a platformou Vercel. Vercel totiž nabízí vestavěnou podporu pro CI/CD, která automaticky spouští build a deployment při každém pushnutí kódu do repozitáře. Díky tomu se celý proces nasazení stává jednoduchým a rychlým, aniž by bylo třeba nastavovat složité pipeline.
+      </p>
+      </div>`,
+  },
+  {
     slug: "tvorba-tohoto-webu",
     title: "Tvorba tohoto webu",
     date: "2025-01-15",
@@ -158,7 +219,7 @@ export const allPosts: BlogPost[] = [
       <h2 style="color: #3b82f6;">Praktické příklady a tipy</h2>
       <ul>
         <li><strong>Optimalizace výkonu:</strong> Díky SSG dosáhnete rychlejšího načítání stránek a zlepšíte uživatelský zážitek.</li>
-        <li><strong>Případové studie:</strong> Sdílejte konkrétní zkušenost z projektu, kde přechod na statickou generaci vedl ke značnému zrychlení aplikace a zlepšení SEO.</li>
+        <li><strong>SEO optimalizace:</strong> Statické stránky se snadno indexují, což zlepšuje pozici ve výsledcích vyhledávání.</li>
         <li><strong>Kombinace SSG a ISR:</strong> Zvažte využití <em>Incremental Static Regeneration (ISR)</em>, která umožňuje aktualizovat obsah bez kompletního rebuildu celé aplikace, a tím přináší další výhody.</li>
       </ul>
       
