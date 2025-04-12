@@ -59,7 +59,7 @@
     "olomouc": "Olomouc",
     "projekt": "Projekty",
     "technologies": " Moje technologie:",
-    "description": "Jsem 24letý nadšenec pro web. Pokud vás moje práce zajimá, prohlédněte si mé ",
+    "description": "Věnuji se web developmentu. Pokud vás moje práce zajimá, prohlédněte si mé ",
     "description2": " nebo si přečtěte",
     "description3": ", kde sdílím své zkušenosti.",
     "descriptionlink2": " Moje poslední příspěvky",
@@ -72,7 +72,7 @@
   "LatestPosts": {
     "title": "Moje poslední příspěvky",
     "headerdesc": "Na mém blogu sdílím své zkušenosti a myšlenky spojené s programováním.",
-    "showMore": "Více príspěvků →"
+    "showMore": "Více příspěvků →"
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
