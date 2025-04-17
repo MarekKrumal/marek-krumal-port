@@ -1,0 +1,43 @@
+---
+slug: staticka-generace-nextjs15
+title: Statická generace v NextJs
+date: 2025-01-13
+problog: V dnešní době, kdy rychlost načítání stránek a optimalizace pro vyhledávače hrají zásadní roli, se statická generace obsahu stává klíčovým nástrojem ve vývoji webových aplikací
+---
+
+<div>
+  <h2 style="color: var(--blog-heading-color);">Úvod</h2>
+  <p>
+          V dnešní době, kdy rychlost načítání stránek a optimalizace pro vyhledávače hrají zásadní roli, se statická generace obsahu stává klíčovým nástrojem ve vývoji webových aplikací. Používám <strong style="font-weight: 600;">Next.js 15</strong>, který nabízí vestavěnou podporu pro <text style="color: var(--blog-code-color); font-weight: 700;">Static Site Generation (SSG)</text> a kombinuje výhody statických stránek s flexibilitou dynamického obsahu. V tomto příspěvku se podíváme na to, jak SSG funguje v Next.js 15, proč je tak užitečné a jak vám může pomoci vytvořit rychlejší a bezpečnější web.
+  </p>
+  <h2 style="color: var(--blog-heading-color);">Co je statická generace obsahu?</h2>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      Základní princip:</text> Statická generace vytváří HTML stránky při buildu aplikace, místo aby byly generovány na požádání na serveru.
+  </p>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">Výhody SSG:</text>
+  </p>
+  <ul>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Rychlost:</text> Statické soubory se načítají okamžitě, což vede k lepšímu uživatelskému zážitku.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">SEO optimalizace:</text> Vyhledávače snadno indexují statické stránky, což zlepšuje pozici ve výsledcích vyhledávání.</li>
+  </ul>
+  <h2 style="color: var(--blog-heading-color);">Jak Next.js 15 implementuje SSG</h2>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      getStaticProps:</text> Použití funkce <text style="color: var(--blog-function); font-weight: 700;">getStaticProps</text> umožňuje získat data při build time. Například můžete načíst data z externího API a předat je komponentě před renderováním.
+  </p>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      generateStaticParams:</text> V novém App Routeru se místo <text style="color: var(--blog-function); font-weight: 700;">getStaticPaths</text> používá funkce <text style="color: var(--blog-function); font-weight: 700;">generateStaticParams</text> pro generování dynamických statických stránek (například pro blogové příspěvky, kdy má každá stránka vlastní URL založenou na slug). Tato funkce určuje seznam parametrů, pro které má být daná stránka předem vygenerována. <em>Tato moje konkrétní stránka používá generateStaticParams</em>.
+  </p>
+  <h2 style="color: var(--blog-heading-color);">Praktické příklady a tipy</h2>
+  <ul>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Optimalizace výkonu:</text> Díky SSG dosáhnete rychlejšího načítání stránek a zlepšíte uživatelský zážitek.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">SEO optimalizace:</text> Statické stránky se snadno indexují, což zlepšuje pozici ve výsledcích vyhledávání.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Kombinace SSG a ISR:</text> Zvažte využití <em style="font-weight: 600;">Incremental Static Regeneration (ISR)</em>, která umožňuje aktualizovat obsah bez kompletního rebuildu celé aplikace, a tím přináší další výhody.</li>
+  </ul>
+
+<h2 style="color: var(--blog-heading-color);">Závěr</h2>
+
+  <p>
+          Next.js 15 svým přístupem ke statické generaci obsahu nabízí silný nástroj, který pomáhá vývojářům vytvářet rychlé, bezpečné a SEO optimalizované webové aplikace. Pokud se i vy chcete zaměřit na zrychlení načítání stránek a zároveň využít moderní technologie, rozhodně stojí za to prozkoumat možnosti, které SSG v Next.js 15 nabízí.
+  </p>
+</div>

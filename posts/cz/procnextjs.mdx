@@ -1,0 +1,175 @@
+---
+slug: procnextjs
+title: Proč mě zaujal NextJs
+date: 2025-01-13
+problog: Musím se přiznat, že když jsem poprvé začal používat Next.js, vůbec jsem nechápal rozdíl mezi SSR (Server-Side Rendering) a CSR (Client-Side Rendering).Většinu projektů jsem do té doby dělal ve Vite nebo obyčejném
+---
+
+<div style="font-weight: 500;">
+<h2 style="color: var(--blog-heading-color); margin-bottom: 1">Server-Side Rendering vs Client-Side Rendering</h3>
+<text>
+        Musím se přiznat, že když jsem poprvé začal používat Next.js, vůbec jsem nechápal rozdíl mezi SSR (Server-Side Rendering) a CSR (Client-Side Rendering).
+Většinu projektů jsem do té doby dělal ve Vite nebo obyčejném Reactu. Pak jsem ale narazil na potřebu psát <text style="color: var(--blog-string); font-weight: 700;">"use client"</text> do komponent, které obsahovaly React hooky nebo interaktivní funkce jako <text style="color: var(--blog-props); font-weight: 700;">onClick</text>.
+To mě přimělo začít se více zajímat o web jako takový.</p>
+<text>
+        Časem jsem zjistil, že není úplně chytré cpát zbytečný JavaScript a React hooky, jako <text style="color: var(--blog-function); font-weight: 700;">useEffect</text>, do každé komponenty. Jasně, složité weby a aplikace se bez toho neobejdou, ale já jsem měl radost, když jsem svou aplikaci
+ nebo jednoduchou webovou stránku dokázal udělat rychlejší díky tomu, že jsem odstranil zbytečný JavaScript. Místo toho jsem se naučil řešit funkce tak, aby běžely pouze na serveru, což mi přišlo mnohem efektivnější.</p>
+
+<h2 style="color: var(--blog-heading-color);">
+  Next.js <text>&lt;Image /&gt;</text> komponenta
+</h2>
+  <text>
+        Optimalizace obrázků mě dřív nijak zvlášť nezajímala, ale Next.js mi
+  nedal na vybranou. Má vlastní
+  <text style="color: var(--blog-heading-color); font-weight: 700;">
+    &lt;Image /&gt;
+  </text>
+  komponentu která umí:
+</text>
+<ul>
+  <li>
+    Automaticky převádět obrázky do formátu
+    <text style="color: var(--blog-code-color); font-weight: 700;">WebP</text>, což
+    zmenšuje jejich velikost a zrychluje načítání.
+  </li>
+  <li>
+    Podporuje lazy loading – obrázky se načítají, jen když jsou viditelné na
+    obrazovce uživatele.
+  </li>
+  <li>
+    Snadno nastavit responzivní design pomocí
+    <text style="color: var(--blog-props); font-weight: 700;">sizes</text> nebo
+    <text style="color: var(--blog-props); font-weight: 700;">layout</text>.
+  </li>
+  <li>
+    Používat placeholdery – například rozmazaný náhled obrázku (blur) před
+    úplným načtením.
+  </li>
+</ul>
+
+<p>
+      Rozmazaný placeholder jsem zakomponoval i na této stránce. Pokud máte
+  pomalejší připojení, místo spinneru nebo skeletonu se nejdříve zobrazí
+  rozmazaný obrázek, který je vygenerovaný jako
+  <text style="color: var(--blog-code-color); font-weight: 700;">Base64</text>. K
+  tomu jsem použil knihovnu
+  <text style="color: var(--blog-code-color); font-weight: 700;">Sharp</text>,
+  kterou Next.js podporuje.
+</p>
+
+<text>Jak jsem to udělal?</text>  <text>
+  Stačí nainstalovat knihovnu Sharp:
+</text>  <pre>
+    <code style="color: var(--blog-code-color);">npm install sharp</code>
+</pre>
+  <text>
+    Potom si vytvoříme skript <strong>generate-blur.mjs</strong>, který
+  vygeneruje Base64 kód pro placeholder. Ten jsem pak použil v
+  <text style="color: var(--blog-heading-color); font-weight: 700;">
+    &lt;Image /&gt;
+  </text>
+  komponentě takto:
+</text>
+  <pre>
+  <code style="color: var(--blog-code-color);">
+    placeholder="blur" blurDataURL={imageBlur || image}
+  </code>
+</pre>
+  <text>
+    Výsledek se mi osobně zamlouvá více než spinner nebo skeleton, a navíc je to
+  super jednoduché na implementaci.
+</text>
+<h2 style="color: var(--blog-heading-color);">File-Based Routing</h2>
+<text>
+        Dříve jsem ve svých projektech používal klasické routes
+  <a
+    href="https://github.com/MarekKrumal/MTRX/tree/main/backend/routes"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Example
+  </a>
+</text>
+<text>
+  . Ze začátku mě překvapilo, že Next.js používá složku
+  <text style="color: var(--blog-code-color); font-weight: 700;">app</text>. Ano,
+  od začátku jsem pracoval s verzí Next.js 14/15, která používá App Router. Zásadní
+  rozdíl oproti Pages Routeru je například v tom, že App Router má footer a navbar
+  v layoutu tak, jako je tomu na této stránce.
+</text>  <p>
+        Další zásadní změnou je, že App Router používá
+  <text style="color: var(--blog-string); font-weight: 700;">
+    "use server"
+  </text> v komponentách jako výchozí. V App Routeru se také nesetkáte s funkcemi
+  jako <text style="color: var(--blog-function); font-weight: 700;">
+    getStaticProps
+  </text> nebo  <text style="color: var(--blog-function); font-weight: 700;">
+    getServerSideProps
+  </text>, jak tomu je u Pages Routeru. Místo toho můžete jednoduše používat <text style="color: var(--blog-function); font-weight: 700;">
+    fetch<text style="color: var(--blog-props); font-weight: 700;">( )</text>
+  </text> přímo v komponentách.
+
+<p>
+        Nejvíc mě zaujalo jak jednoduché je použití
+  <text style="color: var(--blog-code-color); font-weight: 700;">[slug]</text>
+  routování. Jako příklad uvedu tento projekt. Začal jsem ho bez velkého
+  přemýšlení – prostě jsem jel podle intuice a neuvědomil si, že už je stránka
+  větší a že bude potřeba použít něco pro routování, proto jsem předělal tento
+  web, aby fungoval přes slug:
+  <a
+    href="https://github.com/MarekKrumal/marek-krumal-port/commit/b61c5cf5352931ccdc6a3667ee00de27df2f39c7"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Commit
+  </a>
+</p>
+
+<h2 style="color: var(--blog-heading-color);">
+    Vytvoření vlastního API Routeru
+</h2>
+  <text>
+        Vlastní API route jsem použil například ve svém projektu
+  <a
+    href="https://github.com/MarekKrumal/awares33/blob/main/src/app/api/posts/for-you/route.ts"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Aware
+  </a>. Na projektu jsem používal React Query a původně jsem fetchoval data přímo
+  na HomePage. Ale protože React Query běží na clientu a ne na serveru, a abych mohl
+  fetchovat stránky jako například "for-you", musel jsem nastavit vlastní server
+    endpoint <text style="color: var(--blog-props); font-weight: 700">
+    route.ts
+  </text> (pro GET, POST requesty). Nejprve jsem vytvořil GET endpoint, přidal <text style="color: var(--blog-return); font-weight: 700">
+    try-catch
+  </text>, logoval jsem error, pak jsem si vzal usera z funkce<a
+    href="https://github.com/MarekKrumal/awares33/blob/main/src/auth.ts"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    validateRequest()
+  </a>, a když je user autorizován, fetchnul jsem posts. Posts vracím:
+  <text style="color: var(--blog-code-color);">
+    return Response.json(posts)
+  </text>
+  .Potom můžu použít React Query, pomocí kterého můžu dělat requesty na tento endpoint.
+</text>
+
+<h2 style="color: var(--blog-heading-color);">TypeScript , TailwindCSS a Deployment na Vercel</h2>
+  <text>Ze začátku jsem se TypeScriptu hodně vyhýbal, protože jsem nechápal, proč bych se ho měl učit, když jsem měl pocit, že ani pořádně neumím JavaScript. Postupem času jsem ale zjistil, že je lepší mít TypeScript v projektu.
+
+Pokud ho nechcete používat, nemusíte – můžete klidně psát klasický JavaScript, i když to není úplně nejlepší praxe. Jak jsem s ním postupně přicházel do styku, začal jsem pomalu objevovat, v čem je užitečný, hlavně u větších projektů.
+Díky TypeScriptu jsem začal přemýšlet o kódu jinak a snažím se psát komponenty co nejjednodušší na údržbu. Je to sice pořád „work in progress“, ale už vidím, jaké výhody mi to přináší.
+
+S Tailwindem jsem začal prakticky od samého začátku, kdy jsem začal používat JSX, a od té doby jsem na klasické CSS skoro nesáhl. A nasazení na Vercel mi připadá neskutečně jednoduché,
+obzvlášť s Next.js – možná proto, že Vercel vlastně vytvořil Next.js jako open-source framework. Vercel navíc automaticky nasazuje všechny změny, které commitnu do hlavní branch na GitHubu.
+Proto u mých projektů často uvidíte Next.js, TypeScript, TailwindCSS a Deploymnet na Vercel.com.
+
+</text>
+
+</div>

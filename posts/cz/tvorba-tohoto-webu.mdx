@@ -1,0 +1,61 @@
+---
+slug: tvorba-tohoto-webu
+title: Tvorba tohoto webu
+date: 2025-01-15
+problog: Tato stránka vznikla především proto, abych mohl představit své projekty a seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji chci vyvíjet v Next.js – stejně jako většinu svých projektů.
+---
+
+<div>
+  <h2 style="color: var(--blog-heading-color);">Úvod</h2>
+  <p>
+          Tato stránka vznikla především proto, abych mohl představit své projekty a
+    seznámit návštěvníky s mými pracemi. Od samého začátku jsem věděl, že ji
+    chci vyvíjet v Next.js, TypeScriptu a Tailwindu – stejně jako většinu svých
+    projektů.
+  </p>
+
+<h2 style="color: var(--blog-heading-color);">Přístup a vývoj</h2>
+<p>
+      Na začátku jsem měl jasnou představu o tom, jak by měl web vypadat a
+  fungovat. Jak jsem ale na projektu pracoval, postupně se ta představa měnila –
+  přišel jsem na lepší řešení, díky kterým jsem mohl původní nápad výrazně
+  vylepšit. Nakonec jsem vytvořil web, který je nejen rychlý, ale také snadno
+  použitelný, což potvrzují i skvělé výsledky na PageSpeed Insights.
+</p>
+
+<h2 style="color: var(--blog-heading-color);">Technologie a optimalizace</h2>
+<p>
+      Pro posty a projekty využívám slug, většinu obsahu mám předgenerovanou
+  jako statický HTML pomocí funkcí jako
+  <text style="color: var(--blog-function); font-weight: 700;">
+    generateStaticParams
+  </text>v novém App Routeru. Stylování jsem vytvářel ručně – původně bylo vše barevné,
+  ale nakonec jsem se rozhodl pro jednoduchý a nedráždivý desing.
+</p>
+<p>
+  Také jsem se naučil předrenderovat obrázky pomocí knihovny Sharp, o čemž píšu
+  více v mém příspěvku
+  <a
+    href="https://marek-krumal-port.vercel.app/en/posts/procnextjs"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Proč mě zaujal Next.js?
+  </a>.Jeden z problémů, se kterým jsem se při samostatné tvorbě stylování setkal,
+  byla nutnost ladit barvy zvlášť pro Dark a Light // mode ale nakonec jsem si poradil.
+  Další komplikace nastala při použití Reactu v19 a Next.js 15, kdy Next.js požadoval
+  awaitování params, což mi způsobilo nefunkčnost některých částí aplikace. Ani ChatGPT
+  mi v této situaci nedokázal pomoci. Nakonec jsem po dlouhém hledání narazil na
+  řešení díky uživateli <a
+    href="https://github.com/orgs/community/discussions/142577"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    night-fury-3
+  </a>, který na GitHubu popsal správný postup.
+</p>
+
+  <h2 style="color: var(--blog-heading-color);">Závěr</h2>
+  <p>
+          Celkově jsem při vývoji tohoto webu získal mnoho zkušeností, ať už v oblasti
+    optimalizace výkonu, přístupnosti či jednoduchosti designu.
+  </p>
+</div>

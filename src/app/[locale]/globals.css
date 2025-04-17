@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 93%;
     --foreground: 0 0% 10%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 10%;
@@ -29,6 +29,15 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --blog-heading-color: #3cb371;
+    --blog-code-color: #2e8b57;
+    --blog-link-color: #008000;
+    --blog-link-hover-bg: #006400;
+    --blog-link-hover-color: #fff;
+    --blog-string: #c05621;
+    --blog-props: #569cd6;
+    --blog-function: #f9ca23;
+    --blog-return: #c778f0;
   }
 
   .dark {
@@ -56,6 +65,15 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --blog-heading-color: #98fb98;
+    --blog-code-color: #adff2f;
+    --blog-link-color: #7cfc00;
+    --blog-link-hover-bg: #008000;
+    --blog-link-hover-color: #000;
+    --blog-string: #ed8936;
+    --blog-props: #569cd6;
+    --blog-function: #ffe380;
+    --blog-return: #c778f0;
   }
 }
 
