@@ -17,7 +17,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
-    "gray-matter": "^4.0.3",
     "html-to-text": "^9.0.5",
     "lucide-react": "^0.461.0",
     "next": "^15.3.0",
@@ -27,8 +26,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.4.0",
     "sharp": "^0.33.5",
-    "shiki": "^3.2.2",
-    "shiki-themes": "^0.2.7",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "ts-node": "^10.9.2"
@@ -42,9 +39,6 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "postcss": "^8",
-    "rehype-autolink-headings": "^7.1.0",
-    "rehype-pretty-code": "^0.14.1",
-    "rehype-slug": "^6.0.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.7.2",
     "webpack-bundle-analyzer": "^4.10.2"
