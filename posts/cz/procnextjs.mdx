@@ -8,19 +8,19 @@ problog: Musím se přiznat, že když jsem poprvé začal používat Next.js, v
 <div style="font-weight: 500;">
 <h2 style="color: var(--blog-heading-color); margin-bottom: 1">Server-Side Rendering vs Client-Side Rendering</h3>
 <text>
-        Musím se přiznat, že když jsem poprvé začal používat Next.js, vůbec jsem nechápal rozdíl mezi SSR (Server-Side Rendering) a CSR (Client-Side Rendering).
+Musím se přiznat, že když jsem poprvé začal používat Next.js, vůbec jsem nechápal rozdíl mezi SSR (Server-Side Rendering) a CSR (Client-Side Rendering).
 Většinu projektů jsem do té doby dělal ve Vite nebo obyčejném Reactu. Pak jsem ale narazil na potřebu psát <text style="color: var(--blog-string); font-weight: 700;">"use client"</text> do komponent, které obsahovaly React hooky nebo interaktivní funkce jako <text style="color: var(--blog-props); font-weight: 700;">onClick</text>.
 To mě přimělo začít se více zajímat o web jako takový.</p>
 <text>
-        Časem jsem zjistil, že není úplně chytré cpát zbytečný JavaScript a React hooky, jako <text style="color: var(--blog-function); font-weight: 700;">useEffect</text>, do každé komponenty. Jasně, složité weby a aplikace se bez toho neobejdou, ale já jsem měl radost, když jsem svou aplikaci
+Časem jsem zjistil, že není úplně chytré cpát zbytečný JavaScript a React hooky, jako <text style="color: var(--blog-function); font-weight: 700;">useEffect</text>, do každé komponenty. Jasně, složité weby a aplikace se bez toho neobejdou, ale já jsem měl radost, když jsem svou aplikaci
  nebo jednoduchou webovou stránku dokázal udělat rychlejší díky tomu, že jsem odstranil zbytečný JavaScript. Místo toho jsem se naučil řešit funkce tak, aby běžely pouze na serveru, což mi přišlo mnohem efektivnější.</p>
 
 <h2 style="color: var(--blog-heading-color);">
   Next.js <text>&lt;Image /&gt;</text> komponenta
 </h2>
-  <text>
-        Optimalizace obrázků mě dřív nijak zvlášť nezajímala, ale Next.js mi
-  nedal na vybranou. Má vlastní
+<text>
+  Optimalizace obrázků mě dřív nijak zvlášť nezajímala, ale Next.js mi nedal na
+  vybranou. Má vlastní
   <text style="color: var(--blog-heading-color); font-weight: 700;">
     &lt;Image /&gt;
   </text>
@@ -48,7 +48,7 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
 </ul>
 
 <p>
-      Rozmazaný placeholder jsem zakomponoval i na této stránce. Pokud máte
+  Rozmazaný placeholder jsem zakomponoval i na této stránce. Pokud máte
   pomalejší připojení, místo spinneru nebo skeletonu se nejdříve zobrazí
   rozmazaný obrázek, který je vygenerovaný jako
   <text style="color: var(--blog-code-color); font-weight: 700;">Base64</text>. K
@@ -63,7 +63,7 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
     <code style="color: var(--blog-code-color);">npm install sharp</code>
 </pre>
   <text>
-    Potom si vytvoříme skript <strong>generate-blur.mjs</strong>, který
+  Potom si vytvoříme skript <strong>generate-blur.mjs</strong>, který
   vygeneruje Base64 kód pro placeholder. Ten jsem pak použil v
   <text style="color: var(--blog-heading-color); font-weight: 700;">
     &lt;Image /&gt;
@@ -76,12 +76,12 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
   </code>
 </pre>
   <text>
-    Výsledek se mi osobně zamlouvá více než spinner nebo skeleton, a navíc je to
+  Výsledek se mi osobně zamlouvá více než spinner nebo skeleton, a navíc je to
   super jednoduché na implementaci.
 </text>
 <h2 style="color: var(--blog-heading-color);">File-Based Routing</h2>
 <text>
-        Dříve jsem ve svých projektech používal klasické routes
+  Dříve jsem ve svých projektech používal klasické routes
   <a
     href="https://github.com/MarekKrumal/MTRX/tree/main/backend/routes"
     target="_blank"
@@ -98,7 +98,7 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
   rozdíl oproti Pages Routeru je například v tom, že App Router má footer a navbar
   v layoutu tak, jako je tomu na této stránce.
 </text>  <p>
-        Další zásadní změnou je, že App Router používá
+  Další zásadní změnou je, že App Router používá
   <text style="color: var(--blog-string); font-weight: 700;">
     "use server"
   </text> v komponentách jako výchozí. V App Routeru se také nesetkáte s funkcemi
@@ -111,7 +111,7 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
   </text> přímo v komponentách.
 
 <p>
-        Nejvíc mě zaujalo jak jednoduché je použití
+  Nejvíc mě zaujalo jak jednoduché je použití
   <text style="color: var(--blog-code-color); font-weight: 700;">[slug]</text>
   routování. Jako příklad uvedu tento projekt. Začal jsem ho bez velkého
   přemýšlení – prostě jsem jel podle intuice a neuvědomil si, že už je stránka
@@ -128,10 +128,10 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
 </p>
 
 <h2 style="color: var(--blog-heading-color);">
-    Vytvoření vlastního API Routeru
+  Vytvoření vlastního API Routeru
 </h2>
-  <text>
-        Vlastní API route jsem použil například ve svém projektu
+<text>
+  Vlastní API route jsem použil například ve svém projektu
   <a
     href="https://github.com/MarekKrumal/awares33/blob/main/src/app/api/posts/for-you/route.ts"
     target="_blank"
@@ -161,7 +161,7 @@ To mě přimělo začít se více zajímat o web jako takový.</p>
 </text>
 
 <h2 style="color: var(--blog-heading-color);">TypeScript , TailwindCSS a Deployment na Vercel</h2>
-  <text>Ze začátku jsem se TypeScriptu hodně vyhýbal, protože jsem nechápal, proč bych se ho měl učit, když jsem měl pocit, že ani pořádně neumím JavaScript. Postupem času jsem ale zjistil, že je lepší mít TypeScript v projektu.
+<text>Ze začátku jsem se TypeScriptu hodně vyhýbal, protože jsem nechápal, proč bych se ho měl učit, když jsem měl pocit, že ani pořádně neumím JavaScript. Postupem času jsem ale zjistil, že je lepší mít TypeScript v projektu.
 
 Pokud ho nechcete používat, nemusíte – můžete klidně psát klasický JavaScript, i když to není úplně nejlepší praxe. Jak jsem s ním postupně přicházel do styku, začal jsem pomalu objevovat, v čem je užitečný, hlavně u větších projektů.
 Díky TypeScriptu jsem začal přemýšlet o kódu jinak a snažím se psát komponenty co nejjednodušší na údržbu. Je to sice pořád „work in progress“, ale už vidím, jaké výhody mi to přináší.

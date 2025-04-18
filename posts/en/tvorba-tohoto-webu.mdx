@@ -1,6 +1,62 @@
 ---
 slug: tvorba-tohoto-webu
-title: Developing this Site
-date: 2025-02-02
-problog: This page was created primarily so that I could present my projects and introduce visitors to my work. From the very beginning, I knew that I wanted to develop it in Next.js – just like most of my projects.
+title: Building This Website
+date: 2025-01-15
+problog: This site was primarily created so I could showcase my projects and introduce visitors to my work. From the very beginning, I knew I wanted to develop it in Next.js – just like most of my projects.
 ---
+
+<div>
+  <h2 style="color: var(--blog-heading-color);">Introduction</h2>
+  <p>
+          This site was primarily created so I could showcase my projects and
+    introduce visitors to my work. From the very beginning, I knew I wanted
+    to develop it in Next.js, TypeScript, and Tailwind – just like most of my
+    projects.
+  </p>
+
+<h2 style="color: var(--blog-heading-color);">Approach and Development</h2>
+<p>
+  At the start, I had a clear idea of how the website should look and function.
+  However, as I worked on the project, that vision gradually changed – I
+  discovered better solutions that allowed me to significantly improve the
+  original concept. Ultimately, I created a website that is not only fast but
+  also easy to use, which is confirmed by the excellent results on PageSpeed
+  Insights.
+</p>
+
+<h2 style="color: var(--blog-heading-color);">Technology and Optimization</h2>
+<p>
+  For posts and projects, I use slugs. Most of the content is pre-generated as
+  static HTML using functions like
+  <text style="color: var(--blog-function); font-weight: 700;">
+    generateStaticParams
+  </text> in the new App Router. I created the styling manually – initially, everything
+  was colorful, but eventually, I decided on a simple and non-irritating design.
+</p>
+<p>
+  I also learned to pre-render images using the Sharp library, which I write
+  more about in my post
+  <a
+    href="https://marek-krumal-port.vercel.app/en/posts/why-nextjs"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Why Next.js Caught My Attention?
+  </a>. One problem I encountered while creating the styling independently was the
+  need to adjust colors separately for Dark and Light mode, but I managed in the
+  end. Another complication arose when using React v19 and Next.js 15, where Next.js
+  required `await`ing `params`, which caused some parts of my application to stop
+  working. Even ChatGPT couldn't help me in this situation. Finally, after a long
+  search, I came across a solution thanks to user <a
+    href="https://github.com/orgs/community/discussions/142577"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    night-fury-3
+  </a>, who described the correct procedure on GitHub.
+</p>
+
+  <h2 style="color: var(--blog-heading-color);">Conclusion</h2>
+  <p>
+          Overall, during the development of this website, I gained a lot of experience, whether in the area of
+    performance optimization, accessibility, or design simplicity.
+  </p>
+</div>

@@ -1,6 +1,177 @@
 ---
 slug: procnextjs
-title: What I like about Nextjs
-date: 2025-02-02
-problog: I have to admit that when I first started using Next.js, I didn't understand the difference between SSR (Server-Side Rendering) and CSR (Client-Side Rendering) at all. Most projects until then I did in Vite or plain...
+title: Why Next.js Caught My Attention
+date: 2025-01-13
+problog: I must admit, when I first started using Next.js, I didn't understand the difference between SSR (Server-Side Rendering) and CSR (Client-Side Rendering). Most of my projects until then were done in Vite or plain React.
 ---
+
+<div style="font-weight: 500;">
+<h2 style="color: var(--blog-heading-color); margin-bottom: 1">Server-Side Rendering vs Client-Side Rendering</h2>
+<text>
+        I have to admit, when I first started using Next.js, I didn't understand the difference between SSR (Server-Side Rendering) and CSR (Client-Side Rendering).
+Most of my projects until then were done in Vite or plain React. But then I encountered the need to write <text style="color: var(--blog-string); font-weight: 700;">"use client"</text> in components that contained React hooks or interactive functions like <text style="color: var(--blog-props); font-weight: 700;">onClick</text>.
+That prompted me to start learning more about the web itself.</p>
+<text>
+        Over time, I realized it wasn't very smart to cram unnecessary JavaScript and React hooks, like <text style="color: var(--blog-function); font-weight: 700;">useEffect</text>, into every component. Sure, complex websites and applications can't do without them, but I felt satisfied when I could make my application
+or simple webpage faster by removing unnecessary JavaScript. Instead, I learned to handle functions so they run only on the server, which seemed much more efficient to me.</p>
+
+<h2 style="color: var(--blog-heading-color);">
+  Next.js <text>&lt;Image /&gt;</text> Component
+</h2>
+<text>
+  Image optimization didn't particularly interest me before, but Next.js didn't
+  give me a choice. It has its own
+  <text style="color: var(--blog-heading-color); font-weight: 700;">
+    &lt;Image /&gt;
+  </text>
+  component that can:
+</text>
+<ul>
+  <li>
+    Automatically convert images to the
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      WebP
+    </text> format, which reduces their size and speeds up loading.
+  </li>
+  <li>
+    Support lazy loading – images load only when they are visible on the user's
+    screen.
+  </li>
+  <li>
+    Easily set responsive design using
+    <text style="color: var(--blog-props); font-weight: 700;">sizes</text> or
+    <text style="color: var(--blog-props); font-weight: 700;">layout</text>.
+  </li>
+  <li>
+    Use placeholders – for example, a blurred preview of the image (blur) before
+    it fully loads.
+  </li>
+</ul>
+
+<p>
+  I incorporated the blurred placeholder on this page as well. If you have a
+  slower connection, instead of a spinner or skeleton, a blurred image generated
+  as
+  <text style="color: var(--blog-code-color); font-weight: 700;">
+    Base64
+  </text> is displayed first. For this, I used the
+  <text style="color: var(--blog-code-color); font-weight: 700;">
+    Sharp
+  </text>{" "}
+  library, which Next.js supports.
+</p>
+
+<text>How did I do it?</text>  <text>
+  Just install the Sharp library:
+</text>  <pre>
+    <code style="color: var(--blog-code-color);">npm install sharp</code>
+</pre>
+  <text>
+    Then, we create a script <strong>generate-blur.mjs</strong>, which
+  generates the Base64 code for the placeholder. I then used this in the
+  <text style="color: var(--blog-heading-color); font-weight: 700;">
+    &lt;Image /&gt;
+  </text>
+  component like this:
+</text>
+  <pre>
+  <code style="color: var(--blog-code-color);">
+    placeholder="blur" blurDataURL={imageBlur || image}
+  </code>
+</pre>
+  <text>
+    I personally prefer the result over a spinner or skeleton, and it's also
+  super simple to implement.
+</text>
+<h2 style="color: var(--blog-heading-color);">File-Based Routing</h2>
+<text>
+        Previously, in my projects, I used classic routes
+  <a
+    href="https://github.com/MarekKrumal/MTRX/tree/main/backend/routes"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Example
+  </a>
+</text>
+<text>
+  . At first, I was surprised that Next.js uses the
+  <text style="color: var(--blog-code-color); font-weight: 700;">app</text> folder. Yes,
+  from the beginning, I worked with Next.js versions 14/15, which use the App Router. A fundamental
+  difference compared to the Pages Router is, for example, that the App Router has the footer and navbar
+  in the layout, just like on this page.
+</text>  <p>
+        Another significant change is that the App Router uses
+  <text style="color: var(--blog-string); font-weight: 700;">
+    "use server"
+  </text> in components by default. In the App Router, you also won't encounter functions
+  like <text style="color: var(--blog-function); font-weight: 700;">
+    getStaticProps
+  </text> or <text style="color: var(--blog-function); font-weight: 700;">
+    getServerSideProps
+  </text>, as is the case with the Pages Router. Instead, you can simply use <text style="color: var(--blog-function); font-weight: 700;">
+    fetch<text style="color: var(--blog-props); font-weight: 700;">( )</text>
+  </text> directly in components.
+
+<p>
+  What intrigued me the most was how simple it is to use
+  <text style="color: var(--blog-code-color); font-weight: 700;">[slug]</text>
+  routing. As an example, I'll mention this project. I started it without much
+  thought – I just went with my intuition and didn't realize the page was
+  getting larger and would need something for routing, so I refactored this
+  website to work via slugs:
+  <a
+    href="https://github.com/MarekKrumal/marek-krumal-port/commit/b61c5cf5352931ccdc6a3667ee00de27df2f39c7"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Commit
+  </a>
+</p>
+
+<h2 style="color: var(--blog-heading-color);">Creating a Custom API Route</h2>
+<text>
+  I used a custom API route, for example, in my project
+  <a
+    href="https://github.com/MarekKrumal/awares33/blob/main/src/app/api/posts/for-you/route.ts"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    Aware
+  </a>. In the project, I used React Query and initially fetched data directly on
+  the HomePage. But because React Query runs on the client and not the server, and
+  to fetch pages like "for-you", I had to set up a custom server endpoint <text style="color: var(--blog-props); font-weight: 700">
+    route.ts
+  </text> (for GET, POST requests). First, I created a GET endpoint, added <text style="color: var(--blog-return); font-weight: 700">
+    try-catch
+  </text>, logged the error, then I got the user from the <a
+    href="https://github.com/MarekKrumal/awares33/blob/main/src/auth.ts"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color: var(--blog-link-color); font-weight: 650;"
+  >
+    validateRequest()
+  </a> function, and if the user is authorized, I fetched the posts. I return the
+  posts with:
+  <text style="color: var(--blog-code-color);">
+    return Response.json(posts)
+  </text>
+  . Then I can use React Query to make requests to this endpoint.
+</text>
+
+<h2 style="color: var(--blog-heading-color);">TypeScript, TailwindCSS, and Deployment on Vercel</h2>
+  <text>Initially, I avoided TypeScript quite a bit because I didn't understand why I should learn it when I felt I didn't even properly know JavaScript. Over time, however, I found that it's better to have TypeScript in a project.
+
+If you don't want to use it, you don't have to – you can easily write classic JavaScript, although it's not exactly the best practice. As I gradually came into contact with it, I slowly began to discover its usefulness, especially in larger projects.
+Thanks to TypeScript, I started thinking about code differently and try to write components that are as easy to maintain as possible. It's still a "work in progress," but I can already see the benefits it brings.
+
+I started using Tailwind practically from the very beginning when I started using JSX, and since then, I've barely touched classic CSS. And deploying on Vercel seems incredibly simple to me,
+especially with Next.js – perhaps because Vercel actually created Next.js as an open-source framework. Moreover, Vercel automatically deploys all changes I commit to the main branch on GitHub.
+That's why you'll often see Next.js, TypeScript, TailwindCSS, and Deployment on Vercel.com in my projects.
+
+</text>
+
+</div>

@@ -1,6 +1,113 @@
 ---
 slug: docker-kubernetes-ci-cd
-title: Docker, Kubernetes a CI/CD
+title: Docker, Kubernetes, and CI/CD
 date: 2025-02-02
-problog: This article simply explains what Docker, Kubernetes, and CI/CD pipelines do, and how they collaborate in software development and deployment.
+problog: This article simply explains what Docker, Kubernetes, and CI/CD pipelines do, and how they work together in software development and deployment.
 ---
+
+<div>
+  <h2 style="color: var(--blog-heading-color);">Introduction</h2>
+  <text>
+      In this article, we will look at three technologies that complement each other and make working with applications easier: <text style="color: var(--blog-code-color); font-weight: 700;">Docker, Kubernetes</text> and <text style="color: var(--blog-code-color); font-weight: 700;">CI/CD pipelines</text>. We will explain what each of them does and how they work together.
+  </text>
+
+<h2 style="color: var(--blog-heading-color);">What is Docker?</h2>
+<text>
+  Docker is a tool that allows you to package an application along with all its
+  dependencies into a standalone package, called a
+  <text style="color: var(--blog-code-color); font-weight: 700;">
+    container
+  </text>
+  . This ensures the application runs the same way wherever you run it.
+</text>
+<ul>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Isolation:
+    </text>
+    Each container runs independently, ensuring they do not interfere with each other.
+  </li>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Portability:
+    </text>
+    Containers can be easily moved between different systems and environments.
+  </li>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Simple Management:
+    </text>
+    Application versions and their dependencies are easily managed thanks to Docker
+    images.
+  </li>
+</ul>
+
+<h2 style="color: var(--blog-heading-color);">What is Kubernetes?</h2>
+<text>
+  Kubernetes is a system for managing and orchestrating containers. When you
+  have many containers, Kubernetes takes care of their efficient deployment and
+  management.
+</text>
+<ul>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Automatic Deployment and Scaling:
+    </text>
+    It launches more container instances under increased load, or reduces their number
+    otherwise.
+  </li>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Monitoring:
+    </text>
+    It constantly monitors the status of containers and automatically restarts them
+    in case of problems.
+  </li>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Load Balancing:
+    </text>
+    It distributes traffic evenly among all running containers, ensuring the smooth
+    operation of the application.
+  </li>
+</ul>
+
+<h2 style="color: var(--blog-heading-color);">What is CI/CD?</h2>
+<text>
+  CI/CD stands for
+  <text style="color: var(--blog-code-color); font-weight: 700;">
+    Continuous Integration
+  </text>
+  and
+  <text style="color: var(--blog-code-color); font-weight: 700;">
+    Continuous Delivery/Deployment
+  </text>. It involves automating the entire process from code testing to deployment
+  into production.
+</text>
+<ul>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Continuous Integration:
+    </text>
+    Tests are automatically run with every code change to detect errors as early
+    as possible.
+  </li>
+  <li>
+    <text style="color: var(--blog-code-color); font-weight: 700;">
+      Continuous Delivery/Deployment:
+    </text>
+    After successful testing, the new version of the application is automatically
+    built and deployed, which accelerates the entire development cycle.
+  </li>
+</ul>
+
+  <h2 style="color: var(--blog-heading-color);">Conclusion</h2>
+  <text>
+        Docker, Kubernetes, and CI/CD pipelines together create a strong foundation for modern software development and deployment. Docker ensures that applications run consistently in isolated containers, Kubernetes handles the management and scaling of these containers, and CI/CD automates the entire process from testing to deployment. This approach helps speed up development, reduce errors, and ensure reliable application operation.
+  </text>
+  <br />
+  <h2 style="color: var(--blog-heading-color);">My Experience</h2>
+  <text>
+        From my own experience, although I don't have direct personal experience with Kubernetes, I have worked extensively with Next.js and the Vercel platform. Vercel offers built-in support for CI/CD, which automatically triggers builds and deployments every time code is pushed to the repository. This makes the entire deployment process simple and fast, without the need to set up complex pipelines.
+  </text>
+</div>

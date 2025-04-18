@@ -1,6 +1,43 @@
 ---
 slug: staticka-generace-nextjs15
-title: Static generation in Next.js
-date: 2025-02-02
-problog: In today's age, when page loading speed and search engine optimization play a crucial role, static content generation is becoming a key tool in web application development.
+title: Static Generation in Next.js
+date: 2025-01-13
+problog: Nowadays, when page load speed and search engine optimization play a crucial role, static content generation becomes a key tool in web application development.
 ---
+
+<div>
+  <h2 style="color: var(--blog-heading-color);">Introduction</h2>
+  <p>
+          Nowadays, when page load speed and search engine optimization play a crucial role, static content generation becomes a key tool in web application development. I use <strong style="font-weight: 600;">Next.js 15</strong>, which offers built-in support for <text style="color: var(--blog-code-color); font-weight: 700;">Static Site Generation (SSG)</text> and combines the advantages of static pages with the flexibility of dynamic content. In this post, we'll look at how SSG works in Next.js 15, why it's so useful, and how it can help you create a faster and more secure website.
+  </p>
+  <h2 style="color: var(--blog-heading-color);">What is Static Content Generation?</h2>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      Basic Principle:</text> Static generation creates HTML pages during the application build process, instead of generating them on demand on the server.
+  </p>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">Advantages of SSG:</text>
+  </p>
+  <ul>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Speed:</text> Static files load instantly, leading to a better user experience.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">SEO Optimization:</text> Search engines easily index static pages, which improves search result rankings.</li>
+  </ul>
+  <h2 style="color: var(--blog-heading-color);">How Next.js 15 Implements SSG</h2>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      getStaticProps:</text> Using the <text style="color: var(--blog-function); font-weight: 700;">getStaticProps</text> function allows fetching data at build time. For example, you can load data from an external API and pass it to the component before rendering.
+  </p>
+  <p>
+    <text style="color: var(--blog-code-color); font-weight: 700;">      generateStaticParams:</text> In the new App Router, the <text style="color: var(--blog-function); font-weight: 700;">generateStaticParams</text> function is used instead of <text style="color: var(--blog-function); font-weight: 700;">getStaticPaths</text> to generate dynamic static pages (e.g., for blog posts, where each page has its own URL based on a slug). This function determines the list of parameters for which the given page should be pre-generated. <em>This specific page of mine uses generateStaticParams</em>.
+  </p>
+  <h2 style="color: var(--blog-heading-color);">Practical Examples and Tips</h2>
+  <ul>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Performance Optimization:</text> Thanks to SSG, you achieve faster page loading and improve the user experience.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">SEO Optimization:</text> Static pages are easily indexed, which improves search result rankings.</li>
+    <li><text style="color: var(--blog-code-color); font-weight: 700;">Combining SSG and ISR:</text> Consider using <em style="font-weight: 600;">Incremental Static Regeneration (ISR)</em>, which allows updating content without a complete rebuild of the entire application, thus bringing additional benefits.</li>
+  </ul>
+
+<h2 style="color: var(--blog-heading-color);">Conclusion</h2>
+
+  <p>
+          Next.js 15, with its approach to static content generation, offers a powerful tool that helps developers create fast, secure, and SEO-optimized web applications. If you also want to focus on speeding up page loading while utilizing modern technologies, it is definitely worth exploring the possibilities that SSG in Next.js 15 offers.
+  </p>
+</div>
