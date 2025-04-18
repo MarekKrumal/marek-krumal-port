@@ -24,11 +24,6 @@ type SliderKey = keyof typeof sliderData;
 export type ParamsType = Promise<{ slug: string }>;
 
 // 3) generateStaticParams for SSR/SSG:
-export async function generateStaticParams() {
-  return AllProjects2.map((proj) => ({
-    slug: String(proj.translationKey), // must be a string
-  }));
-}
 
 // 4) The page itself, expecting `props: { params: ParamsType }`
 export default async function ProjectDetailPage(props: { params: ParamsType }) {
