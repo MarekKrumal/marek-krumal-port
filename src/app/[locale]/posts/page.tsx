@@ -31,10 +31,12 @@ async function getPostsMetadata(locale: string) {
   }
 }
 
+type ParamsLatestPosts = Promise<{ locale: string }>;
+
 export default async function LatestPosts({
   params,
 }: {
-  params: { locale: string };
+  params: ParamsLatestPosts;
 }) {
   const { locale } = await params;
   const posts = await getPostsMetadata(locale);
@@ -51,11 +53,11 @@ export default async function LatestPosts({
               href={`/${locale}/posts/${post.slug}`}
               aria-label={`Přejít na článek ${post.title}`}
             >
-              <div className="pl-3 sm:pl-4 pt-4 pb-4 hover:bg-stone-200 hover:scale-105 dark:hover:bg-black/20  mx-auto dark:bg-transparent bg-transparent duration-300">
+              <div className="pl-3 sm:pl-4 pt-4 pb-4 hover:bg-stone-200 hover:scale-105 dark:hover:bg-black/20  mx-auto dark:bg-transparent bg-transparent duration-300">
                 <p className="text-xs font-light text-green-700 dark:text-green-200">
                   {new Date(post.date).toLocaleDateString()}
                 </p>
-                <h3 className="text-md sm:text-lg  font-medium">
+                <h3 className="text-md sm:text-lg  font-medium">
                   {post.title}
                 </h3>
                 <p className="text-sm text-gray-700 dark:text-gray-400 mt-1 line-clamp-2">

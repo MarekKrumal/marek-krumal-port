@@ -4,14 +4,14 @@ import matter from "gray-matter";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  const locales = ["cz", "en"]; // Seznam tvých podporovaných jazyků
+  const locales = ["cz", "en"];
   const postsByLocale = await Promise.all(
     locales.map(async (locale) => {
       const postsDirectory = path.join(process.cwd(), "posts", locale);
       try {
         const filenames = await fs.readdir(postsDirectory);
         return filenames.map((filename) => ({
-          slug: path.basename(filename, ".mdx"), // Nebo '.md' podle tvé přípony
+          slug: path.basename(filename, ".mdx"),
           locale,
         }));
       } catch (error) {
@@ -20,17 +20,15 @@ export async function generateStaticParams() {
       }
     })
   );
-
-  // Srovnej pole do jednoho
   return postsByLocale.flat();
 }
 
-export type ParamsType = { slug: string; locale: string };
+type Params = Promise<{ slug: string; locale: string }>;
 
 export default async function BlogPostDetailPage({
   params,
 }: {
-  params: ParamsType;
+  params: Params;
 }) {
   const { locale, slug } = await params;
   const postFilePath = path.join(process.cwd(), "posts", locale, `${slug}.mdx`);
