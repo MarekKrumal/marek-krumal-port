@@ -3,7 +3,11 @@ import LatestPosts from "@/components/Posts/LatestPosts";
 import Contact from "@/components/Contact/Contact";
 import ProjectListServer from "@/components/Projects/ProjectListServer";
 
-export default function HomePage({ params }: { params: { locale: string } }) {
+export default async function HomePage({
+  params,
+}: {
+  params: { locale: string };
+}) {
   return (
     <div className="space-y-1 z-0">
       <div className="mx-auto max-w-3xl">
