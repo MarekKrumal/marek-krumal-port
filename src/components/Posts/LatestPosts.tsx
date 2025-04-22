@@ -41,6 +41,8 @@ interface LatestPostsProps {
 }
 
 export default async function LatestPosts({ params }: LatestPostsProps) {
+  // unexpected any error uvidimeeeeeee
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { locale } = await (params as any);
   const posts = await getPostsMetadata(locale);
   return (
