@@ -41,7 +41,7 @@ interface LatestPostsProps {
 }
 
 export default async function LatestPosts({ params }: LatestPostsProps) {
-  const { locale } = await params;
+  const { locale } = await (params as any);
   const posts = await getPostsMetadata(locale);
   return (
     <>
