@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 const EmailOnClick = () => {
   const handleCopy = () => {
     navigator.clipboard.writeText("marekkrumal11@gmail.com");

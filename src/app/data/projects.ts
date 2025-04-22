@@ -161,4 +161,16 @@ export const AllProjects2: ProjectData[] = [
     hasPage: false,
     alternativeUrl: "https://github.com/MarekKrumal/employees-demo",
   },
+  {
+    id: 13,
+    translationKey: "Tanks-ThreeJs",
+    title: "Tanks Three.js",
+    githubUrl: "https://github.com/MarekKrumal/tankyThreeJS_TS",
+    liveUrl: "https://tanky-three-js-ts.vercel.app/",
+    image: "",
+    imageblur: "",
+    technologies: ["TypeScript", "Three.js", "Vite"],
+    hasPage: false,
+    alternativeUrl: "https://github.com/MarekKrumal/tankyThreeJS_TS",
+  },
 ];

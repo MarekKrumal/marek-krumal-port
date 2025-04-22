@@ -59,7 +59,7 @@
     "olomouc": "Olomouc",
     "projekt": "Projekty",
     "technologies": " Moje technologie:",
-    "description": "Jsem 24letý nadšenec pro web. Pokud vás moje práce zajimá, prohlédněte si mé ",
+    "description": "Specializuji se na web development s využitím Reactu a Next.js. Prohlédněte si mé ",
     "description2": " nebo si přečtěte",
     "description3": ", kde sdílím své zkušenosti.",
     "descriptionlink2": " Moje poslední příspěvky",
@@ -109,7 +109,7 @@
       "description": "Full-stack aplikace AWARE nabízí funkce jako nekonečné načítání, autentizaci, DMs, označování, sledování trendujících hashtagů, ukládání příspěvků do záložek a další.",
 
       "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
-      "whyWasItCreatedDesc": "Toto je můj největší projekt – full-stack aplikace postavená na Next.js. Uživatelé se nejprve musí přihlásit nebo zaregistrovat, přičemž je k dispozici možnost přihlášení přes Google, autentifikaci zajišťuje Lucia. Samozřejmostí je real-time validace formulářů díky knihovně React Hook Form. Pro feed jsem využil knihovnu React Query, která umožňuje efektivní fetching dat, jejich ukládání do cache a revalidaci dat podle potřeby. Díky React Query je implementováno také infinite loading a optimistic updates. To znamená, že při akcích, jako je lajkování nebo sledování uživatele, se změna stavu okamžitě projeví na klientovi ještě před odesláním requestu do databáze. Aplikace podporuje vytváření příspěvků s obrázky nebo videi (s limitem velikosti souboru), přičemž upload je řešen přes knihovnu UploadThing. Součástí je také funkce drag-and-drop, která usnadňuje nahrávání souborů. Příspěvky lze komentovat díky plně funkčnímu systému komentářů. Vyhledávání je možné pomocí hashtagů (#example) nebo zmínek (@example). Funkce trending hashtags byla navržena tak, aby hashtagy byly cachovány každé 3 hodiny. Uživatelé mohou upravovat svou profilovou stránku, měnit profilový obrázek (s možností oříznutí přímo v aplikaci) a aktualizovat své bio. Fungují také notifikace – uživatelé jsou informováni o nových sledujících, lajkech na jejich příspěvcích, zmínkách nebo příchozích zprávách.  Aplikace obsahuje i DM systém, který je integrován přes třetí stranu, Stream. Ten nabízí bohatou škálu funkcí, jako jsou skupinové chaty, nahrávání souborů, reakce na zprávy a další. Mám také nastavený cron job, který každých 24 hodin automaticky maže nahrané soubory, které nebyly použity (například když uživatel nahrál obrázek k příspěvku, ale příspěvek nakonec neodeslal). Poslední přidanou funkcí je možnost repostování. ",
+      "whyWasItCreatedDesc": "Toto je můj největší projekt – full-stack aplikace postavená na Next.js. Uživatelé se nejprve musí přihlásit nebo zaregistrovat, přičemž je k dispozici možnost přihlášení přes Google, autentifikaci zajišťuje Lucia. Samozřejmostí je real-time validace formulářů díky knihovně React Hook Form. Pro feed jsem využil knihovnu React Query, která umožňuje efektivní fetching dat, jejich ukládání do cache a revalidaci dat podle potřeby. Díky React Query je implementováno také infinite loading a optimistic updates. To znamená, že při akcích, jako je lajkování nebo sledování uživatele, se změna stavu okamžitě projeví na klientovi ještě před odesláním requestu do databáze. Aplikace podporuje vytváření příspěvků s obrázky nebo videi (s limitem velikosti souboru), přičemž upload je řešen přes knihovnu UploadThing. Součástí je také funkce drag-and-drop, která usnadňuje nahrávání souborů. Příspěvky lze komentovat díky plně funkčnímu systému komentářů. Vyhledávání je možné pomocí hashtagů (#example) nebo examples (@example). Funkce trending hashtags byla navržena tak, aby hashtagy byly cachovány každé 3 hodiny. Uživatelé mohou upravovat svou profilovou stránku, měnit profilový obrázek (s možností oříznutí přímo v aplikaci) a aktualizovat své bio. Fungují také notifikace – uživatelé jsou informováni o nových sledujících, lajkech na jejich příspěvcích, examples nebo příchozích zprávách.  Aplikace obsahuje i DM systém, který je integrován přes třetí stranu, Stream. Ten nabízí bohatou škálu funkcí, jako jsou skupinové chaty, nahrávání souborů, reakce na zprávy a další. Mám také nastavený cron job, který každých 24 hodin automaticky maže nahrané soubory, které nebyly použity (například když uživatel nahrál obrázek k příspěvku, ale příspěvek nakonec neodeslal). Poslední přidanou funkcí je možnost repostování. ",
 
       "updateTitle": "Aktualizace",
       "updateDesc": "Aplikace je konstantne aktualizována s novymi funkciemi a opravami.",
@@ -130,7 +130,7 @@
         "func12": "Ukládání příspěvků do záložek (bookmarks)",
         "func13": "Autentizace (NextAuth nebo vlastní řešení)",
         "func14": "Postgres DB konfigurace s Prisma ORM",
-        "func15": "Podpora hashtagů (#) a zmínek (@)",
+        "func15": "Podpora hashtagů (#) a examples (@)",
         "func16": "Fulltextové vyhledávání",
         "func17": "Caching a optimalizace výkonu",
         "func18": "Responzivní design pro mobily",
@@ -510,6 +510,42 @@
     "Employee-Manager": {
       "title": "Employee Manager",
       "description": "Malá ukázková aplikace vyvinutá v Reactu a TypeScriptu, která slouží k základní správě zaměstnanců. Data jsou ukládána pomocí Reduxu a LocalStorage, aplikace využívá Webpack pro balíčkování.",
+      "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
+      "whyWasItCreatedDesc": "",
+
+      "updateTitle": "",
+      "updateDesc": "",
+
+      "featuresTitle": "Funkce a technologie",
+      "features": {
+        "func1": "",
+        "func2": "",
+        "func3": "",
+        "func4": "",
+        "func5": "",
+        "func6": "",
+        "func7": "",
+        "func8": "",
+        "func9": "",
+        "func10": "",
+        "func11": "",
+        "func12": "",
+        "func13": "",
+        "func14": "",
+        "func15": "",
+        "func16": "",
+        "func17": "",
+        "func18": "",
+        "func19": "",
+        "func20": "",
+        "func21": "",
+        "func22": "",
+        "func23": ""
+      }
+    },
+    "Tanks-ThreeJs": {
+      "title": "Tanky ThreeJs",
+      "description": "Jednoduchá 3D tanková hra vytvořená pomocí Three.js a TypeScriptu. Demonstruje základní ovládání tanku, střelbu, jednoduchou detekci kolizí a interakci s nepřátelským tankem",
       "whyWasItCreatedTitle": "Něco zajímavého o aplikaci?",
       "whyWasItCreatedDesc": "",
 
