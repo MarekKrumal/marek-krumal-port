@@ -43,8 +43,10 @@ export default async function BlogPostDetailPage({
 
     return (
       <div className="max-w-3xl mx-auto p-8 bg-stone-100 dark:bg-black/10">
-        <h1 className="text-2xl font-bold mb-2">{data.title}</h1>
-        <div className="text-sm text-gray-500 mb-4">
+        <h1 className="text-3xl font-extrabold dark:text-green-400 text-green-700 bolmb-2">
+          {data.title}
+        </h1>
+        <div className="text-sm text-orange-900 dark:text-orange-200 mb-4">
           {new Date(data.date).toLocaleDateString()}
         </div>
         <div

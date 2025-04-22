@@ -29,14 +29,15 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --blog-heading-color: #3cb371;
+    --blog-heading-color: #267349;
     --blog-code-color: #2e8b57;
+    --blog-code-color-inimage: #adff2f;
     --blog-link-color: #008000;
     --blog-link-hover-bg: #006400;
     --blog-link-hover-color: #fff;
     --blog-string: #c05621;
-    --blog-props: #569cd6;
-    --blog-function: #f9ca23;
+    --blog-props: #2c5e8a;
+    --blog-function: #b2840a;
     --blog-return: #c778f0;
   }
 
@@ -67,11 +68,12 @@
     --chart-5: 340 75% 55%;
     --blog-heading-color: #98fb98;
     --blog-code-color: #adff2f;
+    --blog-code-color-inimage: #adff2f;
     --blog-link-color: #7cfc00;
     --blog-link-hover-bg: #008000;
     --blog-link-hover-color: #000;
     --blog-string: #ed8936;
-    --blog-props: #569cd6;
+    --blog-props: #6bb4e7;
     --blog-function: #ffe380;
     --blog-return: #c778f0;
   }

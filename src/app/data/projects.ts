@@ -74,18 +74,6 @@ export const AllProjects2: ProjectData[] = [
   },
   {
     id: 6,
-    translationKey: "store-mern",
-    title: "store-mern",
-    githubUrl: "https://github.com/MarekKrumal/MERN-store1",
-    liveUrl: "https://mern-store1-piyt.onrender.com/",
-    image: "/assets/store-mern/mern-main.webp",
-    imageblur:
-      "data:image/webp;base64,UklGRqgBAABXRUJQVlA4IJwBAADwCACdASooACUAPtFUpUyoJCOiLjgLMQAaCUAXLb9UvJGSNokKkq33bM0M0fcwdpLfYO2XkZi6rR/s/+AJjDsZ/tNUBzPBO49QUuJcgNVtiAD+8NMtAR1n043H67vdDPD3SB4mUadVTuUpAmREIPKhCPkLGTz8bVu2dTfg9GtvT+b7zk62UPFmH02jf9eInqXx8ymadA/LopKm5R6brA+1805pemGGJq+zLEtxhG6WI7e+U1lfTFJGpPRQAFrVwukBvKW4Vbm+CzkXyH3HzWjVZpIsfm2kLBBD7DVA0m29szxg6WQ8Qc345oR/+UWmBLUJcmEfalAx50PUHU6jVd/qD9fNHSE3ey6zPd4ye+oJCsdYJ+bnXBiTPqN2wb0wwTIaOHq3SB/DGsmfu6iP3pTPC4+iIrbc1NItOcQt7d8sPvHvar79AkEucptxkt6zbqpkLf5msXUh5fT7EJEVCzeQRrJAD18/6U5dNLoN8SAwya3BR2HDtyFP7iWd6eAjtbFqaAxPGaBg6Pctx1+OfuImHUBPAIKw2UK8qEAA",
-    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
-    hasPage: true,
-  },
-  {
-    id: 7,
     translationKey: "mtrx-mern",
     title: "mtrx-mern",
     githubUrl: "https://github.com/MarekKrumal/MTRX",
@@ -96,6 +84,19 @@ export const AllProjects2: ProjectData[] = [
     technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
     hasPage: true,
   },
+  {
+    id: 7,
+    translationKey: "store-mern",
+    title: "store-mern",
+    githubUrl: "https://github.com/MarekKrumal/MERN-store1",
+    liveUrl: "https://mern-store1-piyt.onrender.com/",
+    image: "/assets/store-mern/mern-main.webp",
+    imageblur:
+      "data:image/webp;base64,UklGRqgBAABXRUJQVlA4IJwBAADwCACdASooACUAPtFUpUyoJCOiLjgLMQAaCUAXLb9UvJGSNokKkq33bM0M0fcwdpLfYO2XkZi6rR/s/+AJjDsZ/tNUBzPBO49QUuJcgNVtiAD+8NMtAR1n043H67vdDPD3SB4mUadVTuUpAmREIPKhCPkLGTz8bVu2dTfg9GtvT+b7zk62UPFmH02jf9eInqXx8ymadA/LopKm5R6brA+1805pemGGJq+zLEtxhG6WI7e+U1lfTFJGpPRQAFrVwukBvKW4Vbm+CzkXyH3HzWjVZpIsfm2kLBBD7DVA0m29szxg6WQ8Qc345oR/+UWmBLUJcmEfalAx50PUHU6jVd/qD9fNHSE3ey6zPd4ye+oJCsdYJ+bnXBiTPqN2wb0wwTIaOHq3SB/DGsmfu6iP3pTPC4+iIrbc1NItOcQt7d8sPvHvar79AkEucptxkt6zbqpkLf5msXUh5fT7EJEVCzeQRrJAD18/6U5dNLoN8SAwya3BR2HDtyFP7iWd6eAjtbFqaAxPGaBg6Pctx1+OfuImHUBPAIKw2UK8qEAA",
+    technologies: ["Vite", "JavaScript", "MongoDB", "Express"],
+    hasPage: true,
+  },
+
   {
     id: 8,
     translationKey: "weather-app",

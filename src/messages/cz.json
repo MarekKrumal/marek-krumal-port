@@ -72,7 +72,8 @@
   "LatestPosts": {
     "title": "Moje poslední příspěvky",
     "headerdesc": "Na mém blogu sdílím své zkušenosti a myšlenky spojené s programováním.",
-    "showMore": "Více príspěvků →"
+    "showMore": "Více příspěvků →",
+    "showMorePostsAriaLabel": "Zobrazit více příspěvků"
   },
   "Weather": {
     "počasí?": "Jaké mám dnes počasí?",
@@ -182,7 +183,7 @@
       "description": "Tato aplikace slouží jako nástroj pro vizualizaci a testování neurálních sítí. Vytvořil jsem ji pomocí framerworku Vite s Reactem a nového modelu od OpenAI – GPT-o1.",
 
       "whyWasItCreatedTitle": "O Aplikaci: Proč a jak byla vytvořena?",
-      "whyWasItCreatedDesc": "Tato aplikace vznikla jako experiment, abych zjistil, co všechno dokáže OpenAI. Ačkoliv to není ideální přístup, pokud se chcete skutečně naučit programovat, vybral jsem si záměrně složité téma – neuronové sítě – abych vyvážil využití AI a zároveň se něco nového naučil. Po získání inspirace z různých zdrojů na internetu jsem vytvořil vizualizátor neuronových sítí. Na tomto projektu jsem nenapsal téměř žádný kód, většinu práce odvedl model od OpenAI. To ale neznamená, že to bylo snadné. Projekt jsem původně začal v Next.js, ale kvůli problémům s kompatibilitou některých knihoven, jako jsou react-latex a react-mathjax, jsem musel přejít na Vite. Ani s použitím příznaku --legacy-peer-deps a vynucením instalace se mi tyto knihovny v Next.js 15 nepodařilo zprovoznit. I přesto mi tento projekt pomohl lépe pochopit, jak neuronové sítě fungují a k čemu slouží. Díky tomu jsem získal solidní přehled o jejich praktickém využití a významu v oblasti strojového učení a umělé inteligence.",
+      "whyWasItCreatedDesc": "Tato aplikace vznikla jako experiment, abych zjistil, co všechno dokáže OpenAI. Ačkoliv to není ideální přístup, pokud se chcete skutečně naučit programovat, vybral jsem si záměrně složité téma – neuronové sítě – abych vyvážil využití AI a zároveň se něco nového naučil. Po získání inspirace z různých zdrojů na internetu jsem vytvořil vizualizátor neuronových sítí. Na tomto projektu jsem nenapsal téměř žádný kód, většinu práce odvedl model od OpenAI. To ale neznamená, že to bylo snadné. Projekt jsem původně začal v Next.js, ale kvůli problémům s kompatibilitou některých knihoven, jako jsou react-latex a react-mathjax, jsem musel přejít na Vite. Ani s použitím příkazu --legacy-peer-deps a vynucením instalace se mi tyto knihovny v Next.js 15 nepodařilo zprovoznit. I přesto mi tento projekt pomohl lépe pochopit, jak neuronové sítě fungují a k čemu slouží. Díky tomu jsem získal solidní přehled o jejich praktickém využití a významu v oblasti strojového učení a umělé inteligence.",
 
       "updateTitle": "Aktualizace",
       "updateDesc": "Aplikace je konstantne aktualizována s novymi funkciemi a opravami.",

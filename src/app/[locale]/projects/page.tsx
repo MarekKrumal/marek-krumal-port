@@ -15,13 +15,13 @@ export default function ProjectsIndexPage() {
         {t("title")}
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ml-4 mr-4">
         {AllProjects2.map((project) => (
           <Link
             key={`${project.id}-${project.translationKey}`}
             href={`/${locale}/projects/${project.translationKey}`}
             aria-label="visit project"
-            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-stone-200 flex flex-col border hover:scale-105 transition-transform duration-300 bg-stone-100 dark:bg-[#222222] p-4 hover:shadow-2xl dark:hover:shadow-white/5"
+            className="relative min-h-[280px] dark:hover:bg-black/30 hover:bg-stone-200 flex flex-col border hover:scale-105 transition-transform duration-300 hover:shadow-green-800 bg-stone-100 dark:bg-[#222222] p-4 hover:shadow-md dark:hover:shadow-green-700"
           >
             <div className="flex items-center justify-between mb-4">
               <SlFolder

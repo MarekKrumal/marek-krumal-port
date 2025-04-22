@@ -72,7 +72,8 @@
   "LatestPosts": {
     "title": "My Latest Posts",
     "headerdesc": "On my blog, I share my experiences and thoughts on programming.",
-    "showMore": "More posts →"
+    "showMore": "More posts →",
+    "showMorePostsAriaLabel": "Show more posts"
   },
   "Weather": {
     "počasí?": "What's the weather today?",
